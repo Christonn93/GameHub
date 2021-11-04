@@ -4,7 +4,7 @@
 
 .card {
     display: block;
-}
+
 
 
 background: #0d0d0d;/* Old Browsers */
@@ -15,3 +15,5 @@ background: -o-linear-gradient(-45deg, #0d0d0d 0%, #0d0d0d 4%, #f21b1b 11%, #0d0
 background: -ms-linear-gradient(-45deg, #0d0d0d 0%, #0d0d0d 4%, #f21b1b 11%, #0d0d0d 27%, #0d0d0d 34%, #00ff00 59%, #00ff00 99%, #00ff00 100%); /* IE 10+ */
 background: linear-gradient(135deg, #0d0d0d 0%, #0d0d0d 4%, #f21b1b 11%, #0d0d0d 27%, #0d0d0d 34%, #00ff00 59%, #00ff00 99%, #00ff00 100%);/* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d0d0d', endColorstr='#00ff00', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+
+}
