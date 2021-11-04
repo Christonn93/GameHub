@@ -9,5 +9,6 @@
         "minw",
         "padd",
         "textbox"
-    ]
+    ],
+    "liveServer.settings.CustomBrowser": "firefox"
 }

@@ -54,8 +54,8 @@
     window.addEventListener('DOMContentLoaded', setup)
 
     function setup() {
-      document.querySelector('button#dropdown-nav').addEventListener('click', toggleDropDown)
-      document.querySelector('button#back-btn').addEventListener('click', closeDropDown)
+      document.querySelector('a#dropdown-nav').addEventListener('click', toggleDropDown)
+      document.querySelector('a#back-btn').addEventListener('click', closeDropDown)
       let isDropDownOpen = false;
       let isDropDownClosed = false;
 
@@ -80,23 +80,40 @@
   <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <header role="Header">
-    <ul class="page-nav">
-      <a href="#" class="btn nav-btn">Home</a>
-      <a href="#" class="btn nav-btn">Your account</a>
-      <a href="#" class="btn nav-btn">Games | Game Deals</a>
-      <a href="#" class="btn nav-btn">News</a>
-      <a href="#" class="btn nav-btn">About us | Contact</a>
-    </ul>
-    <img src="./static/assets/img/#" alt="GameHub Logo" href="index.html">
-    <ul class="page-cart">
-      <li class="added-item">item1</li>
-      <li class="added-item">item1</li>
-      <li class="added-item">item1</li>
-      <li class="added-item">item1</li>
-      <li class="added-item">item1</li>
-      <li class="added-item">item1</li>
-      <li class="added-item">item1</li>
-    </ul>
+    <nav class="page-nav">
+      <div class="nav-left">
+        <a href="#" class="btn login">
+          <img src="./static/assets/icons/black/black-user.png" class="icon" alt="user icon">
+          <img src="./static/assets/icons/black/black-padlock.png" class="icon" alt="padlock icon">
+        </a>
+        <a href="#" class="btn dropdown" onclick="toggleDropDown()" id="dropdown-nav">
+          <img src="/static/assets/icons/black/Black-morevertical.png">
+        </a>
+
+         <!-- Dropdown menu -->
+      <div class="dropdown-list" id="dropdown-nav">
+        <div class="dd-header-logo">
+          <a href="index.html">
+            <img class="dropdown-logo" src="/config/style/icons/GameHub_Logo4.svg">
+          </a>
+          <a class="back-btn" onclick="toggleDropDown()" id="back-btn"><img
+              src="/config/style/icons/Icons - Undo.svg"></a>
+        </div>
+      </div>
+
+
+      </div>
+      <div class="nav-center">
+        <a href="index.html">
+          <img src="/static/assets/logo/rsz_gamehub_logo4.png" alt="company logo" class="btn logo">
+        </a>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="btn dropdown" onclick="toggleDropDown()" id="btn-dropdown">
+          <img src="/static/assets/icons/black/Black-shoppingcart.png">
+        </a>
+      </div>
+    </nav>
   </header>
 
   <!-- Main
@@ -108,7 +125,7 @@
 
       <!-- ------ page-main-header ------ -->
       <section class="page-main-header" role="main-header">
-        <div class="textbox">
+        <div class="text-box">
           <h1>Welcome to GameHub, The universe of games.</h1>
 
           <!-- ------ page-break ------ -->
@@ -141,7 +158,7 @@
           <!-- Gallery Card -->
           <div class="gallery-card">
             <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
+            <div class="text-box">
               <h3>Game Title placeholder</h3>
               <p>Placeholder game information</p>
             </div>
@@ -155,7 +172,7 @@
           <!-- Gallery Card -->
           <div class="gallery-card">
             <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
+            <div class="text-box">
               <h3>Game Title placeholder</h3>
               <p>Placeholder game information</p>
             </div>
@@ -169,7 +186,7 @@
           <!-- Gallery Card -->
           <div class="gallery-card">
             <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
+            <div class="text-box">
               <h3>Game Title placeholder</h3>
               <p>Placeholder game information</p>
             </div>
@@ -183,7 +200,7 @@
           <!-- Gallery Card -->
           <div class="gallery-card">
             <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
+            <div class="text-box">
               <h3>Game Title placeholder</h3>
               <p>Placeholder game information</p>
             </div>
@@ -197,7 +214,7 @@
           <!-- Gallery Card -->
           <div class="gallery-card">
             <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
+            <div class="text-box">
               <h3>Game Title placeholder</h3>
               <p>Placeholder game information</p>
             </div>
@@ -211,7 +228,91 @@
           <!-- Gallery Card -->
           <div class="gallery-card">
             <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
+            <div class="text-box">
+              <h3>Game Title placeholder</h3>
+              <p>Placeholder game information</p>
+            </div>
+
+            <!-- ------ page-break ------ -->
+            <br>
+
+            <a href="#" class="btn">Details</a>
+          </div>
+
+          <!-- Gallery Card -->
+          <div class="gallery-card">
+            <img src="./static/assets/img/images.jpg">
+            <div class="text-box">
+              <h3>Game Title placeholder</h3>
+              <p>Placeholder game information</p>
+            </div>
+
+            <!-- ------ page-break ------ -->
+            <br>
+
+            <a href="#" class="btn">Details</a>
+          </div>
+
+          <!-- Gallery Card -->
+          <div class="gallery-card">
+            <img src="./static/assets/img/images.jpg">
+            <div class="text-box">
+              <h3>Game Title placeholder</h3>
+              <p>Placeholder game information</p>
+            </div>
+
+            <!-- ------ page-break ------ -->
+            <br>
+
+            <a href="#" class="btn">Details</a>
+          </div>
+
+          <!-- Gallery Card -->
+          <div class="gallery-card">
+            <img src="./static/assets/img/images.jpg">
+            <div class="text-box">
+              <h3>Game Title placeholder</h3>
+              <p>Placeholder game information</p>
+            </div>
+
+            <!-- ------ page-break ------ -->
+            <br>
+
+            <a href="#" class="btn">Details</a>
+          </div>
+
+          <!-- Gallery Card -->
+          <div class="gallery-card">
+            <img src="./static/assets/img/images.jpg">
+            <div class="text-box">
+              <h3>Game Title placeholder</h3>
+              <p>Placeholder game information</p>
+            </div>
+
+            <!-- ------ page-break ------ -->
+            <br>
+
+            <a href="#" class="btn">Details</a>
+          </div>
+
+          <!-- Gallery Card -->
+          <div class="gallery-card">
+            <img src="./static/assets/img/images.jpg">
+            <div class="text-box">
+              <h3>Game Title placeholder</h3>
+              <p>Placeholder game information</p>
+            </div>
+
+            <!-- ------ page-break ------ -->
+            <br>
+
+            <a href="#" class="btn">Details</a>
+          </div>
+
+          <!-- Gallery Card -->
+          <div class="gallery-card">
+            <img src="./static/assets/img/images.jpg">
+            <div class="text-box">
               <h3>Game Title placeholder</h3>
               <p>Placeholder game information</p>
             </div>
@@ -248,7 +349,7 @@
               <h3>Are you a player?</h3>
             </div>
 
-            <div class="textbox text">
+            <div class="text-box text">
               <p>Every week GameHub sends out newsletter to everyone that signs up.
                 Here we can interest you with new amazing deals.
                 Showcase games that is putted out for sale by our community members.
@@ -292,7 +393,7 @@
           <!-- Gallery Card -->
           <div class="gallery-card">
             <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
+            <div class="text-box">
               <h3>Game Title placeholder</h3>
               <p>Placeholder game information</p>
             </div>
@@ -306,7 +407,7 @@
           <!-- Gallery Card -->
           <div class="gallery-card">
             <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
+            <div class="text-box">
               <h3>Game Title placeholder</h3>
               <p>Placeholder game information</p>
             </div>
@@ -320,7 +421,7 @@
           <!-- Gallery Card -->
           <div class="gallery-card">
             <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
+            <div class="text-box">
               <h3>Game Title placeholder</h3>
               <p>Placeholder game information</p>
             </div>
@@ -334,7 +435,7 @@
           <!-- Gallery Card -->
           <div class="gallery-card">
             <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
+            <div class="text-box">
               <h3>Game Title placeholder</h3>
               <p>Placeholder game information</p>
             </div>
@@ -348,7 +449,7 @@
           <!-- Gallery Card -->
           <div class="gallery-card">
             <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
+            <div class="text-box">
               <h3>Game Title placeholder</h3>
               <p>Placeholder game information</p>
             </div>
@@ -362,7 +463,7 @@
           <!-- Gallery Card -->
           <div class="gallery-card">
             <img src="./static/assets/img/images.jpg">
-            <div class="textbox">
+            <div class="text-box">
               <h3>Game Title placeholder</h3>
               <p>Placeholder game information</p>
             </div>
