@@ -57,7 +57,7 @@
 
       function toggleDropDown() {
         isDropDownOpen = !isDropDownOpen;
-        document.body.classList.toggle('dropdown-list-open', isDropDownOpen);
+        document.body.classList.toggle('dropdown-open', isDropDownOpen);
       }
 
       function closeDropDown() {
@@ -83,9 +83,9 @@
           <img src="./static/assets/icons/black/black-user.png" class="icon" alt="user icon">
           <img src="./static/assets/icons/black/black-padlock.png" class="icon" alt="padlock icon">
         </a>
-        <a href="#" class="dropdown-1" onclick="toggleDropDown()" id="dropdown-1">
+        <button class="dropdown-1" onclick="toggleDropDown()" id="dropdown-1">
           <img src="/static/assets/icons/black/Black-morevertical.png" class="icon" alt="Dropdown icon">
-        </a>
+        </button>
 
         <!-- Dropdown menu -->
         <div class="dropdown-list" id="dropdown-list">

@@ -422,24 +422,19 @@ header {
 .dropdown-li-btn > a,
 li,
 ul{
-	display: flex;
+	display: none;
 	flex-direction: column;
 	text-decoration: none;
 }
 
-.dropdown-list{
-    display: none;
+.dropdown-open .dropdown-list{
+    display: flex;
     width: 20em;
     background-color: transparent;
 
     position: absolute;
 
 }    
-
-.dropdown-open .dropdown-list {
-    display: grid;
-    grid-template-rows: 1fr;
-}
 
 .dropdown-ul{
     background-color: var(--ghub-white);
