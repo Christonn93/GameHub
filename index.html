@@ -50,8 +50,8 @@
     window.addEventListener('DOMContentLoaded', setup)
 
     function setup() {
-      document.querySelector('button#dropdown-list').addEventListener('click', toggleDropDown)
-      document.querySelector('button#back').addEventListener('click', closeDropDown)
+      document.querySelector('button#dropdown-nav').addEventListener('click', toggleDropDown)
+      document.querySelector('button#back-btn').addEventListener('click', closeDropDown)
       let isDropDownOpen = false;
       let isDropDownClosed = false;
 
@@ -79,16 +79,16 @@
   <header class="header">
     <nav class="page-nav">
       <div class="nav-left">
-        <a href="#" class="btn-login">
+        <a href="/pages/lg_rg.html" class="btn-login">
           <img src="./static/assets/icons/black/black-user.png" class="icon" alt="user icon">
           <img src="./static/assets/icons/black/black-padlock.png" class="icon" alt="padlock icon">
         </a>
-        <button class="dropdown-1" onclick="toggleDropDown()" id="dropdown-1">
+        <button class="dropdown-1" onclick="toggleDropDown()" id="dropdown-nav">
           <img src="/static/assets/icons/black/Black-morevertical.png" class="icon" alt="Dropdown icon">
         </button>
 
         <!-- Dropdown menu -->
-        <div class="dropdown-list" id="dropdown-list">
+        <div class="dropdown-list" id="dropdown-nav">
           <ul class="dropdown-ul">
             <li class="dropdown-li-header">
               <div class="dropdown-header">
@@ -97,8 +97,8 @@
                       class="icon-logo"></a>
                 </div>
                 <div class="dropdown-header-right">
-                  <a href="#" onclick="toggleDropDown()" id="back"><img
-                      src="../static/assets/icons/black/Black-leftarrow.png" alt="back-btn" class="icon"></a>
+                  <button class="back-btn" onclick="toggleDropDown()" id="back-btn"><img
+                      src="../static/assets/icons/black/Black-leftarrow.png" alt="back-btn" class="icon"></button>
                 </div>
               </div>
             </li>
@@ -108,24 +108,24 @@
             </li>
             <br>
             <li class="dropdown-li-btn">
-                <a href="#"><img src="../static/assets/icons/green/Green-home.png" alt="icon" class="icon" />Home</a>
+                <a href="./index.html"><img src="../static/assets/icons/green/Green-home.png" alt="icon" class="icon" />Home</a>
             </li>
             <br>
             <li class="dropdown-li-btn">
-                <a href="#"><img src="../static/assets/icons/green/Green-personperson.png" alt="icon" class="icon">Profile Page</a>
+                <a href="./pages/userpage.html"><img src="../static/assets/icons/green/Green-personperson.png" alt="icon" class="icon">Profile Page</a>
             </li>
             <br>
             <li class="dropdown-li-btn">
-                <a href="#"><img src="../static/assets/icons/green/Green-gridicon.png" alt="icon" class="icon">All Games</a>
+                <a href="./pages/gamelist.html"><img src="../static/assets/icons/green/Green-gridicon.png" alt="icon" class="icon">All Games</a>
             </li>
             <br>
             <li class="dropdown-li-btn">
-                <a href="#"><img src="../static/assets/icons/green/Green-percent.png" alt="icon" class="icon">Weekly Deals</a>
+                <a href="./pages/gamelist.html"><img src="../static/assets/icons/green/Green-percent.png" alt="icon" class="icon">Weekly Deals</a>
             </li>
             <br>
             <li class="push-down"></li>
             <li class="dropdown-li-btn">
-                <a href="#"><img src="../static/assets/icons/green/Green-semail.png" alt="icon" class="icon">Contact</a>
+                <a href="./pages/contact.html"><img src="../static/assets/icons/green/Green-semail.png" alt="icon" class="icon">Contact</a>
             </li>
             <br>
             <li class="push-down"></li>
@@ -530,12 +530,17 @@
   <!-- Footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <footer class="footer">
-    <ul>
-      <li><a href="#" class="footer-btn">Home</a></li>
-      <li><a href="#" class="footer-btn">About us | Contact</a></li>
-    </ul>
-    <p>Copyright reserved GameHub 2021</p>
-  </footer>
+    <section class="page-footer">
+        <div class="footer-btn-layout">
+          <a href="../index.html" class="footer-btn">Home</a>
+          <a href="../pages/contact.html" class="footer-btn">Contact</a>
+          <a href="../pages/chart.html" class="footer-btn">Checkout</a>
+          <div class="copyright-footer">
+            <p>Copyright reserved GameHub 2021</p>
+          </div>
+        </div>
+      </section>
+</footer>
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

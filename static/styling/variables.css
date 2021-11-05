@@ -1,137 +1,224 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+::-webkit-resizer {
+    display: none;
+}
+
+/* ## ==== CSS VARIABLES ==== ## */
 :root {
-/* -- Smoky Black -- */
-    --primary-bg: #0D0D0D;
-/* -- Anti-Flash White -- */
-    --light-bg: #F2F2F2;
-/* -- Electric Green1 -- */
-     --primary-btn: #00FF00;
-/* -- Dark Silver -- */
-    --my-dark-silver: #726C6C;
-/* -- Rhythm -- */
-    --my-rhythm: #7A778C;
-/* -- Gray -- */
-    --my-gray: #808285;
-/* -- Yankees Blue -- */
-    --my-yankee-blue: #1D2540;
-/* -- Light Periwinkle -- */
-    --my-light-periwinkle: #C5D1D9;
-/* -- Absolute Zero -- */
-    --my-blue: #074DD9;
-/* -- Electric Green2 -- */
-    --my-green2: #0DF205;
-/* -- Red(pigment) -- */
-    --my-red: #f21b1b;
-/* -- White -- */
-    --my-white: #FFFFFF;
 
-/* Typography */
-    --main-font: 'Audiowide', cursive;
-    --secondary-font: 'Oswald', sans-serif;
+    /* ==== Font family ==== */
+    --ff-heading: 'Audiowide', cursive;
+    --ff-body: 'Oswald', sans-serif;
+    --fw-heading: 700;
+    --fw-body: 300;
+    --line-height: 1.55
+    
+    /* ==== Font size ==== */
+    --fs-h1: 5rem;
+    --fs-h2: 3.25rem;
+    --fs-h3: 2.75rem;
+    --fs-h4: 1.75rem;
+    --fs-body-lg: 1.125rem;
+    --fs-body-md: 1.120rem;
+    --fs-body-sm: 0.1rem;
+    --nav-fs: .8rem;
+    --link-fs: 1.10rem;
 
-/* Calculation */
-    --responsive: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420)));
-/* Ranges from 421px to 1199px */
+    /* ==== colour variables ==== */
+
+    /* -- Smoky Black -- */
+    --ghub-black: #0D0D0D;
+    /* -- Anti-Flash White -- */
+    --ghub-white: #F2F2F2;
+    /* -- Electric Green1 -- */
+    --ghub-green: #00FF00;
+    /* -- Rhythm -- */
+    --ghub-rhythm: #7A778C;
+    /* -- Red(pigment) -- */
+    --ghub-red: #F21B1B;
+
+    /* ==== Other variables ==== */
+
+    /* -- General -- */
+    --transition: all 0.2s;
+    --shadow: 2px 5px 20px var(--ghub-black);
+    --shadow2: 0px 2px 16px 0px var(--ghub-black);
+    --shadow3: 0px 0px 10px #dedcdc,
+        0px 0px 10px #e6e3e3,
+        0px 0px 10px #9c9a9a;
+    --shadow4: 0.5rem 0.5rem var(--ghub-green),
+        -0.5rem -0.5rem var(--ghub-red);
+
+    --padding: 0.35em 1.2em;
+    --border: 0.1em solid var(--ghub-black);
+    --border-r: 0.20em;
+    --minh: 100px;
+    --maxh: 100%;
+    --minw: 100px;
+    --maxw: 100%;
+    --flex: calc(100% / 6);
+
+    /* -- Button -- */
+    --btn-border: 0.1em solid var(--ghub-black);
+    --btn-padd: 0.35em 1.2em;
+    --btn-marg: 0 0.3em 0.3em 0;
+    --btn-bordrad: 0.20em;
+    --btn-ff: var(--ff-heading);
+    --btn-fs: var(--link-fs);
+
+    /* -- Gallery Card -- */
+    --gc-mih: fit-content;
+    --gc-mxh: auto;
+    --gc-miw: fit-content;
+    --gc-mxw: auto;
+
+    /* -- Input field's -- */
+    --input-border: 5px solid var(--ghub-black);
+    --input-border-r: 0px 30px 0px 30px;
+    --input-focus-h: 245;
+    --input-focus-s: 100%;
+    --input-focus-l: 42%;
+
+
+
 }
 
-* {
-/* Typography */
-    --main-font: 'Audiowide', cursive;
-    --secondary-font: 'Oswald', sans-serif;
+/* ## ==== Media Queries Root ==== ## */
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-device-width : 320px) {
+    :root {
+        /* ==== Font family ==== */
+        --ff-heading: 'Audiowide', cursive;
+        --ff-body: 'Oswald', sans-serif;
+        --fw-heading: 700;
+        --fw-body: 300;
+        --line-height: 1.55
+        
+        /* ==== Font size ==== */
+        --fs-h1: 2rem;
+        --fs-h2: 2.25rem;
+        --fs-h3: 1.75rem;
+        --fs-h4: 0.75rem;
+        --fs-body-lg: 1.125rem;
+        --fs-body-md: 1.120rem;
+        --fs-body-sm: 1.150rem;
+        --nav-fs: .8rem;
+        --link-fs: 1.10rem;
 
-/* Calculation */
-    --responsive: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420)));
-/* Ranges from 421px to 1199px */
-}
+        /* ==== colour variables ==== */
 
-h1 {
-/* Set max and min font sizes */
-    --max-font: 50;
-    --min-font: 25;
-    font-family: var(--main-font);
-    font-size: var(--responsive);
-}
+        /* -- Smoky Black -- */
+        --ghub-black: #0D0D0D;
+        /* -- Anti-Flash White -- */
+        --ghub-white: #F2F2F2;
+        /* -- Electric Green1 -- */
+        --ghub-green: #00FF00;
+        /* -- Rhythm -- */
+        --ghub-rhythm: #7A778C;
 
-p {
-    font-family: var(--secondary-font);
-    margin: auto;
-    width: fit-content;
+        /* ==== Other variables ==== */
 
-/* Set max and min font sizes */
-    --max-font: 20;
-    --min-font: 14;
-    font-size: var(--responsive);
-}
+        /* -- General -- */
+        --transition: all 0.2s;
+        --shadow: 2px 5px 20px var(--ghub-black);
+        --shadow2: 0px 2px 16px 0px var(--ghub-black);
+        --padding: 0.35em 1.2em;
+        --border: 0.1em solid var(--ghub-black);
+        --border-r: 0.20em;
+        --minh: 100px;
+        /* min-h */
+        --maxh: 100%;
+        --minw: 100px;
+        --maxw: 100%;
+        --flex: calc(100% / 6);
 
-@media (min-width: 1200px) {
+        /* -- Button -- */
+        --btn-border: 0.1em solid var(--ghub-black);
+        --btn-padd: 0.35em 1.2em;
+        --btn-marg: 0 0.3em 0.3em 0;
+        --btn-bordrad: 0.20em;
+        --btn-ff: var(--ff-heading);
+        --btn-fs: var(--link-fs);
 
-    h1,
-    p {
-        font-size: calc(var(--max-font) * 1px);
+        /* -- Gallery Card -- */
+        --gc-mih: fit-content;
+        --gc-mxh: 400px;
+        --gc-miw: fit-content;
+        --gc-mxw: 145px;
     }
 }
 
-@media (max-width: 420px) {
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-device-width : 480px) {
+    :root {
+        /* ==== Font family ==== */
+        --ff-heading: 'Audiowide', cursive;
+        --ff-body: 'Oswald', sans-serif;
+        --fw-heading: 700;
+        --fw-body: 300;
+        --line-height: 1.55
+        
+        /* ==== Font size ==== */
+        --fs-h1: 2rem;
+        --fs-h2: 2.25rem;
+        --fs-h3: 1.75rem;
+        --fs-h4: 0.75rem;
+        --fs-body-lg: 1.125rem;
+        --fs-body-md: 1.120rem;
+        --fs-body-sm: 1.150rem;
+        --nav-fs: .8rem;
+        --link-fs: 1.10rem;
 
-    h1,
-    p {
-        font-size: calc(var(--min-font) * 1px);
+        /* ==== Other variables ==== */
+
+        /* -- General -- */
+        --transition: all 0.2s;
+        --shadow: 2px 5px 20px var(--ghub-black);
+        --shadow2: 0px 2px 16px 0px var(--ghub-black);
+        --padding: 0.35em 1.2em;
+        --border: 0.1em solid var(--ghub-black);
+        --border-r: 0.20em;
+        --minh: 100px;
+        --maxh: 100%;
+        --minw: 100px;
+        --maxw: 100%;
+        --flex: calc(100% / 6);
+
+        /* -- Button -- */
+        --btn-border: 0.1em solid var(--ghub-black);
+        --btn-padd: 0.35em 1.2em;
+        --btn-marg: 0 0.3em 0.3em 0;
+        --btn-bordrad: 0.20em;
+        --btn-ff: var(--ff-heading);
+        --btn-fs: var(--link-fs);
+
+        /* -- Gallery Card -- */
+        --gc-mih: fit-content;
+        --gc-mxh: 400px;
+        --gc-miw: fit-content;
+        --gc-mxw: 145px;
     }
 }
-
-/* Whatever */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-*{
-    background-color: var(--light-bg);
-}
-
-html,
-body {
-    height: 100vh;
-}
-
-body {
-    display: block;
-}
-
-div {
-    margin: auto;
-    padding: 20px;
-}
-
-a,
-a:visited,
-a:focus,
-a:active,
-a:link {
-    text-decoration: none;
-    outline: 0;
-}
-
-a {
-    color: var(--primary-bg);
-    transition: .2s ease-in-out color;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    margin: .3em 0;
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-}
-
-img {
-    vertical-align: middle;
-    height: auto;
-    width: 100%;
-}
-

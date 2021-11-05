@@ -14,35 +14,6 @@
 
 ============================================================ */
 
-::-webkit-scrollbar {
-    display: none;
-}
-
-::-webkit-scrollbar-button {
-    display: none;
-}
-
-::-webkit-scrollbar-track {
-    display: none;
-}
-
-::-webkit-scrollbar-track-piece {
-    display: none;
-}
-
-::-webkit-scrollbar-thumb {
-    display: none;
-}
-
-::-webkit-scrollbar-corner {
-    display: none;
-}
-
-::-webkit-resizer {
-    display: none;
-}
-
-/* ## ==== CSS VARIABLES ==== ## */
 :root {
 
     /* ==== Font family ==== */
@@ -76,10 +47,6 @@
     /* -- Red(pigment) -- */
     --ghub-red: #F21B1B;
 
-    /* ==== Other variables ==== */
-
-    /* -- General -- */
-    --transition: all 0.2s;
     --shadow: 2px 5px 20px var(--ghub-black);
     --shadow2: 0px 2px 16px 0px var(--ghub-black);
     --shadow3: 0px 0px 10px #dedcdc,
@@ -88,157 +55,7 @@
     --shadow4: 0.5rem 0.5rem var(--ghub-green),
         -0.5rem -0.5rem var(--ghub-red);
 
-    --padding: 0.35em 1.2em;
-    --border: 0.1em solid var(--ghub-black);
-    --border-r: 0.20em;
-    --minh: 100px;
-    --maxh: 100%;
-    --minw: 100px;
-    --maxw: 100%;
-    --flex: calc(100% / 6);
-
-    /* -- Button -- */
-    --btn-border: 0.1em solid var(--ghub-black);
-    --btn-padd: 0.35em 1.2em;
-    --btn-marg: 0 0.3em 0.3em 0;
-    --btn-bordrad: 0.20em;
-    --btn-ff: var(--ff-heading);
-    --btn-fs: var(--link-fs);
-
-    /* -- Gallery Card -- */
-    --gc-mih: fit-content;
-    --gc-mxh: auto;
-    --gc-miw: fit-content;
-    --gc-mxw: auto;
-
-    /* -- Input field's -- */
-    --input-border: 5px solid var(--ghub-black);
-    --input-border-r: 0px 30px 0px 30px;
-    --input-focus-h: 245;
-    --input-focus-s: 100%;
-    --input-focus-l: 42%;
-
-
-
 }
-
-/* ## ==== Media Queries Root ==== ## */
-/* Smartphones (portrait) ----------- */
-@media only screen and (min-device-width : 320px) {
-    :root {
-        /* ==== Font family ==== */
-        --ff-heading: 'Audiowide', cursive;
-        --ff-body: 'Oswald', sans-serif;
-        --fw-heading: 700;
-        --fw-body: 300;
-        --line-height: 1.55
-        
-        /* ==== Font size ==== */
-        --fs-h1: 2rem;
-        --fs-h2: 2.25rem;
-        --fs-h3: 1.75rem;
-        --fs-h4: 0.75rem;
-        --fs-body-lg: 1.125rem;
-        --fs-body-md: 1.120rem;
-        --fs-body-sm: 1.150rem;
-        --nav-fs: .8rem;
-        --link-fs: 1.10rem;
-
-        /* ==== colour variables ==== */
-
-        /* -- Smoky Black -- */
-        --ghub-black: #0D0D0D;
-        /* -- Anti-Flash White -- */
-        --ghub-white: #F2F2F2;
-        /* -- Electric Green1 -- */
-        --ghub-green: #00FF00;
-        /* -- Rhythm -- */
-        --ghub-rhythm: #7A778C;
-
-        /* ==== Other variables ==== */
-
-        /* -- General -- */
-        --transition: all 0.2s;
-        --shadow: 2px 5px 20px var(--ghub-black);
-        --shadow2: 0px 2px 16px 0px var(--ghub-black);
-        --padding: 0.35em 1.2em;
-        --border: 0.1em solid var(--ghub-black);
-        --border-r: 0.20em;
-        --minh: 100px;
-        /* min-h */
-        --maxh: 100%;
-        --minw: 100px;
-        --maxw: 100%;
-        --flex: calc(100% / 6);
-
-        /* -- Button -- */
-        --btn-border: 0.1em solid var(--ghub-black);
-        --btn-padd: 0.35em 1.2em;
-        --btn-marg: 0 0.3em 0.3em 0;
-        --btn-bordrad: 0.20em;
-        --btn-ff: var(--ff-heading);
-        --btn-fs: var(--link-fs);
-
-        /* -- Gallery Card -- */
-        --gc-mih: fit-content;
-        --gc-mxh: 400px;
-        --gc-miw: fit-content;
-        --gc-mxw: 145px;
-    }
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-device-width : 480px) {
-    :root {
-        /* ==== Font family ==== */
-        --ff-heading: 'Audiowide', cursive;
-        --ff-body: 'Oswald', sans-serif;
-        --fw-heading: 700;
-        --fw-body: 300;
-        --line-height: 1.55
-        
-        /* ==== Font size ==== */
-        --fs-h1: 2rem;
-        --fs-h2: 2.25rem;
-        --fs-h3: 1.75rem;
-        --fs-h4: 0.75rem;
-        --fs-body-lg: 1.125rem;
-        --fs-body-md: 1.120rem;
-        --fs-body-sm: 1.150rem;
-        --nav-fs: .8rem;
-        --link-fs: 1.10rem;
-
-        /* ==== Other variables ==== */
-
-        /* -- General -- */
-        --transition: all 0.2s;
-        --shadow: 2px 5px 20px var(--ghub-black);
-        --shadow2: 0px 2px 16px 0px var(--ghub-black);
-        --padding: 0.35em 1.2em;
-        --border: 0.1em solid var(--ghub-black);
-        --border-r: 0.20em;
-        --minh: 100px;
-        --maxh: 100%;
-        --minw: 100px;
-        --maxw: 100%;
-        --flex: calc(100% / 6);
-
-        /* -- Button -- */
-        --btn-border: 0.1em solid var(--ghub-black);
-        --btn-padd: 0.35em 1.2em;
-        --btn-marg: 0 0.3em 0.3em 0;
-        --btn-bordrad: 0.20em;
-        --btn-ff: var(--ff-heading);
-        --btn-fs: var(--link-fs);
-
-        /* -- Gallery Card -- */
-        --gc-mih: fit-content;
-        --gc-mxh: 400px;
-        --gc-miw: fit-content;
-        --gc-mxw: 145px;
-    }
-}
-
 /* ## ==== PAGE STYLING ==== ## */
 
 /* ==== Fonts ==== */
@@ -280,11 +97,11 @@ a {
 
 /* ==== Assets/Components/Generic style ====  */
 .btn {
-    padding: var(--btn-padd);
-    border: var(--btn-border);
-    margin: var(--btn-marg);
-    border-radius: var(--btn-bordrad);
-    transition: var(--transition);
+    padding:  0.35em 1.2em;
+    border:  0.1em solid var(--ghub-black);
+    margin: 0 0.3em 0.3em 0;
+    border-radius:  0.20em;
+    transition: all 0.2s;
     color: var(--ghub-black);
     background-color: var(--ghub-green);
     box-shadow: var(--shadow2);
@@ -297,11 +114,11 @@ a {
 }
 
 .btn2 {
-    padding: var(--btn-padd);
-    border: var(--btn-border);
-    margin: var(--btn-marg);
-    border-radius: var(--btn-bordrad);
-    transition: var(--transition);
+    padding:  0.35em 1.2em;
+    border:  0.1em solid var(--ghub-black);
+    margin: 0 0.3em 0.3em 0;
+    border-radius:  0.20em;
+    transition: all 0.2s;
     color: var(--ghub-green);
     background-color: var(--ghub-black);
     box-shadow: var(--shadow2);
@@ -311,16 +128,6 @@ a {
     text-decoration: none;
     text-align: center;
     float: right;
-}
-
-.card {
-    display: block;
-    padding: var(--pd);
-    border: var(--bx-rad);
-    margin: var(--bx-mg);
-    border-radius: var(--br-r);
-    box-sizing: var(--bs);
-    box-shadow: var(--bx-shadow);
 }
 
 .icon {
@@ -336,11 +143,9 @@ img {
     width: 100%;
 }
 
-*,
-*::before,
-*::after {
+* {
     padding: 0px;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
 
     /* min-width: var(--minw);
@@ -359,7 +164,7 @@ hr{
 /* ==== Body style ==== */
 body {
     display: block;
-    background-color: var(--ghub-white);
+    background-color: var(--ghub-black);
 }
 
 /* ==== Header style ==== */
@@ -521,19 +326,19 @@ main {
 
 .page-wrapper {
     background-color: var(--ghub-black);
+    margin-top: 10px;
 }
 
 .page-main-header {
     display: block;
     background-color: var(--ghub-black);
     text-align: center;
-    margin: 10px;
+    padding: 5px;
 }
 
 .text-box {
     background-color: var(--ghub-white);
     padding: 1.125em;
-    margin: 10px;
 }
 
 .main-header-img {
@@ -591,10 +396,9 @@ main {
 }
 
 .gallery-card {
-    min-width: var(--gc-miw);
     min-height: fit-content;
-    border: var(--border);
-    border-radius: var(--border-r);
+    border: 0.1em solid var(--ghub-black);
+    border-radius:0.20em;
     margin: 10px;
 
     text-align: center;
@@ -768,15 +572,52 @@ footer {
     background-color: var(--ghub-black);
 }
 
-.footer-btn {
+.page-footer {
+    background-color: #0d0d0d;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px 5px 0px;
+    margin-top: auto;
+}
+
+.footer-btn-layout {
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    border-radius: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
     display: block;
+    margin-top: 15px;
+}
+
+.footer-btn {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    font-size: 1rem;
     text-decoration: none;
-
-
-    display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
+    color: #00FF00;
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    background-color: #0D0D0D;
+    border: 0.1em solid #0d0d0d;
+    /*box-shadow: 0px 2px 16px 0px #F2F2F2;*/
+    border-radius: 0.20em;
+    box-sizing: border-box;
 	
 }
 
+.copyright-footer {
+    min-height: fit-content;
+    margin: 0 auto;
+    align-content: center;
+}
 
+.copyright-footer>p {
+    color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Audiowide', cursive;
+}
