@@ -773,6 +773,7 @@ ul{
 
 .dropdown-menu-span{
     display: inline-block;
+    width: 100%;
 }
 
 .push-down{
