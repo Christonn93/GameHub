@@ -372,7 +372,7 @@ header {
 }
 
 .nav-left{
-
+    float: left;
 }
 
 .dropdown{
@@ -384,7 +384,7 @@ header {
 }
 
 .nav-right{
-
+    float: right;
 }
 
 .page-cart {
@@ -465,9 +465,8 @@ main {
 
 .gallery-card {
     min-width: var(--gc-miw);
-    max-width: var(--gc-mxw);
     min-height: var(--gc-mih);
-    max-height: var(--gc-mxh);
+
     border: var(--border);
     border-radius: var(--border-r);
 
