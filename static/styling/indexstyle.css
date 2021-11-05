@@ -762,6 +762,7 @@ ul{
 
 .dropdown-li-btn > a{
     margin: 0 auto;
+    color: var(--ghub-green);
 }
 
 .dropdown-header{
