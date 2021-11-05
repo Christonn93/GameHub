@@ -54,7 +54,7 @@
     window.addEventListener('DOMContentLoaded', setup)
 
     function setup() {
-      document.querySelector('a#dropdown-nav').addEventListener('click', toggleDropDown)
+      document.querySelector('a#dropdown-1').addEventListener('click', toggleDropDown)
       document.querySelector('a#back-btn').addEventListener('click', closeDropDown)
       let isDropDownOpen = false;
       let isDropDownClosed = false;
@@ -79,25 +79,25 @@
 <body>
   <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header role="Header">
+  <header class="Header">
     <nav class="page-nav">
       <div class="nav-left">
-        <a href="#" class="btn login">
+        <a href="#" class="btn-login">
           <img src="./static/assets/icons/black/black-user.png" class="icon" alt="user icon">
           <img src="./static/assets/icons/black/black-padlock.png" class="icon" alt="padlock icon">
         </a>
-        <a href="#" class="btn dropdown" onclick="toggleDropDown()" id="dropdown-nav">
-          <img src="/static/assets/icons/black/Black-morevertical.png">
+        <a href="#" class="dropdown-1" onclick="toggleDropDown()" id="dropdown-1">
+          <img src="/static/assets/icons/black/Black-morevertical.png" class="icon" alt="Dropdown icon">
         </a>
 
          <!-- Dropdown menu -->
-      <div class="dropdown-list" id="dropdown-nav">
+      <div class="dropdown-list" id="dropdown-1">
         <div class="dd-header-logo">
           <a href="index.html">
-            <img class="dropdown-logo" src="/config/style/icons/GameHub_Logo4.svg">
+            <img class="dropdown-logo" src="/config/style/icons/GameHub_Logo4.svg" alt="GameHub logo">
           </a>
-          <a class="back-btn" onclick="toggleDropDown()" id="back-btn"><img
-              src="/config/style/icons/Icons - Undo.svg"></a>
+          <a class="btn-back" onclick="toggleDropDown()" id="back-btn"><img
+              src="/config/style/icons/Icons - Undo.svg" alt="back icon"></a>
         </div>
       </div>
 
@@ -105,11 +105,11 @@
       </div>
       <div class="nav-center">
         <a href="index.html">
-          <img src="/static/assets/logo/rsz_gamehub_logo4.png" alt="company logo" class="btn logo">
+          <img src="/static/assets/logo/GameHub_Logo4.png" alt="company logo" class="header-logo">
         </a>
       </div>
       <div class="nav-right">
-        <a href="#" class="btn dropdown" onclick="toggleDropDown()" id="btn-dropdown">
+        <a href="#" class="dropdown-2" onclick="toggleDropDown()" id="dropdown-2">
           <img src="/static/assets/icons/black/Black-shoppingcart.png">
         </a>
       </div>
@@ -118,7 +118,7 @@
 
   <!-- Main
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <main role="main">
+  <main class="main">
 
     <!-- ------ page-Wrapper ------ -->
     <div class="page-wrapper">
@@ -489,7 +489,7 @@
 
   <!-- Footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <footer role="footer">
+  <footer class="footer">
     <ul>
       <a href="#" class="footer-btn">Home</a>
       <a href="#" class="footer-btn">About us | Contact</a>

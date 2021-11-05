@@ -132,8 +132,9 @@
         --fw-heading: 700;
         --fw-body: 300;
         --line-height: 1.55
-            /* ==== Font size ==== */
-            --fs-h1: 2rem;
+        
+        /* ==== Font size ==== */
+        --fs-h1: 2rem;
         --fs-h2: 2.25rem;
         --fs-h3: 1.75rem;
         --fs-h4: 0.75rem;
@@ -195,8 +196,9 @@
         --fw-heading: 700;
         --fw-body: 300;
         --line-height: 1.55
-            /* ==== Font size ==== */
-            --fs-h1: 2rem;
+        
+        /* ==== Font size ==== */
+        --fs-h1: 2rem;
         --fs-h2: 2.25rem;
         --fs-h3: 1.75rem;
         --fs-h4: 0.75rem;
@@ -359,6 +361,7 @@ body {
 header {
     background-color: var(--ghub-black);
     display: grid;
+    padding: 5px;
 }
 
 .page-nav {
@@ -366,25 +369,74 @@ header {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    border: 2px solid red;
-    height: 5rem;
+    border: 2px solid yellow;
+    height: fit-content;
     padding: 5px;
 }
 
 .nav-left{
     float: left;
+    border: 2px solid green;
 }
 
-.dropdown{
 
+.btn-login{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #00FF00;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.20em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: #00FF00;
+    text-align: center;
+    transition: all 0.2s;
 }
+
+.dropdown-1{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #00FF00;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #00FF00;
+    text-align: center;
+    transition: all 0.2s;
+
+    box-shadow: var(--shadow3);
+}
+
+/* Dropdown menu nav */
+.dropdown-list {
+    display: none;
+    width: 20em;
+    background-color: #F2F2F2;
+    box-shadow: 0px 8px 16px 0px #F2F2F2;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 115px;
+    left: 10px;
+}
+
+.dropdown-open .dropdown-list {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
 
 .nav-center{
-
+    border: 2px solid rgb(186, 7, 180);
+    width: 150px;
 }
 
 .nav-right{
     float: right;
+    border: 2px solid rgb(222, 245, 13);
 }
 
 .page-cart {
@@ -449,7 +501,6 @@ main {
     grid-template-columns: repeat(6, 1fr);
     background-color: var(--ghub-white);
     gap: 20px;
-
 }
 
 /* Smartphones (portrait) ----------- */
@@ -471,8 +522,6 @@ main {
     }
     
 }
-
-
 
 .gallery-card {
     min-width: var(--gc-miw);
