@@ -49,13 +49,13 @@
 
     <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="https://kit.fontawesome.com/15a08758fb.js" crossorigin="anonymous"></script>
+   
     <script>
         window.addEventListener('DOMContentLoaded', setup)
 
         function setup() {
-            document.querySelector('a#dropdown-list').addEventListener('click', toggleDropDown)
-            document.querySelector('a#back-btn').addEventListener('click', closeDropDown)
+            document.querySelector('button#dropdown-nav').addEventListener('click', toggleDropDown)
+            document.querySelector('button#back').addEventListener('click', closeDropDown)
             let isDropDownOpen = false;
             let isDropDownClosed = false;
 
@@ -71,6 +71,7 @@
         }
     </script>
 
+<script src="https://kit.fontawesome.com/15a08758fb.js" crossorigin="anonymous"></script>
 </head>
 
 <!-- Primary Page Layout
@@ -82,27 +83,28 @@
     <header class="header">
         <nav class="page-nav">
             <div class="nav-left">
-                <a href="#" class="btn-login">
+                <a href="../pages/lg_rg.html" class="btn-login">
                     <img src="../static/assets/icons/black/black-user.png" class="icon" alt="user icon">
                     <img src="../static/assets/icons/black/black-padlock.png" class="icon" alt="padlock icon">
                 </a>
-                <a href="#" class="dropdown-1" onclick="toggleDropDown()" id="dropdown-1">
+                <button class="dropdown-1" onclick="toggleDropDown()" id="dropdown-nav">
                     <img src="../static/assets/icons/black/Black-morevertical.png" class="icon" alt="Dropdown icon">
-                </a>
+                </button>
 
                 <!-- Dropdown menu -->
-                <div class="dropdown-list" dropdown>
-                    <ul class="dropdown-ul" id="dropdown-1">
+                <div class="dropdown-list" id="dropdown-nav">
+                    <ul class="dropdown-ul">
                         <li class="dropdown-li-btn">
                             <div class="dropdown-header">
                                 <div>
+
                                     <a href="../index.html"><img src="../static/assets/logo/rsz_gamehub_logo4.png"
                                             alt="Company Logo" class="icon-logo"></a>
                                 </div>
                                 <div>
-                                    <a href="#" onclick="toggleDropDown()" id="back"><img
+                                    <button href="#" onclick="toggleDropDown()" id="back"><img
                                             src="../static/assets/icons/black/Black-leftarrow.png" alt="back btn"
-                                            class="icon"></a>
+                                            class="icon"></button>
                                 </div>
                             </div>
                         </li>
@@ -115,28 +117,28 @@
                         <br>
                         <li class="dropdown-li-btn">
                             <span class="dropdown-menu-span">
-                                <a href="#"><img src="../static/assets/icons/green/Green-home.png" alt="icon"
+                                <a href="../index.html"><img src="../static/assets/icons/green/Green-home.png" alt="icon"
                                         class="icon" />Home</a>
                             </span>
                         </li>
                         <br>
                         <li class="dropdown-li-btn">
                             <span class="dropdown-menu-span">
-                                <a href="#"><img src="../static/assets/icons/green/Green-personperson.png" alt="icon"
+                                <a href="../pages/userpage.html"><img src="../static/assets/icons/green/Green-personperson.png" alt="icon"
                                         class="icon">Profile Page</a>
                             </span>
                         </li>
                         <br>
                         <li class="dropdown-li-btn">
                             <span class="dropdown-menu-span">
-                                <a href="#"><img src="../static/assets/icons/green/Green-gridicon.png" alt="icon"
+                                <a href="../pages/gamelist.html"><img src="../static/assets/icons/green/Green-gridicon.png" alt="icon"
                                         class="icon">All Games</a>
                             </span>
                         </li>
                         <br>
                         <li class="dropdown-li-btn">
                             <span class="dropdown-menu-span">
-                                <a href="#"><img src="../static/assets/icons/green/Green-percent.png" alt="icon"
+                                <a href="../pages/gamelist.html"><img src="../static/assets/icons/green/Green-percent.png" alt="icon"
                                         class="icon">Weekly Deals</a>
                             </span>
                         </li>
@@ -144,7 +146,7 @@
                         <li class="push-down"></li>
                         <li class="dropdown-li-btn">
                             <span class="dropdown-menu-span">
-                                <a href="#"><img src="../static/assets/icons/green/Green-semail.png" alt="icon"
+                                <a href="../pages/contact.html"><img src="../static/assets/icons/green/Green-semail.png" alt="icon"
                                         class="icon">Contact</a>
                             </span>
                         </li>
@@ -154,14 +156,14 @@
                 </div>
             </div>
             <div class="nav-center">
-                <a href="./pages/page-temp.html">
+                <a href="../index.html">
                     <img src="../static/assets/logo/GameHub_Logo4.png" alt="company logo" class="header-logo">
                 </a>
             </div>
             <div class="nav-right">
-                <a href="#" class="dropdown-2" onclick="toggleDropDown()" id="dropdown-2">
+                <button class="dropdown-2" onclick="toggleDropDown()" id="dropdown-cart">
                     <img src="../static/assets/icons/black/Black-shoppingcart.png">
-                </a>
+                </button>
             </div>
         </nav>
     </header>
