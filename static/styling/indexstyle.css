@@ -428,6 +428,14 @@ main {
     padding: 20px;
 }
 
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-device-width : 320px) {
+    .item-gallery {
+        display: block;
+
+    }
+}
+
 .item-gallery>h2 {
     color: var(--ghub-green);
 }
@@ -441,34 +449,37 @@ main {
     grid-template-columns: repeat(6, 1fr);
     background-color: var(--ghub-white);
     gap: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-device-width : 320px) {
+@media only screen and (max-device-width : 415px) {
     .grid-layout {
         grid-template-columns: repeat(2, auto);
         column-gap: 5px;
         row-gap: 5px;
     }
+
+    .gallery-card {
+        max-width: 155px;
+        max-height: var(--gc-mih);
+        border: var(--border);
+        border-radius: var(--border-r);
+        margin: 10px;
+    
+        text-align: center;
+    }
+    
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (max-device-width : 480px) {
-    .grid-layout {
-        grid-template-columns: repeat(3, auto);
-        column-gap: 5px;
-        row-gap: 5px;
-    }
-}
+
 
 .gallery-card {
     min-width: var(--gc-miw);
-    min-height: var(--gc-mih);
-
+    max-height: fit-content;
     border: var(--border);
     border-radius: var(--border-r);
+    margin: 10px;
 
     text-align: center;
 }
