@@ -44,7 +44,7 @@
 
   <!-- Favicon/icons
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
 
 
   <!-- JavaScript
@@ -79,7 +79,7 @@
 <body>
   <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header class="Header">
+  <header class="header">
     <nav class="page-nav">
       <div class="nav-left">
         <a href="#" class="btn-login">
@@ -104,7 +104,7 @@
 
       </div>
       <div class="nav-center">
-        <a href="index.html">
+        <a href="./pages/page-temp.html">
           <img src="/static/assets/logo/GameHub_Logo4.png" alt="company logo" class="header-logo">
         </a>
       </div>
@@ -130,7 +130,6 @@
 
           <!-- ------ page-break ------ -->
           <br>
-          <hr>
           <br>
 
           <p>Here you will find a range of pc games.
@@ -147,9 +146,15 @@
 
       <!-- ------ Item-gallery ------ -->
       <section class="item-gallery" role="gallery">
-        <h2>New Games</h2><img src="/static/assets/icons/green/Green-grid.png" class="icon">
-        <p><small>View all</small></p>
-        <hr size="3" color="#00FF00" width="100%">
+        <div class="detail-box">
+          <<h2>New Games</h2>
+          <p>
+            <small>View all</small>
+          </p>
+          <a href="#"><img src="/static/assets/icons/green/Green-grid.png" class="icon" alt="Grid Icon"></a>
+        </div>
+        
+        <hr>
 
         <!-- ------ page-break ------ -->
         <br>
@@ -327,9 +332,10 @@
 
         <!-- ------ page-break ------ -->
         <br>
-
-        <p>View more</p>
-        <hr size="3" color="#00FF00" width="100%">
+        <div class="detail-box">
+          <p>View more</p><a href="#"><img src="./static/assets/icons/green/Green-sarrowchevronright.png" alt="Arrow icon" class="icon"></a>
+        </div>
+        <hr>
         <br>
       </section>
 
@@ -384,7 +390,7 @@
       <section class="item-gallery" role="gallery">
         <h2>New Games</h2><img src="/static/assets/icons/green/Green-grid.png" class="icon">
         <p><small>View all</small></p>
-        <hr size="3" color="#00FF00" width="100%">
+        <hr>
 
         <!-- ------ page-break ------ -->
         <br>
@@ -480,7 +486,7 @@
         <br>
 
         <p>View more</p>
-        <hr size="3" color="#00FF00" width="100%">
+        <hr>
         <br>
       </section>
 

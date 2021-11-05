@@ -252,7 +252,7 @@ h1 {
 h2 {
     font-size: (--fs-h2);
     font-family: var(--ff-heading);
-    color: var(--ghub-white);
+    color: var(--ghub-green);
 }
 
 h3 {
@@ -351,6 +351,12 @@ img {
     max-height: var(--maxh); */
 }
 
+hr{
+    size: 3;
+    color: var(--ghub-green);
+    width: 100%;
+}
+
 /* ==== Body style ==== */
 body {
     display: block;
@@ -379,12 +385,12 @@ header {
     border: 2px solid green;
 }
 
-
 .btn-login{
     display: inline-block;
     padding: 0.35em 1.2em;
     border: 0.1em solid #00FF00;
     margin: 0 0.3em 0.3em 0;
+    
     border-radius: 0.20em;
     box-sizing: border-box;
     text-decoration: none;
@@ -396,10 +402,10 @@ header {
 }
 
 .dropdown-1{
-    display: inline-block;
+    display: block;
     padding: 0.35em 1.2em;
     border: 0.1em solid #00FF00;
-    margin: 0 0.3em 0.3em 0;
+    margin-top: 50%;
     border-radius: 50%;
     box-sizing: border-box;
     text-decoration: none;
@@ -428,7 +434,6 @@ header {
     grid-template-rows: 1fr;
 }
 
-
 .nav-center{
     border: 2px solid rgb(186, 7, 180);
     width: 150px;
@@ -439,13 +444,21 @@ header {
     border: 2px solid rgb(222, 245, 13);
 }
 
-.page-cart {
-    display: none;
+.dropdown-2{
+    display: block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #00FF00;
+    margin-top: 50%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #00FF00;
+    text-align: center;
+    transition: all 0.2s;
+
+    box-shadow: var(--shadow3);
 }
 
-.added-item {
-    display: block;
-}
 
 /* ==== Main style ==== */
 main {
@@ -540,6 +553,14 @@ main {
 
 .gallery-card>img {
     box-shadow: var(--shadow2);
+}
+
+.detail-box{
+    display: inline-block;
+}
+
+.detail-box > p{
+    color: var(--ghub-green);
 }
 
 /* ==== Page Banner ==== */
