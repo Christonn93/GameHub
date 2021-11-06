@@ -34,6 +34,7 @@
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="../css/indexstyle.css" rel="stylesheet" type="text/css">
+    <link href="../css/pagestyle.css" rel="stylesheet" type="text/css">
 
     <!-- FrameWork Css 
   <link rel="stylesheet" href="./config/css/normalize.css">
@@ -134,33 +135,122 @@
         <main class="page-wrapper-inner">
             <div class="page-content-frame">
 
-                <!-- top-section
+                <!-- User setup
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                <section class="user-setup">
+                    <table class="table">
+                        <td>
+                            <button class="cta-btn header-btn" id="register">
+                                <h3>Register</h3>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="cta-btn header-btn" id="login">
+                                <h3>Log in</h3>
+                            </button>
+                        </td>
+                    </table>
 
-                <section class="top-section">
-
-                </section>
-
-                <!-- Content Section 1 - Game Card's
+                    <!-- Form section register
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                    <div class="form-section-1" id="register">
+                        <div class="form-header">
+                            <h1>Register</h1>
+                            <p>Welcome Back!</p>
+                            <p>Don't want to log in everytime?</p>
+                        </div>
+                        <form class="page-form" action="#">
 
-                <section class="content-section-1">
+                            <div class="form-frame">
+                                <fieldset class="form-fieldset">
+                                    <label class="form-label" for="f-name">First Name*</label><br>
+                                    <input class="form-input" name="f-name" type="text" id="f-name" required>
+                                </fieldset>
 
-                </section>
+                                <fieldset class="form-fieldset">
+                                    <label class="form-label" for="l-name">Last Name*</label><br>
+                                    <input class="form-input" name="l-name" type="text" id="l-name" required>
+                                </fieldset>
 
-                <!-- Content Section 2
+                                <fieldset class="form-fieldset">
+                                    <label class="form-label" for="email">Email*</label><br>
+                                    <input class="form-input" name="email" type="email" id="email" required>
+                                </fieldset>
+
+                                <fieldset class="form-fieldset">
+                                    <label class="form-label" for="email">Repeat Email*</label><br>
+                                    <input class="form-input" name="email" type="email" id="email" required>
+                                </fieldset>
+
+                                <fieldset class="form-fieldset">
+                                    <label class="form-label" for="pw">Password*</label><br>
+                                    <input class="form-input" name="pw" type="password" id="email" required>
+                                </fieldset>
+
+                                <fieldset class="form-fieldset">
+                                    <label class="form-label" for="pw-r">Repeat Password*</label><br>
+                                    <input class="form-input" name="pw-r" type="password" id="email" required>
+                                </fieldset>
+
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-checkbox" id="terms-of-use-check" required>
+                                    <label class="checkbox-label">Read our terms of use, privacy agreement <a
+                                            href="#" class="form-link">here</a></label>
+                                </div>
+
+                                <fieldset class="form-fieldset">
+                                    <button class="cta-btn form-sub-btn">Register</button>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Form section login
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                <section class="content-section-2">
+                    <div class="form-section-2" id="login">
+                        <div class="form-header">
+                            <h1>Log in</h1>
+                            <p>Welcome Back!</p>
+                            <p>Don't want to log in everytime?</p>
+                        </div>
+                        <form class="page-form" action="#">
 
-                </section>
+                            <div class="form-frame">
+                                <fieldset class="form-fieldset">
+                                    <label class="form-label" for="email">Email*</label><br>
+                                    <input class="form-input" name="email" type="email" id="email" required>
+                                </fieldset>
+
+                                <fieldset class="form-fieldset">
+                                    <label class="form-label" for="pw">Password*</label><br>
+                                    <input class="form-input" name="pw" type="password" id="email" required>
+                                </fieldset>
+
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-checkbox" id="remember" required>
+                                    <label class="checkbox-label">Remember me</label>&nbsp;&nbsp;
+                                    <input type="checkbox" class="form-checkbox" id="remember" required>
+                                    <label class="checkbox-label">Keep me logged in</label>
+                                </div>
+
+                                <fieldset class="form-fieldset">
+                                    <button class="cta-btn form-sub-btn">Login</button>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
 
 
-                <!-- Content Section 3
+                    <!-- Form section Banner
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                <section class="content-section-3">
-
+                    <div class="banner-section">
+                        <div class="page-info-banner">
+                            <img src="#" alt="Info-banner-image">
+                            <h3>Info Banner Header</h3>
+                            <p>Info banner paragraph</p>
+                        </div>
+                    </div>
                 </section>
-
 
             </div>
         </main>

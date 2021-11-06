@@ -1,0 +1,204 @@
+/* -- header font -- */
+@font-face {
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+}
+
+/* -- body text fonts -- */
+@font-face {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+}
+
+/* CSS VARIABLES */
+:root {
+
+    /* ==== Font family ==== */
+    --ff-heading: 'Audiowide', Arial, Helvetica, sans-serif;
+    --ff-body: 'Oswald', Arial, Helvetica, sans-serif;
+    --fw-heading: 700;
+    --fw-body: 300;
+    --line-height: 1.55
+    
+    /* ==== Font size ==== */
+    --fs-h1: 5rem;
+    --fs-h2: 3.25rem;
+    --fs-h3: 2.75rem;
+    --fs-h4: 1.75rem;
+    --fs-body-lg: 1.125rem;
+    --fs-body-md: 1.120rem;
+    --fs-body-sm: 0.1rem;
+    --nav-fs: .8rem;
+    --link-fs: 1.10rem;
+
+    /* ==== colour variables ==== */
+
+    /* -- Smoky Black -- */
+    --ghub-black: #0D0D0D;
+    /* -- Anti-Flash White -- */
+    --ghub-white: #F2F2F2;
+    /* -- Electric Green1 -- */
+    --ghub-green: #00FF00;
+    /* -- Rhythm -- */
+    --ghub-rhythm: #7A778C;
+    /* -- Red(pigment) -- */
+    --ghub-red: #F21B1B;
+
+    --shadow: 2px 5px 20px var(--ghub-black);
+    --shadow2: 0px 2px 16px 0px var(--ghub-black);
+    --shadow3: 0px 0px 10px #dedcdc,
+        0px 0px 10px #e6e3e3,
+        0px 0px 10px #9c9a9a;
+    --shadow4: 0.5rem 0.5rem var(--ghub-green),
+        -0.5rem -0.5rem var(--ghub-red);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0 0 20px 0;
+  }
+  
+p {
+    margin: 10px 0 0 0;
+  }
+
+.page-content-frame{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -- Page - User setup -- */
+.user-setup{
+    padding: 25px;
+    background-color: var(--ghub-white);
+    width: fit-content;
+}
+
+.header-btn{
+    background-color: var(--ghub-white);
+    color: var(--ghub-black);
+    border: 1px solid black;
+}
+
+.form-section-1,
+.form-section-2{
+    margin: 30px;
+}
+
+.form-header{
+    margin-bottom: 25px;
+}
+
+.form-fieldset{
+    margin: 5px;
+    border: none;
+}
+
+.form-label{
+    font-family: var(--ff-heading);
+    margin-left: 5px;
+}
+
+.form-input{
+    border: 1px solid var(--ghub-black);
+    border-radius: 0.20em;
+    height: 25px;
+    width: 250px;
+    background-color: var(--ghub-white);
+    margin: 5px;
+}
+
+.form-checkbox{
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.checkbox-label{
+   font-family: var(--ff-body);
+   font-size: var(--fs-body-md);
+}
+
+.form-link{
+    font-family: var(--ff-body);
+    font-size: var(--link-fs);
+    text-decoration: none;
+    color: var(--ghub-red);
+}
+
+.form-sub-btn{
+    background-color: var(--ghub-black);
+    font-size: var(--fs-body-md);
+    font-family: var(--ff-body);
+}
+
+.banner-section{
+    margin-top: 25px;
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- Page - User -- */
+
+/* -- Page - Game list -- */
+
+/* -- Page - Game display -- */
+
+/* -- Page - Check out -- */
+
+/* -- Page - Contact -- */
+
+
