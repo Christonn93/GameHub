@@ -1,0 +1,298 @@
+/* -- header font -- */
+@font-face {
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+}
+
+/* -- body text fonts -- */
+@font-face {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+}
+
+/* CSS VARIABLES */
+:root {
+
+    /* ==== Font family ==== */
+    --ff-heading: 'Audiowide', Arial, Helvetica, sans-serif;
+    --ff-body: 'Oswald', Arial, Helvetica, sans-serif;
+    --fw-heading: 700;
+    --fw-body: 300;
+    --line-height: 1.55
+    
+    /* ==== Font size ==== */
+    --fs-h1: 5rem;
+    --fs-h2: 3.25rem;
+    --fs-h3: 2.75rem;
+    --fs-h4: 1.75rem;
+    --fs-body-lg: 1.125rem;
+    --fs-body-md: 1.120rem;
+    --fs-body-sm: 0.1rem;
+    --nav-fs: .8rem;
+    --link-fs: 1.10rem;
+
+    /* ==== colour variables ==== */
+
+    /* -- Smoky Black -- */
+    --ghub-black: #0D0D0D;
+    /* -- Anti-Flash White -- */
+    --ghub-white: #F2F2F2;
+    /* -- Electric Green1 -- */
+    --ghub-green: #00FF00;
+    /* -- Rhythm -- */
+    --ghub-rhythm: #7A778C;
+    /* -- Red(pigment) -- */
+    --ghub-red: #F21B1B;
+
+    --shadow: 2px 5px 20px var(--ghub-black);
+    --shadow2: 0px 2px 16px 0px var(--ghub-black);
+    --shadow3: 0px 0px 10px #dedcdc,
+        0px 0px 10px #e6e3e3,
+        0px 0px 10px #9c9a9a;
+    --shadow4: 0.5rem 0.5rem var(--ghub-green),
+        -0.5rem -0.5rem var(--ghub-red);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0 0 20px 0;
+  }
+  
+p {
+    margin: 10px 0 0 0;
+  }
+
+.cta-btn{
+    background-color: var(--ghub-green);
+    color: var(--ghub-green);
+    text-decoration: none;
+    padding: 0.35em 1.2em;
+    border-radius: 0.25em;
+    border: 0.1em solid var(--ghub-black);
+}
+
+.page-wrapper-outer{
+    background-color: var(--ghub-white);
+}
+
+.page-header{
+    background-color: var(--ghub-black);
+}
+
+.page-nav{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav-logo{
+    margin: 30px 300px 30px 300px;
+}
+
+/* Dropdown menu */
+.dropdown-list {
+    display: none;
+    width: 20em;
+    background-color: #F2F2F2;
+    box-shadow: 0px 8px 16px 0px #f2f2f2;
+    border-radius: 5px;
+    position: absolute;
+    top: 115px;
+    left: 10px;
+}
+
+.dropdown-open .dropdown-list {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.btn-nav{
+    border-radius: 50%;
+    box-shadow: var(--shadow3);
+    align-content: center;
+    justify-content: center;
+}
+
+.page-wrapper-inner{
+    background-color: var(--ghub-black);
+    margin: 25px 25px 25px 25px;
+}
+
+.page-content-frame{
+    margin: 10px;
+}
+
+/* top-section */
+
+.top-section{
+    padding: 10px;
+}
+
+.text-box{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: var(--ghub-white);
+}
+
+.text-box > h1{
+    font-family: var(--ff-heading);
+    text-align: center;
+}
+
+.text-box > p{
+    padding: 5px 20px 5px 20px;
+    font-family: var(--ff-body);
+}
+
+.img-box{
+    margin-top: 15px;
+    padding: 5px;
+    background-color: var(--ghub-white);
+}
+
+.img-lg{
+    width: 100%;
+}
+
+/* content-section-1 */
+.content-section-1{
+    padding: 10px;
+    
+}
+
+.game-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.game-section-header,
+.game-section-footer{
+    color: var(--ghub-green);
+    font-family: var(--ff-heading);
+    border-bottom: 2px solid var(--ghub-green);
+    
+    
+}
+
+.game-display-card{
+    border: 1px solid var(--ghub-black);
+    background-color: var(--ghub-white);
+    border-radius: 0.50em;
+    padding: 5px;
+    font-family: var(--ff-heading);
+    margin: 15px;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow3);
+}
+
+.game-card-img{
+    width: 100%;
+    background-color: var(--ghub-rhythm);
+}
+
+.game-card-img > img{
+    width: 100%;
+}
+
+.game-card-info{
+    background-color: var(--ghub-white);
+}
+
+.game-card-text-box{
+    width: 140px;
+    margin-bottom: 15px;
+}
+
+.card-heading{
+    padding: 5px;
+}
+
+.card-text-box{
+    height: 110px;
+    padding: 5px;
+}
+
+.game-card-price{
+    float: right;
+    padding: 5px;
+}
+
+.game-card-cta{
+    background-color: var(--ghub-white);
+    margin: 0 auto;
+}
+
+.btn-more{
+    background-color: var(--ghub-black);
+    color: var(--ghub-green);
+    font-size: var(--nav-fs);
+    margin-top: 0 auto;
+}
+
+/* content-section-2 */
+.content-section-2{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-info-banner{
+    background-color: var(--ghub-white);
+    margin: 0 auto;
+    border-radius: 0.50em;
+}
+
+.page-info-banner > img{
+    width: 100%;
+}
+
+/* content-section-3 */
+.content-section-3{
+    padding: 10px;
+}
+
+/* content-section-3 */
+.page-footer{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ghub-black);
+}
+
+.page-footer-layout{
+    padding: 25px;
+    margin: 25px;
+    border-radius: 1.25em;
+    background-color: var(--ghub-white);
+}
+
+.footer-btn{
+    background-color: var(--ghub-black);
+    color: var(--ghub-green);
+    font-size: var(--nav-fs);
+    font-family: var(--ff-heading);
+    margin-right: 20px;
+}
+
+.text-box-footer{
+    text-align: center;
+    font-size: var(--nav-fs);
+    font-family: var(--ff-heading);
+}
