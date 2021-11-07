@@ -1,0 +1,87 @@
+@import url(../css/indexstyle.css);
+
+.box-container{
+    background-color: var(--ghub-af);
+    padding: 15px;
+    
+}
+
+.card-container{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.card-container > *div {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+}
+
+.card-frame{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    border-radius: 15px;
+    background-color: wheat;
+}
+
+.card-frame > .card-img{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 20%;
+    padding: 20px;
+}
+
+.game-img{
+    max-width: 300px;
+}
+
+.card-frame > .card-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 80%;
+    min-width: 25ch;
+    padding: 20px;
+}
+
+.card-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-info > .card-header{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 80%;
+}
+
+.card-info > .price-tag{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 20%;
+    justify-content: flex-end;
+}
+
+.card-info > .game-description{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+}
+
+.card-btn{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.btn-card,
+.btn-add{
+    background-color: black;
+    color: white;
+}

@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', setup)
 
     function setup() {
-      document.querySelector('button#dropdown-nav').addEventListener('click', toggleDropDown)
+      document.querySelector('button#dropdown').addEventListener('click', toggleDropDown)
       document.querySelector('button#back-btn').addEventListener('click', closeDropDown)
       let isDropDownOpen = false;
       let isDropDownClosed = false;
