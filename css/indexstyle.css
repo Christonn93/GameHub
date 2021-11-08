@@ -44,6 +44,11 @@
     --ghub-red: #F21B1B;
     /* -- Anti Flash White */
     --ghub-af: #F2F2F2;
+    /* -- Dark Silver -- */
+    --ghub-silver: #726c6c;
+    /* -- Light periwinkle */
+    --ghub-periwinkle: #c5d1d9;
+
 
     --shadow: 2px 5px 20px var(--ghub-black);
     --shadow2: 0px 2px 16px 0px var(--ghub-black);
@@ -74,6 +79,8 @@ p {
     margin: 5px;
 }
 
+
+
 /* Button's  */
 .btn-a,
 .btn-b {
@@ -82,7 +89,7 @@ p {
     border-radius: 0.25em;
     border: 0.1em solid black;
     cursor: pointer;
-    box-shadow: 0px 5px 20px #4F4D4D;
+    box-shadow: 0px 5px 20px var(--ghub-silver);
 }
 
 .btn-a:hover,
@@ -117,15 +124,77 @@ label:hover {
     position: fixed;
     top: 150px;
     left: 10px;
-    padding: 10px;
+    background-color: var(--ghub-white);
+    border: 0.1em solid black;
+    box-shadow: 0px 5px 20px var(--ghub-silver);
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.35em 1.2em;
+    border-radius: 0.25em;
+    border: 0.1em solid black;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px var(--ghub-silver);
+    color: var(--ghub-black);
+    font-family: var(ff);
     background-color: var(--ghub-black);
+}
+
+.not-active{
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.menu-link{
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--ff-body);
+    color: var(--ghub-green);
+}
+
+.menu-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.list-item-contact{
+    margin-top: 40px;
+}
+
+li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+li > a {
+    text-decoration: none;
 }
 
 .cart {
     position: fixed;
     top: 150px;
-    left: 10px;
-    padding: 10px;
+    right: 10px;
+    background-color: var(--ghub-white);
+    border: 0.1em solid black;
+    box-shadow: 0px 5px 20px var(--ghub-silver);
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.btn-exit{
+    position:  absolute;
+    top: 2px;
+    right: 2px;
+    background-color: var(--ghub-white);
+
 }
 
 /* Text-box */
