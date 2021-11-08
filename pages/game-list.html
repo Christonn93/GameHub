@@ -58,87 +58,132 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <header class="page-header">
-            <div class="page-nav">
+  <header class="page-header">
+    <div class="page-nav">
 
-                <!-- Dropdown menu -->
-                <div class="nav-1">
-                    <label for="dropdown-menu" class="btn-b">
-                        <img src="../assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
-                    </label>
+      <!-- Dropdown menu -->
+      <div class="nav-section">
+        <label for="dropdown-menu" class="btn-b btn-nav">
+          <img src="./assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
+        </label>
 
-                    <!-- Dropdown menu display -->
-                    <input type="checkbox" id="dropdown-menu">
-                    <section class="menu">
+        <!-- Dropdown menu display -->
+        <input type="checkbox" id="dropdown-menu">
+        <section class="menu">
 
-                        <!-- Dropdown menu header -->
-                        <div class="menu-header">
-                            <a href="../index.html">
-                                <img class="dropdown-menu-logo" src="../assets/logo/rsz_gamehub_logo4.png"
-                                    alt="Dropdown company logo">
-                            </a>
-                            <label for="dropdown-menu" class="btn-b">
-                                <img src="../assets/icons/green/Green-undo.png" alt="Dropdown back button icon"
-                                    class="icon-1">
-                            </label>
-                        </div>
+          <!-- Dropdown menu header -->
+          <div class="menu-header">
+            <a href="./index.html">
+              <img src="./assets/logo/rsz_gamehub_logo4.png" alt="Dropdown company logo" class="dropdown-menu-logo">
+            </a>
+            <label for="dropdown-menu" class="btn-b btn-exit">
+              <img src="./assets/icons/green/Green-undo.png" alt="Dropdown back button icon" class="icon-1">
+            </label>
+          </div>
 
-                        <!-- Dropdown menu items -->
-                        <ul class="menu-list">
-                            <li class="icon-place home">
-                                <a href="#" class="menu-link">Home</a>
-                            </li>
-                            <li class="icon-place">
-                                <a href="#" class="menu-link">Home</a>
-                            </li>
-                            <li class="icon-place">
-                                <a href="#" class="menu-link">Home</a>
-                            </li>
-                            <li class="icon-place">
-                                <a href="../pages/check-out.html" class="menu-link">Checkout</a>
-                            </li>
-                            <li class="icon-place ">
-                                <a href="../pages/contact.html" class="menu-link">contact</a>
-                            </li>
-                        </ul>
-                    </section>
+          <!-- Dropdown menu items -->
+          <ul class="menu-list">
 
-                    <!-- Logo -->
-                    <div class="nav-2">
-                        <a href="../index.html">
-                            <img src="../assets/logo/rsz_1gamehub_logo4.png" class="nav-logo" alt="Logo-image">
-                        </a>
-                    </div>
+            <li class="list-item-search">
+              <label for="search">
+                <input type="search" class="menu-link icon-place-search" placeholder="Search">
+                <button class="menu-link-btn">Search</button>
+              </label>
+            </li>
 
-                    <!-- Dropdown cart -->
-                    <div class="nav-3">
-                        <label for="dropdown-menu" class="btn-b">
-                            <img src="../assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
-                        </label>
+            <li class="list-item-home">
+              <div class="menu-item">
+                <a href="/index.html" class="menu-link">
+                  <img src="./assets/icons/green/Green-home.png" alt="menu icon" class="menu-icon">&ensp;Home</a>
+              </div>
+            </li>
 
-                        <!-- Dropdown menu display -->
-                        <input type="checkbox" id="dropdown-cart">
-                        <section class="menu">
+            <li class="list-item-all-games">
+              <div class="menu-item">
+                <a href="./pages/game-list.html" class="menu-link">
+                  <img src="./assets/icons/green/Green-gridicon.png" alt="menu icon" class="menu-icon">&ensp;All
+                  Games</a>
+              </div>
+            </li>
 
-                            <!-- Dropdown menu header -->
-                            <div class="menu-header">
+            <li class="list-item-deals">
+              <div class="menu-item">
+                <a href="#" class="menu-link not-active">
+                  <img src="./assets/icons/green/Green-percent.png" alt="menu icon" class="menu-icon">&ensp;Game
+                  deals</a>
+              </div>
+            </li>
 
-                            </div>
+            <li class="list-item-checkout">
+              <div class="menu-item">
+                <a href="./pages/check-out.html" class="menu-link">
+                  <img src="./assets/icons/green/Green-setting.png" alt="menu icon"
+                    class="menu-icon">&ensp;Checkout</a>
+              </div>
+            </li>
 
-                            <!-- Dropdown menu items -->
-                            <table>
+            <li class="list-item-contact">
+              <div class="menu-item">
+                <a href="./pages/contact.html" class="menu-link">
+                  <img src="./assets/icons/green/Green-semail.png" alt="menu icon" class="menu-icon">&ensp;Contact</a>
+              </div>
+            </li>
 
-                            </table>
-                        </section>
-                    </div>
-                    <!-- Dropdown -->
-                    <div class="login">
-                        <a href="../pages/user-setup.html" class="btn-a">
-                            <img src="../assets/icons/black/Black-padlock.png" class="icon" alt="Button-icon">
-                            <img src="../assets/icons/black/Black-person.png" class="icon" alt="Button-icon">
-                        </a>
-                    </div>
-        </header>
+          </ul>
+        </section>
+
+        <!-- Logo -->
+        <div class="nav-section">
+          <a href="./index.html" class="desktop-logo">
+            <img src="./assets/logo/rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
+          </a>
+          <a href="./index.html" class="mobile-logo">
+            <img src="./assets/logo/rsz_1rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
+          </a>
+        </div>
+
+        <!-- Dropdown cart -->
+        <div class="nav-section">
+          <label for="dropdown-cart" class="btn-b btn-nav">
+            <img src="./assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
+          </label>
+
+          <!-- Dropdown menu display -->
+          <input type="checkbox" id="dropdown-cart">
+          <section class="cart">
+
+            <!-- Dropdown menu header -->
+            <div class="menu-header">
+              <label for="dropdown-cart" class="btn-b btn-exit">
+                <img src="./assets/icons/black/Black-closesquare.png" alt="Dropdown back button icon" class="icon-1">
+              </label>
+            </div>
+
+            <!-- Dropdown menu items -->
+            <table class="chart-table">
+              <thead>
+                <tr>
+                  <th>Game</th>
+                  <th>Price</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Game title</td>
+                  <td>399,-</td>
+                  <td>
+                    <img src="./assets/icons/black/Black-plussquare.png" alt="icon add" class="table-icon">
+                    <img src="./assets/icons/black/Black-square.png" alt="icon amount" class="table-icon">
+                    <img src="./assets/icons/black/" alt="icon remove" class="table-icon">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+  </header>
 
         <!-- Main
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

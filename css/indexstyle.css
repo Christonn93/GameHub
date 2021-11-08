@@ -197,6 +197,16 @@ li > a {
 
 }
 
+.login-btn{
+    background-color: var(--ghub-green);
+    color: var(--ghub-black);
+}
+
+.login-btn::before{
+    position: absolute;
+    left: -20px;
+}
+
 /* Text-box */
 .text-box {
     display: flex;
