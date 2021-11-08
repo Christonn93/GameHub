@@ -42,6 +42,8 @@
     --ghub-rhythm: #7A778C;
     /* -- Red(pigment) -- */
     --ghub-red: #F21B1B;
+    /* -- Anti Flash White */
+    --ghub-af: #F2F2F2;
 
     --shadow: 2px 5px 20px var(--ghub-black);
     --shadow2: 0px 2px 16px 0px var(--ghub-black);
@@ -65,11 +67,11 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 20px 0;
+    margin: 5px;
 }
 
 p {
-    margin: 10px 0 0 0;
+    margin: 5px;
 }
 
 /* Button's  */
@@ -113,14 +115,15 @@ label:hover {
 
 .menu {
     position: fixed;
-    top: 25px;
+    top: 150px;
     left: 10px;
     padding: 10px;
+    background-color: var(--ghub-black);
 }
 
 .cart {
     position: fixed;
-    top: 25px;
+    top: 150px;
     left: 10px;
     padding: 10px;
 }
@@ -130,11 +133,9 @@ label:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    min-width: 50ch;
     padding: 5px;
     border: 1px solid black;
     border-radius: 0.25em;
-    margin-top: 5px;
     background-color: var(--ghub-white);
 }
 
@@ -183,6 +184,25 @@ label:hover {
     align-items: center;
 }
 
+.desktop-logo{
+    margin: 15px 5px 5px;
+    display: block;
+}
+
+.mobile-logo{
+    margin: 15px 5px 5px;
+    display: none;
+}
+
+@media only screen and (max-width: 500px){
+    .desktop-logo{
+        display: none;
+    }
+
+    .mobile-logo{
+        display: block;
+    }
+}
 
 /* top-section */
 .top-section {
@@ -208,6 +228,8 @@ label:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 10px 15px 10px 15px;
+    background-color: var(--ghub-af);
 }
 
 .game-section-header,
@@ -220,34 +242,43 @@ label:hover {
 /* Game Card 1 */
 .game-card-1 {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: stretch;
+    max-width: 300px;
+    margin: 10px;
 }
 
 .card-frame {
-    flex: 1 1 100%;
-    margin: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    background-color: var(--ghub-rhythm);
+    box-shadow: 2px 2px 6px 0px var(--ghub-black);
+}
+
+.game-img-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .game-img {
     max-width: 100%;
 }
 
-.text-box {
+.card-text-box {
     display: flex;
     flex-direction: column;
     border-radius: 0.25em;
     margin-top: 5px;
     background-color: white;
-    padding: 0 20px 20px;
+    padding: 5px;
 }
 
 .btn-1 {
+    margin-top: 15px;
     box-shadow: none;
     text-align: center;
-    color: black;
+    color:var(--ghub-black);
+    background-color: var(--ghub-green);
 }
 
 .btn-1:hover {
@@ -308,32 +339,30 @@ label:hover {
     padding: 10px;
 }
 
-/* content-section-3 */
+/* Footer section */
 .page-footer {
     display: flex;
-    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: var(--ghub-black);
 }
 
 .page-footer-layout {
-    padding: 25px;
+    padding: 10px;
     margin: 25px;
     border-radius: 1.25em;
     background-color: var(--ghub-white);
 }
 
-.footer-btn {
+.btn-foot {
     background-color: var(--ghub-black);
     color: var(--ghub-green);
     font-size: var(--nav-fs);
     font-family: var(--ff-heading);
-    margin-right: 20px;
 }
 
-.text-box-footer {
-    text-align: center;
-    font-size: var(--nav-fs);
-    font-family: var(--ff-heading);
+.box-foot {
+    border: 0;
 }
