@@ -7,7 +7,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>GameHub | Login/Register</title>
+    <title>GameHub | Login</title>
     <meta name="description"
         content="
         Here you will find a range of pc games. you want a old or new game? A super good deal or a pre-release game? 
@@ -30,11 +30,12 @@
     <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet" type="text/css">
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="../css/indexstyle.css" rel="stylesheet" type="text/css">
-    <link href="../css/pagestyle.css" rel="stylesheet" type="text/css">
 
     <!-- FrameWork Css 
   <link rel="stylesheet" href="./config/css/normalize.css">
@@ -47,7 +48,6 @@
 
     <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
 </head>
 
 <!-- Primary Page Layout
@@ -55,7 +55,7 @@
 
 <body>
     <div class="page-wrapper-outer">
-        <!-- Header
+        <!-- Header section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <header class="page-header">
             <div class="page-nav">
@@ -65,229 +65,202 @@
                     <label for="dropdown-menu" class="btn-b btn-nav">
                         <img src="../assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
                     </label>
+                </div>
+                <!-- Dropdown menu display -->
+                <input type="checkbox" id="dropdown-menu">
+                <section class="menu">
+
+                    <!-- Dropdown menu header -->
+                    <div class="menu-header">
+                        <a href="../index.html">
+                            <img src="../assets/logo/rsz_gamehub_logo4.png" alt="Dropdown company logo"
+                                class="dropdown-menu-logo">
+                        </a>
+                        <label for="dropdown-menu" class="btn-b btn-exit">
+                            <img src="../assets/icons/green/Green-undo.png" alt="Dropdown back button icon"
+                                class="icon-1">
+                        </label>
+                    </div>
+
+                    <!-- Dropdown menu items -->
+                    <ul class="menu-list">
+
+                        <li class="list-item-search">
+                            <label for="search">
+                                <input type="search" class="menu-link icon-place-search" placeholder="Search">
+                                <button class="menu-link-btn">Search</button>
+                            </label>
+                        </li>
+
+                        <li class="list-item-home">
+                            <div class="menu-item">
+                                <a href="../index.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-home.png" alt="menu icon"
+                                        class="menu-icon">&ensp;Home</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-all-games">
+                            <div class="menu-item">
+                                <a href="../pages/game-list.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-gridicon.png" alt="menu icon"
+                                        class="menu-icon">&ensp;All
+                                    Games</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-deals">
+                            <div class="menu-item">
+                                <a href="#" class="menu-link not-active">
+                                    <img src="../assets/icons/green/Green-percent.png" alt="menu icon"
+                                        class="menu-icon">&ensp;Game
+                                    deals</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-checkout">
+                            <div class="menu-item">
+                                <a href="../pages/check-out.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-setting.png" alt="menu icon"
+                                        class="menu-icon">&ensp;Checkout</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-contact">
+                            <div class="menu-item">
+                                <a href="../pages/contact.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-semail.png" alt="menu icon"
+                                        class="menu-icon">&ensp;Contact</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <!-- Logo -->
+                <div class="nav-section">
+                    <a href="../index.html" class="desktop-logo">
+                        <img src="../assets/logo/rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
+                    </a>
+                    <a href="../index.html" class="mobile-logo">
+                        <img src="../assets/logo/rsz_1rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
+                    </a>
+                </div>
+
+                <!-- Dropdown cart -->
+                <div class="nav-section">
+                    <label for="dropdown-cart" class="btn-b btn-nav">
+                        <img src="../assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
+                    </label>
 
                     <!-- Dropdown menu display -->
-                    <input type="checkbox" id="dropdown-menu">
-                    <section class="menu">
+                    <input type="checkbox" id="dropdown-cart">
+                    <section class="cart">
 
                         <!-- Dropdown menu header -->
                         <div class="menu-header">
-                            <a href="../index.html">
-                                <img src="../assets/logo/rsz_gamehub_logo4.png" alt="Dropdown company logo"
-                                    class="dropdown-menu-logo">
-                            </a>
-                            <label for="dropdown-menu" class="btn-b btn-exit">
-                                <img src="../assets/icons/green/Green-undo.png" alt="Dropdown back button icon"
+                            <label for="dropdown-cart" class="btn-b btn-exit">
+                                <img src="../assets/icons/black/Black-closesquare.png" alt="Dropdown back button icon"
                                     class="icon-1">
                             </label>
                         </div>
 
                         <!-- Dropdown menu items -->
-                        <ul class="menu-list">
-
-                            <li class="list-item-search">
-                                <label for="search">
-                                    <input type="search" class="menu-link icon-place-search" placeholder="Search">
-                                    <button class="menu-link-btn">Search</button>
-                                </label>
-                            </li>
-
-                            <li class="list-item-home">
-                                <div class="menu-item">
-                                    <a href="../index.html" class="menu-link">
-                                        <img src="../assets/icons/green/Green-home.png" alt="menu icon"
-                                            class="menu-icon">&ensp;Home</a>
-                                </div>
-                            </li>
-
-                            <li class="list-item-all-games">
-                                <div class="menu-item">
-                                    <a href="../pages/game-list.html" class="menu-link">
-                                        <img src="../assets/icons/green/Green-gridicon.png" alt="menu icon"
-                                            class="menu-icon">&ensp;All
-                                        Games</a>
-                                </div>
-                            </li>
-
-                            <li class="list-item-deals">
-                                <div class="menu-item">
-                                    <a href="#" class="menu-link not-active">
-                                        <img src="../assets/icons/green/Green-percent.png" alt="menu icon"
-                                            class="menu-icon">&ensp;Game
-                                        deals</a>
-                                </div>
-                            </li>
-
-                            <li class="list-item-checkout">
-                                <div class="menu-item">
-                                    <a href="../pages/check-out.html" class="menu-link">
-                                        <img src="../assets/icons/green/Green-setting.png" alt="menu icon"
-                                            class="menu-icon">&ensp;Checkout</a>
-                                </div>
-                            </li>
-
-                            <li class="list-item-contact">
-                                <div class="menu-item">
-                                    <a href="../pages/contact.html" class="menu-link">
-                                        <img src="../assets/icons/green/Green-semail.png" alt="menu icon"
-                                            class="menu-icon">&ensp;Contact</a>
-                                </div>
-                            </li>
-
-                        </ul>
+                        <table class="chart-table">
+                            <thead>
+                                <tr>
+                                    <th>Game</th>
+                                    <th>Price</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Game title</td>
+                                    <td>399,-</td>
+                                    <td>
+                                        <img src="../assets/icons/black/Black-plussquare.png" alt="icon add"
+                                            class="table-icon">
+                                        <img src="../assets/icons/black/Black-square.png" alt="icon amount"
+                                            class="table-icon">
+                                        <img src="../assets/icons/black/" alt="icon remove" class="table-icon">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </section>
-
-                    <!-- Logo -->
-                    <div class="nav-section">
-                        <a href="../index.html" class="desktop-logo">
-                            <img src="../assets/logo/rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
-                        </a>
-                        <a href="../index.html" class="mobile-logo">
-                            <img src="../assets/logo/rsz_1rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
-                        </a>
-                    </div>
-
-                    <!-- Dropdown cart -->
-                    <div class="nav-section">
-                        <label for="dropdown-cart" class="btn-b btn-nav">
-                            <img src="../assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
-                        </label>
-
-                        <!-- Dropdown menu display -->
-                        <input type="checkbox" id="dropdown-cart">
-                        <section class="cart">
-
-                            <!-- Dropdown menu header -->
-                            <div class="menu-header">
-                                <label for="dropdown-cart" class="btn-b btn-exit">
-                                    <img src="../assets/icons/black/Black-closesquare.png"
-                                        alt="Dropdown back button icon" class="icon-1">
-                                </label>
-                            </div>
-
-                            <!-- Dropdown menu items -->
-                            <table class="chart-table">
-                                <thead>
-                                    <tr>
-                                        <th>Game</th>
-                                        <th>Price</th>
-                                        <th>Amount</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Game title</td>
-                                        <td>399,-</td>
-                                        <td>
-                                            <img src="../assets/icons/black/Black-plussquare.png" alt="icon add"
-                                                class="table-icon">
-                                            <img src="../assets/icons/black/Black-square.png" alt="icon amount"
-                                                class="table-icon">
-                                            <img src="../assets/icons/black/" alt="icon remove" class="table-icon">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </section>
-                    </div>
                 </div>
+            </div>
         </header>
 
-        <!-- Main
+
+        <!-- Main section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <main class="page-wrapper-inner">
             <div class="page-content-frame">
-                <div class="form-frame">
-                    <div class="user-setup-top-box">
-                        <button class="btn-a" onclick="document.getElementById('login').style.display='block'">Log
-                            in</button>
-                        <button class="btn-a"
-                            onclick="document.getElementById('register').style.display='block'">Register</button>
-                    </div>
 
-                    <!--  Register Modal -->
-                    <div class="modal-box" id="register">
-                        <span onclick="document.getElementById('register').style.display='none'" class="end"
-                            title="Close">&times;</span>
-                        <form class="modal-form" action="../pages/user-page.html">
-                            <div class="form-container">
-                                <img src="../assets/logo/rsz_gamehub_logo4.png" alt="company logo" class="logo-md">
-                                <h2>Register New User</h2>
-                                <p>Welcome to GameHub</p>
-                                <p>We hope you enjoy your stay and reach out if it is anything we can assist you with
-                                </p>
-                                <hr class="hr-user-setup">
-                                <label for="username"><b>Username</b></label>
-                                <input type="text" placeholder="Username" name="username" required>
+                <!-- top-section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-                                <label for="f-name"><b>First Name</b></label>
-                                <input type="text" placeholder="First Name" name="f-name" required>
-
-                                <label for="l-name"><b>Last Name</b></label>
-                                <input type="text" placeholder="Last Name" name="l-name" required>
-
-                                <label for="email"><b>Email</b></label>
-                                <input type="email" placeholder="Email" name="email" required>
-
-                                <label for="email-repeat"><b>Repeat email</b></label>
-                                <input type="email" placeholder="Repeat Email" name="email-repeat" required>
-
-                                <label for="pw"><b>Password</b></label>
-                                <input type="password" placeholder="Password" name="pw" required>
-
-                                <label for="pw-repeat"><b>Repeat Password</b></label>
-                                <input type="password" placeholder="Repeat password" name="pw-repeat" required>
-                                <p>When creating a account you agree to our <a href="#" class="agree-link"
-                                        aria-readonly="true">Terms & Privacy agreement</a>.</p>
-                                <label>
-                                    <input type="checkbox" name="agree" required>&ensp;I have Read and Agree
+                <section class="top-section">
+                    <div class="login-form">
+                        <div class="img-box">
+                            <img src="../assets/logo/GameHub_Logo4.12.jpg" alt="Company Logo" class="img-lg">
+                        </div>
+                        <div class="text-box underline">
+                            <h1>Login</h1>
+                            <p>Welcome back!</p>
+                        </div>
+                        
+                        <form action="../pages/user-page.html" class="from-frame">
+                            <div class="user-name">
+                                <label class="label-user-name" for="user-name">
+                                    <input type="text" id="user-name" class="input-user-name" placeholder="Username">
                                 </label>
-
-
-
-                                <hr class="hr-user-setup">
-                                <div class="clearfix">
-                                    <button class="cta-btn stop-btn"
-                                        onclick="document.getElementById('Register').style.display='none'">Cancel</button>
-                                    <button type="submit" class="cta-btn continue-btn">Register user account</button>
-                                </div>
+                            </div>
+                            <div class="pws">
+                                <label class="label-password" for="pws">
+                                    <input type="text" id="pws" class="input-pws" placeholder="Password*">
+                                </label>
+                            </div>
+                            <div class="from-checkbox">
+                                <label class="label-checkbox" for="remember">
+                                    <input type="checkbox" id="remember">&ensp;Remember me
+                                </label>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn-b" type="submit">Log in</button>
                             </div>
                         </form>
                     </div>
+                </section>
 
-                    <!-- Login modal -->
-                    <div class="modal-box" id="login">
-                        <span onclick="document.getElementById('login').style.display='none'" class="end"
-                            title="Close">&times;</span>
-                        <form class="modal-form" action="../pages/user-page.html">
-                            <div class="form-container">
-                                <img src="../assets/logo/rsz_gamehub_logo4.png" alt="company logo" class="logo-md">
-                                <h2>Login</h2>
-                                <p>Welcome back to GameHub</p>
-                                <hr class="hr-user-setup">
+                <!-- Content Section 1 - Game Card's
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-                                <label for="username"><b>Username</b></label>
-                                <input type="text" placeholder="Username" name="username" required>
+                <section class="content-section-1">
 
-                                <label for="pw"><b>Password</b></label>
-                                <input type="password" placeholder="Password" name="pw" required>
-                                <label>
-                                    <input type="checkbox" name="keep">&ensp;Remember login info
-                                </label>
-                                <hr class="hr-user-setup">
-                                <div class="clearfix">
-                                    <button class="cta-btn stop-btn"
-                                        onclick="document.getElementById('login').style.display='none'">Cancel</button>
-                                    <button type="submit" class="cta-btn continue-btn">Login</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                </section>
+
+                <!-- Content Section 2
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+                <section class="content-section-2">
+
+                </section>
+
+                <!-- Content Section 3
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+                <section class="content-section-3">
+
+
+                </section>
+
             </div>
         </main>
 
-        <!-- Footer
+        <!-- Footer section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <footer class="page-footer">
             <div class="page-footer-layout">
@@ -306,18 +279,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script>
-        //Show modal
-        var modal = document.getElementById('login', 'register');
-
-
-        //Clicking outside modal
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
     <script src="https://kit.fontawesome.com/15a08758fb.js" crossorigin="anonymous"></script>
     <script type="module" src="./js/main.js"></script>
 

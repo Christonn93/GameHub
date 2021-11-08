@@ -294,6 +294,27 @@ li > a {
     width: 100%;
 }
 
+/* User setup page */
+.login-form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ghub-white);
+}
+
+.underline{
+    border: 0;
+    border-bottom: 1px solid var(--ghub-black);
+    margin-bottom: 5px;
+}
+
+form > div{
+    margin: 20px;
+}
+
+
 /* content-section-1 */
 .content-section-1 {
     padding: 10px;
