@@ -204,18 +204,6 @@ label:hover {
     padding: 10px;
 }
 
-.game-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.game-section-header,
-.game-section-footer {
-    color: var(--ghub-green);
-    font-family: var(--ff-heading);
-    border-bottom: 2px solid var(--ghub-green);
-}
 
 /* Game Card 1 */
 .game-card-1 {
@@ -225,7 +213,7 @@ label:hover {
 }
 
 .card-frame {
-    flex: 1 1 100%;
+    flex: 0 0 200px;
     margin: 10px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
@@ -254,36 +242,76 @@ label:hover {
     color: red;
 }
 
-/* Game Card 2 */
-.game-card-2 {
+.game-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 0 0 200px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
-.game-img-2 {
-    max-width: 100%;
+.game-section-header,
+.game-section-footer {
+    color: var(--ghub-green);
+    font-family: var(--ff-heading);
+    border-bottom: 2px solid var(--ghub-green);
+
+
 }
 
-.card-frame-outer {
-    display: flex;
-    background-color: white;
-    padding: 0 20px 20px;
-}
-
-.text-box-2 {
-    display: felx;
-    flex: 1 1 80%;
-}
-
-.btn-box {
+.game-display-card {
+    border: 1px solid var(--ghub-black);
+    background-color: var(--ghub-white);
+    border-radius: 0.50em;
+    padding: 5px;
+    font-family: var(--ff-heading);
+    margin: 15px;
+    max-width: 150px;
     display: flex;
     flex-direction: column;
-    flex: 1 1 20%;
+    box-shadow: var(--shadow3);
+}
+
+.game-card-img {
+    width: 100%;
+    background-color: var(--ghub-rhythm);
+}
+
+.game-card-img>img {
+    width: 100%;
+}
+
+.game-card-info {
+    background-color: var(--ghub-white);
+}
+
+.game-card-text-box {
+    width: 140px;
+    margin-bottom: 15px;
+}
+
+.card-heading {
+    padding: 5px;
+}
+
+.card-text-box {
+    height: 110px;
+    padding: 5px;
+}
+
+.game-card-price {
+    float: right;
+    padding: 5px;
+}
+
+.game-card-cta {
+    background-color: var(--ghub-white);
+    margin: 0 auto;
+}
+
+.btn-more {
+    background-color: var(--ghub-black);
+    color: var(--ghub-green);
+    font-size: var(--nav-fs);
+    margin-top: 0 auto;
 }
 
 /* content-section-2 */
