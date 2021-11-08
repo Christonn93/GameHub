@@ -202,10 +202,6 @@ li > a {
     color: var(--ghub-black);
 }
 
-.login-btn::before{
-    position: absolute;
-    left: -20px;
-}
 
 /* Text-box */
 .text-box {
