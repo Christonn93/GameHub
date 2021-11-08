@@ -46,27 +46,6 @@
 
     <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script defer>
-        window.addEventListener('DOMContentLoaded', setup)
-
-        function setup() {
-            document.querySelector('button#dropdown-nav').addEventListener('click', toggleDropDown)
-            document.querySelector('button#back-btn').addEventListener('click', closeDropDown)
-            let isDropDownOpen = false;
-            let isDropDownClosed = false;
-
-            function toggleDropDown() {
-                isDropDownOpen = !isDropDownOpen;
-                document.body.classList.toggle('dropdown-open', isDropDownOpen);
-            }
-
-            function closeDropDown() {
-                isDropDownClosed = !isDropDownClosed;
-                document.body.classList.toggle('dropdown-open', isDropDownClosed);
-            }
-        }
-    </script>
-
 
 </head>
 
@@ -77,56 +56,88 @@
     <div class="page-wrapper-outer">
         <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- Header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <header class="page-header">
             <div class="page-nav">
 
-                <!-- Dropdown -->
-                <div class="nav-1">
-                    <a href="../pages/user-setup.html" class="cta-btn log-in">
-                        <img src="../assets/icons/black/Black-padlock.png" class="icon" alt="Button-icon">
-                        <img src="../assets/icons/black/Black-person.png" class="icon" alt="Button-icon">
-                    </a>
-                </div>
-
                 <!-- Dropdown menu -->
-                <div class="nav-2">
-                    <button class="cta-btn btn-nav" onclick="toggleDropDown()" id="dropdown-nav">
-                        <p><img src="../assets/icons/black/black-Menu.svg" class="icon-1"></p>
-                    </button>
-                </div>
+                <div class="nav-1">
+                    <label for="dropdown-menu" class="btn-b">
+                        <img src="../assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
+                    </label>
 
-                <!-- Dropdown menu display -->
-                <div class="dropdown-list" id="dropdown-nav">
+                    <!-- Dropdown menu display -->
+                    <input type="checkbox" id="dropdown-menu">
+                    <section class="menu">
 
-                    <!-- Dropdown menu header -->
-                    <div class="dropdown-menu header">
+                        <!-- Dropdown menu header -->
+                        <div class="menu-header">
+                            <a href="../index.html">
+                                <img class="dropdown-menu-logo" src="../assets/logo/rsz_gamehub_logo4.png"
+                                    alt="Dropdown company logo">
+                            </a>
+                            <label for="dropdown-menu" class="btn-b">
+                                <img src="../assets/icons/green/Green-undo.png" alt="Dropdown back button icon"
+                                    class="icon-1">
+                            </label>
+                        </div>
+
+                        <!-- Dropdown menu items -->
+                        <ul class="menu-list">
+                            <li class="icon-place home">
+                                <a href="#" class="menu-link">Home</a>
+                            </li>
+                            <li class="icon-place">
+                                <a href="#" class="menu-link">Home</a>
+                            </li>
+                            <li class="icon-place">
+                                <a href="#" class="menu-link">Home</a>
+                            </li>
+                            <li class="icon-place">
+                                <a href="../pages/check-out.html" class="menu-link">Checkout</a>
+                            </li>
+                            <li class="icon-place ">
+                                <a href="../pages/contact.html" class="menu-link">contact</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Logo -->
+                    <div class="nav-2">
                         <a href="../index.html">
-                            <img class="dropdown-menu-logo" src="../assets/logo/rsz_gamehub_logo4.png"
-                                alt="Dropdown company logo">
+                            <img src="../assets/logo/rsz_1gamehub_logo4.png" class="nav-logo" alt="Logo-image">
                         </a>
-                        <button class="back-btn" onclick="toggleDropDown()" id="back-btn">
-                            <img src="../assets/icons/green/Green-undo.png" alt="Dropdown back button icon"
-                                class="icon-1">
-                        </button>
                     </div>
 
-                    <!-- Dropdown menu items -->
+                    <!-- Dropdown cart -->
+                    <div class="nav-3">
+                        <label for="dropdown-menu" class="btn-b">
+                            <img src="../assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
+                        </label>
 
+                        <!-- Dropdown menu display -->
+                        <input type="checkbox" id="dropdown-cart">
+                        <section class="menu">
 
-                </div>
+                            <!-- Dropdown menu header -->
+                            <div class="menu-header">
 
-                <!-- Logo -->
-                <div class="nav-3">
-                    <img src="../assets/logo/rsz_1gamehub_logo4.png" class="nav-logo" alt="Logo-image">
-                </div>
+                            </div>
 
-                <!-- Dropdown cart -->
-                <div class="nav-4">
-                    <button class="cta-btn btn-nav" onclick="toggleDropDown()" id="dropdown-cart">
-                        <p><img src="../assets/icons/black/Black-shoppingcart.png" class="icon-1"></p>
-                    </button>
-                </div>
-            </div>
+                            <!-- Dropdown menu items -->
+                            <table>
+
+                            </table>
+                        </section>
+                    </div>
+                    <!-- Dropdown -->
+                    <div class="login">
+                        <a href="../pages/user-setup.html" class="btn-a">
+                            <img src="../assets/icons/black/Black-padlock.png" class="icon" alt="Button-icon">
+                            <img src="../assets/icons/black/Black-person.png" class="icon" alt="Button-icon">
+                        </a>
+                    </div>
         </header>
 
         <!-- Main
@@ -139,7 +150,7 @@
 
                 <section class="top-section">
                     <div class="game-card-layout">
-                        
+
                         <!-- Game Card -->
                         <div class="game-card-container">
                             <div class="img">
@@ -155,7 +166,15 @@
                                 </div>
                                 <div class="game-info">
                                     <p>
-                                        Mauris quam libero, vulputate vitae pretium et, tempor sed enim. Donec consequat enim ac nibh malesuada, at volutpat lacus fringilla. Ut rhoncus sit amet neque ut consectetur. Sed ornare congue velit nec euismod. Donec et dignissim massa. Maecenas lorem lacus, consectetur sit amet viverra non, blandit at ante. Ut id libero ornare, mattis velit vitae, pulvinar mi. Duis vel elementum lorem. Aenean euismod cursus sodales. Etiam quis justo pulvinar, tempor urna eget, pharetra lectus. Phasellus volutpat cursus elementum. Praesent sit amet velit magna. Praesent sagittis scelerisque nisl, ac volutpat orci facilisis sit amet. Proin sed magna accumsan, varius ex sed, fringilla ex. 
+                                        Mauris quam libero, vulputate vitae pretium et, tempor sed enim. Donec consequat
+                                        enim ac nibh malesuada, at volutpat lacus fringilla. Ut rhoncus sit amet neque
+                                        ut consectetur. Sed ornare congue velit nec euismod. Donec et dignissim massa.
+                                        Maecenas lorem lacus, consectetur sit amet viverra non, blandit at ante. Ut id
+                                        libero ornare, mattis velit vitae, pulvinar mi. Duis vel elementum lorem. Aenean
+                                        euismod cursus sodales. Etiam quis justo pulvinar, tempor urna eget, pharetra
+                                        lectus. Phasellus volutpat cursus elementum. Praesent sit amet velit magna.
+                                        Praesent sagittis scelerisque nisl, ac volutpat orci facilisis sit amet. Proin
+                                        sed magna accumsan, varius ex sed, fringilla ex.
                                     </p>
                                 </div>
                                 <div class="button">
@@ -163,7 +182,8 @@
                                     <button class="cta-btn add-btn">Add to cart</button>
                                 </div>
                                 <div class="age">
-                                    <img src="../assets/img/bannerimg/icons8-pegi-18-48.png" alt="Age limit image" class="game-img-sm">
+                                    <img src="../assets/img/bannerimg/icons8-pegi-18-48.png" alt="Age limit image"
+                                        class="game-img-sm">
                                 </div>
                             </div>
                         </div>
