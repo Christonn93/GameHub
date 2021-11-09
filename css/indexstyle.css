@@ -101,6 +101,56 @@ p {
     background-color: var(--ghub-green);
 }
 
+.btn-exit{
+    position:  absolute;
+    top: 2px;
+    right: 2px;
+    background-color: var(--ghub-white);
+
+}
+
+.login-btn{
+    background-color: var(--ghub-green);
+    color: var(--ghub-black);
+    font-size: var(--fs-body-md);
+    font-family: var(--ff-body);
+    width: 100%;
+}
+
+.login-btn:hover{
+    color: var(--ghub-red);
+    background-color: var(--ghub-black);
+}
+
+.login-btn{
+    background-color: var(--ghub-green);
+    color: var(--ghub-black);
+}
+
+.btn-1 {
+    margin-top: 15px;
+    box-shadow: none;
+    text-align: center;
+    color:var(--ghub-black);
+    background-color: var(--ghub-green);
+}
+
+.btn-1:hover {
+    color: red;
+}
+
+.btn-foot {
+    background-color: var(--ghub-black);
+    color: var(--ghub-green);
+    font-size: var(--nav-fs);
+    font-family: var(--ff-heading);
+}
+
+.banner-btn{
+    padding: 0;
+    background-color: var(--ghub-green);
+}
+
 /* Dropdown */
 #dropdown-menu,
 .menu,
@@ -188,20 +238,6 @@ li > a {
     padding: 5px;
     margin-bottom: 20px;
 }
-
-.btn-exit{
-    position:  absolute;
-    top: 2px;
-    right: 2px;
-    background-color: var(--ghub-white);
-
-}
-
-.login-btn{
-    background-color: var(--ghub-green);
-    color: var(--ghub-black);
-}
-
 
 /* Text-box */
 .text-box {
@@ -299,8 +335,9 @@ li > a {
     border-radius: 50%;
 }
 
-/* User setup page */
-.login-form{
+/* Login & Register */
+.login-form,
+.register-form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -324,7 +361,92 @@ form > div{
     margin: 20px;
 }
 
+.form-footer{
+    margin-top: 15px;
+}
 
+.form-input-area{
+    margin: 15px;
+}
+
+.form-input-label{
+    background-color: none;
+}
+
+.form-input-style{
+    border: 1px solid var(--ghub-black);
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+    
+}
+
+.form-input-style:focus{
+    border: none;
+    outline: 1px solid var(--ghub-red);
+    box-shadow: var(--shadow3);
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+}
+
+/* Testing that did not work and i need to move on... */
+/*
+.form-input-area{
+    position: relative;
+}
+
+:focus{
+    outline: none;
+}
+.form-input-style{
+    border: 0; 
+    padding: 4px 0; 
+    border-bottom: 1px solid #ccc; 
+    background-color: transparent;
+}
+
+.form-input-style ~ .input-border{
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 0; 
+    height: 2px; 
+    background-color: #4caf50; 
+    transition: 0.4s;
+}
+
+.form-input-style:focus ~ .input-border,
+.has-content.form-input-style ~ .input-border{
+    width: 100%; 
+    transition: 0.4s;
+}
+
+.form-input-style ~ label{
+    position: absolute; 
+    left: 0; 
+    width: 100%; 
+    top: 9px; 
+    color: #aaa; 
+    transition: 0.3s; 
+    z-index: -1; 
+    letter-spacing: 0.5px;
+}
+
+.form-input-style:focus ~ label, 
+.has-content.form-input-style ~ label{
+    top: -16px; 
+    font-size: 12px; 
+    color: #4caf50; 
+    transition: 0.3s;
+} */
+
+.user-form-link{
+    text-decoration: none;
+    border-bottom: 2px solid var(--ghub-red);
+    color: var(--ghub-black);
+}
 /* content-section-1 */
 .content-section-1 {
     padding: 10px;
@@ -379,18 +501,6 @@ form > div{
     padding: 5px;
 }
 
-.btn-1 {
-    margin-top: 15px;
-    box-shadow: none;
-    text-align: center;
-    color:var(--ghub-black);
-    background-color: var(--ghub-green);
-}
-
-.btn-1:hover {
-    color: red;
-}
-
 /* Game Card 2 */
 .game-card-2 {
     display: flex;
@@ -423,7 +533,7 @@ form > div{
     flex: 1 1 20%;
 }
 
-/* content-section-2 */
+/* Content section 2 */
 .content-section-2 {
     padding: 10px;
     display: flex;
@@ -431,7 +541,8 @@ form > div{
 
 }
  
-.banner-frame{
+/* Banner-section */
+.banner-frame-desktop{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -441,48 +552,77 @@ form > div{
     background-color: var(--ghub-af);
     box-shadow: 0px 5px 20px var(--ghub-red);
 }
- 
-.banner-img{
+
+.banner-frame-mobile{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--ghub-red);
+    border-radius: 25px;
+    background-color: var(--ghub-af);
+    box-shadow: 0px 5px 20px var(--ghub-red);
+    margin: 15px;
+    padding: 15px;
+} 
+
+.banner-img-desktop{
     padding: 15px;
     width: 150px;
 }
+
+.banner-img-mobile{
+    padding: 15px;
+    max-width: 250px;
+}
+
+.banner-text-area-desktop{
+    padding: 15px;
+}
  
-.banner-text-area{
+.banner-text-area-mobile{
     padding: 15px;
 }
 
-.banner-text-area-mobile{
-    display: none;
-    padding: 15px;
-}
- 
 .input-banner{
     margin-top: 25px;
 }
 
-input[type=text]{
-    border:0;
-    border-bottom: 1px solid black;
-    background-color: var(--ghub-white);
+.banner-link{
+    text-decoration: none;
+    color: var(--ghub-black);
+    border-bottom: 2px solid var(--ghub-black);
 }
 
-@media only screen and (max-width: 500px){
-    .banner-text-area{
-        display: none;
-    }
-
-    .banner-text-area-mobile{
-        display: block;
-    }
+.banner-link:hover{
+    color: var(--ghub-black);
+    border-bottom: 2px solid var(--ghub-green);
 }
 
-.banner-btn{
-    padding: 0;
-    background-color: var(--ghub-green);
+.sub-email{
+    margin: 25px;
 }
 
 .banner-icon{
     width: 15px;
+}
+
+@media only screen and (max-width: 500px){
+    .banner-frame-desktop{
+        display: none;
+    }
+
+    .banner-frame-mobile{
+        display: flex;
+    }
+
+    .input-banner{
+        margin: 25px;
+    }
+
+    .banner-footer{
+        margin-top: 5px;
+    }
 }
 
 /* content-section-3 */
@@ -505,13 +645,6 @@ input[type=text]{
     margin: 25px;
     border-radius: 1.25em;
     background-color: var(--ghub-white);
-}
-
-.btn-foot {
-    background-color: var(--ghub-black);
-    color: var(--ghub-green);
-    font-size: var(--nav-fs);
-    font-family: var(--ff-heading);
 }
 
 .box-foot {
