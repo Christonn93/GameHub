@@ -275,7 +275,7 @@ li > a {
     margin: 5px;
 }
 
-/* Page Layout */
+/* ======== Page Layout ======== */
 .page-header {
     background-color: var(--ghub-black);
     display: flex;
@@ -315,7 +315,7 @@ li > a {
     }
 }
 
-/* top-section */
+/* ======== top-section ======== */
 .top-section {
     padding: 10px;
 }
@@ -448,8 +448,70 @@ form > div{
     transition: 0.3s;
 } */
 
+/* User page */
+.user-page-frame{
+    margin: 5px;
+    
+}
 
-/* content-section-1 */
+.user-info{
+    margin-top: 70px;
+
+    background-color: var(--ghub-af);
+    display: flex;
+    border: 1px solid var(--ghub-black);
+}
+
+.user-header{
+    display: flex;
+}
+
+.info-header > h4{
+    position: relative;
+    top: -65px;
+    left: 50px;
+}
+
+.profile-icon{
+    position: relative;
+    cursor: pointer;
+}
+
+.icon-left{
+    top: -120px;
+    left: 10px;
+}
+
+.icon-right{
+    top: -120px;
+    left: 65px;
+}
+
+.profile-img{
+    border-radius: 50%;
+    width: 150px;
+    position: relative;
+    top: -70px;
+    left: 40px;
+    border: 1px solid var(--ghub-black);
+}
+
+.info-bottom{
+    position: relative;
+    top: 70px;
+    right: 105px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between baseline ;
+}
+
+.icon-link:hover{
+    filter: drop-shadow( 0px 2px 16px 0px black);
+}
+
+/* ======== content-section-1 ======== */
 .content-section-1 {
     padding: 10px;
 }
@@ -536,7 +598,7 @@ form > div{
     flex: 1 1 20%;
 }
 
-/* Content section 2 */
+/* ======== Content section 2 ======== */
 .content-section-2 {
     padding: 10px;
     display: flex;
@@ -571,11 +633,13 @@ form > div{
 
 .banner-img-desktop{
     padding: 15px;
-    width: 150px;
+    border-radius: 25px;
+    max-width: 250px;
 }
 
 .banner-img-mobile{
     padding: 15px;
+    border-radius: 25px;
     max-width: 250px;
 }
 
@@ -628,12 +692,12 @@ form > div{
     }
 }
 
-/* content-section-3 */
+/* ======== content-section-3 ======== */
 .content-section-3 {
     padding: 10px;
 }
 
-/* Footer section */
+/* ======== Footer section ======== */
 .page-footer {
     display: flex;
     flex-direction: row;
