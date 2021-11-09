@@ -294,6 +294,11 @@ li > a {
     width: 100%;
 }
 
+.img-md{
+    width: 150px;
+    border-radius: 50%;
+}
+
 /* User setup page */
 .login-form{
     display: flex;
@@ -308,6 +313,11 @@ li > a {
     border: 0;
     border-bottom: 1px solid var(--ghub-black);
     margin-bottom: 5px;
+}
+
+.form{
+    border: 0;
+    background-color: var(--ghub-white);
 }
 
 form > div{
