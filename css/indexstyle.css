@@ -391,6 +391,12 @@ form > div{
     padding: 15px;
 }
 
+.user-form-link{
+    text-decoration: none;
+    border-bottom: 2px solid var(--ghub-red);
+    color: var(--ghub-black);
+}
+
 /* Testing that did not work and i need to move on... */
 /*
 .form-input-area{
@@ -442,11 +448,7 @@ form > div{
     transition: 0.3s;
 } */
 
-.user-form-link{
-    text-decoration: none;
-    border-bottom: 2px solid var(--ghub-red);
-    color: var(--ghub-black);
-}
+
 /* content-section-1 */
 .content-section-1 {
     padding: 10px;
@@ -472,8 +474,9 @@ form > div{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 300px;
     margin: 10px;
+    flex-grow: 1;
+    flex-basis: 300px;
 }
 
 .card-frame {
