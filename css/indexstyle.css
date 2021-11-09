@@ -1,14 +1,11 @@
-/* -- header font -- */
-@font-face {
-    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-}
+/* ======== Importing assets ======== */
 
-/* -- body text fonts -- */
-@font-face {
-    font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-}
+/* ---- TYPOGRAPHY ---- */
+@import url(../css/typography.css);
+
+/* ---- base utilities ---- */
+
+
 
 /* CSS VARIABLES */
 :root {
@@ -72,10 +69,12 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: var(--ff-heading);
     margin: 5px;
 }
 
 p {
+    font-family: var(--ff-body);
     margin: 5px;
 }
 
@@ -101,15 +100,15 @@ p {
     background-color: var(--ghub-green);
 }
 
-.btn-exit{
-    position:  absolute;
+.btn-exit {
+    position: absolute;
     top: 2px;
     right: 2px;
     background-color: var(--ghub-white);
 
 }
 
-.login-btn{
+.login-btn {
     background-color: var(--ghub-green);
     color: var(--ghub-black);
     font-size: var(--fs-body-md);
@@ -117,12 +116,12 @@ p {
     width: 100%;
 }
 
-.login-btn:hover{
+.login-btn:hover {
     color: var(--ghub-red);
     background-color: var(--ghub-black);
 }
 
-.login-btn{
+.login-btn {
     background-color: var(--ghub-green);
     color: var(--ghub-black);
 }
@@ -131,7 +130,7 @@ p {
     margin-top: 15px;
     box-shadow: none;
     text-align: center;
-    color:var(--ghub-black);
+    color: var(--ghub-black);
     background-color: var(--ghub-green);
 }
 
@@ -140,13 +139,14 @@ p {
 }
 
 .btn-foot {
+    margin: 0 auto;
     background-color: var(--ghub-black);
     color: var(--ghub-green);
     font-size: var(--nav-fs);
     font-family: var(--ff-heading);
 }
 
-.banner-btn{
+.banner-btn {
     padding: 0;
     background-color: var(--ghub-green);
 }
@@ -182,7 +182,7 @@ label:hover {
     margin-bottom: 20px;
 }
 
-.menu-item{
+.menu-item {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -196,34 +196,34 @@ label:hover {
     background-color: var(--ghub-black);
 }
 
-.not-active{
+.not-active {
     color: currentColor;
     cursor: not-allowed;
     opacity: 0.5;
 }
 
-.menu-link{
+.menu-link {
     display: inline-block;
     text-decoration: none;
     font-family: var(--ff-body);
     color: var(--ghub-green);
 }
 
-.menu-icon{
+.menu-icon {
     width: 20px;
     height: 20px;
 }
 
-.list-item-contact{
+.list-item-contact {
     margin-top: 40px;
 }
 
-li{
+li {
     list-style-type: none;
     margin-top: 15px;
 }
 
-li > a {
+li>a {
     text-decoration: none;
 }
 
@@ -296,22 +296,22 @@ li > a {
     align-items: center;
 }
 
-.desktop-logo{
+.desktop-logo {
     margin: 15px 5px 5px;
     display: block;
 }
 
-.mobile-logo{
+.mobile-logo {
     margin: 15px 5px 5px;
     display: none;
 }
 
-@media only screen and (max-width: 500px){
-    .desktop-logo{
+@media only screen and (max-width: 500px) {
+    .desktop-logo {
         display: none;
     }
 
-    .mobile-logo{
+    .mobile-logo {
         display: block;
     }
 }
@@ -332,14 +332,14 @@ li > a {
     width: 100%;
 }
 
-.img-md{
+.img-md {
     width: 150px;
     border-radius: 50%;
 }
 
 /* Login & Register */
 .login-form,
-.register-form{
+.register-form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -348,43 +348,43 @@ li > a {
     background-color: var(--ghub-white);
 }
 
-.underline{
+.underline {
     border: 0;
     border-bottom: 1px solid var(--ghub-black);
     margin-bottom: 5px;
 }
 
-.form{
+.form {
     border: 0;
     background-color: var(--ghub-white);
 }
 
-form > div{
+form>div {
     margin: 20px;
 }
 
-.form-footer{
+.form-footer {
     margin-top: 15px;
 }
 
-.form-input-area{
+.form-input-area {
     margin: 15px;
 }
 
-.form-input-label{
+.form-input-label {
     background-color: none;
 }
 
-.form-input-style{
+.form-input-style {
     border: 1px solid var(--ghub-black);
     border-radius: 10px;
     height: 30px;
     width: 100%;
     padding: 15px;
-    
+
 }
 
-.form-input-style:focus{
+.form-input-style:focus {
     border: none;
     outline: 1px solid var(--ghub-red);
     box-shadow: var(--shadow3);
@@ -393,7 +393,7 @@ form > div{
     padding: 15px;
 }
 
-.user-form-link{
+.user-form-link {
     text-decoration: none;
     border-bottom: 2px solid var(--ghub-red);
     color: var(--ghub-black);
@@ -451,12 +451,12 @@ form > div{
 } */
 
 /* User page */
-.user-page-frame{
+.user-page-frame {
     margin: 5px;
-    
+
 }
 
-.user-info{
+.user-info {
     margin-top: 70px;
 
     background-color: var(--ghub-af);
@@ -464,32 +464,32 @@ form > div{
     border: 1px solid var(--ghub-black);
 }
 
-.user-header{
+.user-header {
     display: flex;
 }
 
-.info-header > h4{
+.info-header>h4 {
     position: relative;
     top: -65px;
     left: 50px;
 }
 
-.profile-icon{
+.profile-icon {
     position: relative;
     cursor: pointer;
 }
 
-.icon-left{
+.icon-left {
     top: -120px;
     left: 10px;
 }
 
-.icon-right{
+.icon-right {
     top: -120px;
     left: 65px;
 }
 
-.profile-img{
+.profile-img {
     border-radius: 50%;
     width: 150px;
     position: relative;
@@ -498,7 +498,7 @@ form > div{
     border: 1px solid var(--ghub-black);
 }
 
-.info-bottom{
+.info-bottom {
     position: relative;
     top: 70px;
     right: 105px;
@@ -506,11 +506,11 @@ form > div{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between baseline ;
+    justify-content: space-between baseline;
 }
 
-.icon-link:hover{
-    filter: drop-shadow( 0px 2px 16px 0px black);
+.icon-link:hover {
+    filter: drop-shadow(0px 2px 16px 0px black);
 }
 
 /* ======== content-section-1 ======== */
@@ -549,7 +549,7 @@ form > div{
     box-shadow: 2px 2px 6px 0px var(--ghub-black);
 }
 
-.game-img-area{
+.game-img-area {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -607,9 +607,9 @@ form > div{
     flex-direction: column;
 
 }
- 
+
 /* Banner-section */
-.banner-frame-desktop{
+.banner-frame-desktop {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -622,7 +622,7 @@ form > div{
     padding: 15px;
 }
 
-.banner-frame-mobile{
+.banner-frame-mobile {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -633,65 +633,65 @@ form > div{
     box-shadow: 0px 5px 20px var(--ghub-red);
     margin: 15px;
     padding: 15px;
-} 
+}
 
-.banner-img-desktop{
+.banner-img-desktop {
     padding: 15px;
     border-radius: 25px;
     max-width: 250px;
 }
 
-.banner-img-mobile{
+.banner-img-mobile {
     padding: 15px;
     border-radius: 25px;
     max-width: 250px;
 }
 
-.banner-text-area-desktop{
-    padding: 15px;
-}
- 
-.banner-text-area-mobile{
+.banner-text-area-desktop {
     padding: 15px;
 }
 
-.input-banner{
+.banner-text-area-mobile {
+    padding: 15px;
+}
+
+.input-banner {
     margin-top: 25px;
 }
 
-.banner-link{
+.banner-link {
     text-decoration: none;
     color: var(--ghub-black);
     border-bottom: 2px solid var(--ghub-black);
 }
 
-.banner-link:hover{
+.banner-link:hover {
     color: var(--ghub-black);
     border-bottom: 2px solid var(--ghub-green);
 }
 
-.sub-email{
+.sub-email {
     margin: 25px;
 }
 
-.banner-icon{
+.banner-icon {
     width: 15px;
 }
 
-@media only screen and (max-width: 500px){
-    .banner-frame-desktop{
+@media only screen and (max-width: 500px) {
+    .banner-frame-desktop {
         display: none;
     }
 
-    .banner-frame-mobile{
+    .banner-frame-mobile {
         display: flex;
     }
 
-    .input-banner{
+    .input-banner {
         margin: 25px;
     }
 
-    .banner-footer{
+    .banner-footer {
         margin-top: 5px;
     }
 }
@@ -712,12 +712,26 @@ form > div{
 }
 
 .page-footer-layout {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    flex-shrink: 1;
     padding: 10px;
-    margin: 25px;
+    margin: 10px;
     border-radius: 1.25em;
     background-color: var(--ghub-white);
 }
 
-.box-foot {
-    border: 0;
+.footer-btn-layout {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.text-box-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
 }
