@@ -15,9 +15,9 @@
     --ff-body: 'Oswald', Arial, Helvetica, sans-serif;
     --fw-heading: 700;
     --fw-body: 300;
-    --line-height: 1.55
+    --line-height: 1.55;
         /* ==== Font size ==== */
-        --fs-h1: 5rem;
+    --fs-h1: 5rem;
     --fs-h2: 3.25rem;
     --fs-h3: 2.75rem;
     --fs-h4: 1.75rem;
