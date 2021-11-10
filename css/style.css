@@ -47,19 +47,19 @@ body {
     background-color: var(--ghub-white);
 }
 
-header{}
+header {}
 
-main{
+main {
     background-color: var(--ghub-black);
     margin: 15px;
     border-radius: 0.5em;
 }
 
-section{}
+section {}
 
-div{}
+div {}
 
-footer{}
+footer {}
 
 /* --- 1.2 CSS VARIABLES --- */
 
@@ -71,14 +71,14 @@ footer{}
     --fw-heading: 700;
     --fw-body: 300;
     --line-height: 1.55;
-        /* ==== Font size ==== */
+    /* ==== Font size ==== */
     --fs-h1: 5rem;
     --fs-h2: 3.25rem;
     --fs-h3: 2.75rem;
     --fs-h4: 1.75rem;
     --fs-body-lg: 1.125rem;
     --fs-body-md: 1.120rem;
-    --fs-body-sm: 0.1rem;
+    --fs-body-sm: 1rem;
     --nav-fs: .8rem;
     --link-fs: 1.10rem;
 
@@ -114,7 +114,7 @@ footer{}
 
 
 /* --- 1.3 Sections --- */
-.section-frame{
+.section-frame {
     margin: 10px;
     padding: 10px;
     display: flex;
@@ -160,7 +160,7 @@ p {
    ---------------------- */
 
 /* -- 3.2.1 Main box layout -- */
-.box{
+.box {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -170,13 +170,13 @@ p {
     background-color: var(--ghub-white);
 }
 
-.box > div{
+.box>div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-.box-header{
+.box-header {
     display: flex;
     flex-direction: column;
     flex: 1 1 100%;
@@ -184,13 +184,13 @@ p {
     align-items: center;
 }
 
-.box-content{
+.box-content {
     display: flex;
     flex-direction: column;
     flex: 1 1 100%;
 }
 
-.box-footer{
+.box-footer {
     display: flex;
     flex-direction: column;
     flex: 1 1 100%;
@@ -223,32 +223,42 @@ p {
 
 
 /* --- 3.3.1 Button element --- */
+.form-btn{
+    background-color: var(--ghub-green);
+    color: var(--ghub-black);
+    font-size: var(--fs-body-sm);
+    font-family: var(--ff-heading);
+    width: 100%;
+}
 
-
+.form-btn:hover {
+    color: var(--ghub-red);
+    background-color: var(--ghub-black);
+}
 
 /* --- 3.3.2 Anchor element --- */
 
 
 /* --- 3.3.3 Links --- */
-.general-link{
+.general-link {
     text-decoration: none;
     color: var(--ghub-black);
 }
 
-.social-link{
+.social-link {
     display: inline-flex;
     justify-content: baseline;
     padding: 5px;
     position: relative;
 }
 
-.social-link:hover:after{
+.social-link:hover:after {
     content: attr(data-value);
     position: absolute;
     top: 30px;
     left: -10px;
     color: var(--ghub-silver);
-    text-shadow:0 0 3px #ccc;
+    text-shadow: 0 0 3px #ccc;
 }
 
 /* ----------------------
@@ -266,49 +276,73 @@ p {
 /* ----------------------
     3.6 Forms
    ---------------------- */
-form{
+form {
     border: 0;
-    background-color: var(--ghub-white);
+    width: 100%;
 }
 
-.form-box{
+.form-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    border-radius: 0.5em;
+    background-color: var(--ghub-white);
+    border: 1px solid var(--ghub-black);
+}
+
+.form-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex: 1 1 100%;
+}
+
+.form-box-left,
+.form-box-right {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 1 1 100%;
-    padding: 10px;
-    border-radius: 0.5em;
-    background-color: var(--ghub-white);
+    flex: 1 1 50%;
+    justify-content: flex-start;
+    align-content: stretch;
 }
 
 /* --- 3.6.1 Form field --- */
 
 .form-input-area {
-    margin: 15px;
+    margin: 10px;
+}
+
+.checkbox-area{
+    display: inline-flex;
 }
 
 /* --- 3.6.2 Labels --- */
 
-label{
+.form-label {
     background-color: none;
 }
 
-label:hover {
+.form-label:hover {
     cursor: pointer;
 }
 
 /* --- 3.6.3 Inputs --- */
 
-.form-input-style {
+.form-text-input {
+    background-color: white;
     border: 1px solid var(--ghub-black);
-    border-radius: 10px;
+    border-radius: 0.5em;
     height: 30px;
     width: 100%;
     padding: 15px;
 
 }
 
-.form-input-style:focus {
+.form-text-input:focus {
     border: none;
     outline: 1px solid var(--ghub-red);
     box-shadow: var(--shadow3);
@@ -317,11 +351,28 @@ label:hover {
     padding: 15px;
 }
 
+.form-text-area {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 1px solid var(--ghub-black);
+    border-radius: 0.5em;
+    resize: vertical;
+}
+
+
+.form-text-area:focus {
+    border: none;
+    outline: 1px solid var(--ghub-red);
+    box-shadow: var(--shadow3);
+    padding: 12px 20px;
+}
+
 /* ----------------------
     3.7 Span Classes
    ---------------------- */
 
-/* --- 3.7.1 Vertical --- */   
-.vertical-line{
+/* --- 3.7.1 Vertical --- */
+.vertical-line {
     border-right: 1px solid var(--ghub-black);
 }

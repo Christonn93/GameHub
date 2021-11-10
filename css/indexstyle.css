@@ -123,11 +123,6 @@ body{
     background-color: var(--ghub-black);
 }
 
-.login-btn {
-    background-color: var(--ghub-green);
-    color: var(--ghub-black);
-}
-
 .btn-1 {
     margin-top: 15px;
     box-shadow: none;
