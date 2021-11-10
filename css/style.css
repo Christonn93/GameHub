@@ -7,11 +7,14 @@ Style list:
 1. Global style
     1.1 Base elements
     1.2 Css Variables
+    1.3 Sections
 2. Typography
 3. Components
     3.1 Page wrappers
     3.2 Text areas
-    3.3 Buttons
+        3.2.1 Main Box Layout
+        3.2.2 Specific Box Layout
+    3.3 Buttons/Links
         3.3.1 Button element
         3.3.2 Anchor element
     3.4 Cards
@@ -20,6 +23,9 @@ Style list:
         3.6.1 Form field
         3.6.2 Labels
         3.6.3 Inputs
+    3.7 Span classes
+4. Images
+5. ID
 
 
    ====================== */
@@ -38,9 +44,22 @@ Style list:
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--ghub-white);
 }
 
+header{}
 
+main{
+    background-color: var(--ghub-black);
+    margin: 15px;
+    border-radius: 0.5em;
+}
+
+section{}
+
+div{}
+
+footer{}
 
 /* --- 1.2 CSS VARIABLES --- */
 
@@ -51,9 +70,9 @@ body {
     --ff-body: 'Oswald', Arial, Helvetica, sans-serif;
     --fw-heading: 700;
     --fw-body: 300;
-    --line-height: 1.55
+    --line-height: 1.55;
         /* ==== Font size ==== */
-        --fs-h1: 5rem;
+    --fs-h1: 5rem;
     --fs-h2: 3.25rem;
     --fs-h3: 2.75rem;
     --fs-h4: 1.75rem;
@@ -94,6 +113,16 @@ body {
 }
 
 
+/* --- 1.3 Sections --- */
+.section-frame{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ghub-af);
+    border-radius: 0.5em;
+}
+
 /* ======================
     2. TYPOGRAPHY
    ====================== */
@@ -130,10 +159,52 @@ p {
     3.2 Text areas
    ---------------------- */
 
+/* -- 3.2.1 Main box layout -- */
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    padding: 10px;
+    border-radius: 0.5em;
+    background-color: var(--ghub-white);
+}
+
+.box > div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box-header{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -- Specific box layout -- */
+
 
 
 /* ----------------------
-    3.3 Buttons
+    3.3 Buttons / Links
    ---------------------- */
 .btn-a,
 .btn-b {
@@ -155,8 +226,30 @@ p {
 
 
 
-/* --- 3.3.1 Anchor element --- */
+/* --- 3.3.2 Anchor element --- */
 
+
+/* --- 3.3.3 Links --- */
+.general-link{
+    text-decoration: none;
+    color: var(--ghub-black);
+}
+
+.social-link{
+    display: inline-flex;
+    justify-content: baseline;
+    padding: 5px;
+    position: relative;
+}
+
+.social-link:hover:after{
+    content: attr(data-value);
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    color: var(--ghub-silver);
+    text-shadow:0 0 3px #ccc;
+}
 
 /* ----------------------
     3.4 Cards
@@ -173,12 +266,62 @@ p {
 /* ----------------------
     3.6 Forms
    ---------------------- */
+form{
+    border: 0;
+    background-color: var(--ghub-white);
+}
 
+.form-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    padding: 10px;
+    border-radius: 0.5em;
+    background-color: var(--ghub-white);
+}
 
 /* --- 3.6.1 Form field --- */
 
+.form-input-area {
+    margin: 15px;
+}
 
 /* --- 3.6.2 Labels --- */
 
+label{
+    background-color: none;
+}
+
+label:hover {
+    cursor: pointer;
+}
 
 /* --- 3.6.3 Inputs --- */
+
+.form-input-style {
+    border: 1px solid var(--ghub-black);
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+
+}
+
+.form-input-style:focus {
+    border: none;
+    outline: 1px solid var(--ghub-red);
+    box-shadow: var(--shadow3);
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+}
+
+/* ----------------------
+    3.7 Span Classes
+   ---------------------- */
+
+/* --- 3.7.1 Vertical --- */   
+.vertical-line{
+    border-right: 1px solid var(--ghub-black);
+}
