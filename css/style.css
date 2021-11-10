@@ -72,13 +72,15 @@ footer {}
     --fw-body: 300;
     --line-height: 1.55;
     /* ==== Font size ==== */
-    --fs-h1: 5rem;
-    --fs-h2: 3.25rem;
-    --fs-h3: 2.75rem;
-    --fs-h4: 1.75rem;
-    --fs-body-lg: 1.125rem;
-    --fs-body-md: 1.120rem;
-    --fs-body-sm: 1rem;
+    --fs-h1: 2em;
+    --fs-h2: 1.5em;
+    --fs-h3: 1.17em;
+    --fs-h4: 1em;
+    --fs-h5: .83em;
+    --fs-h6: .67em;
+    --fs-body-lg: 1.125em;
+    --fs-body-md: 1.120em;
+    --fs-body-sm: 1em;
     --nav-fs: .8rem;
     --link-fs: 1.10rem;
 
@@ -127,19 +129,56 @@ footer {}
     2. TYPOGRAPHY
    ====================== */
 
-h1,
-h2,
-h3,
-h4,
-h5,
+h1{
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h1);
+    margin: 5px;
+}
+
+h2{
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h2);
+    margin: 5px;
+}
+
+h3{
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h3);
+    margin: 5px;
+}
+
+h4{
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h4);
+    margin: 5px;
+}
+
+h5{
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h5);
+    margin: 5px;
+}
+
 h6 {
     font-family: var(--ff-heading);
+    font-size: var(--fs-h6);
     margin: 5px;
 }
 
 p {
     font-family: var(--ff-body);
+    font-size: var(--fs-body-md);
     margin: 5px;
+}
+
+.text-size{
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h4);
+}
+
+.text-p{
+    font-family: var(--ff-body);
+    font-size: var(--fs-body-sm);
 }
 
 
