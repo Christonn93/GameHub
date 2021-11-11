@@ -467,7 +467,7 @@ form {
     border: none;
     outline: 1px solid var(--ghub-red);
     box-shadow: var(--shadow3);
-    height: 50px;
+    height: 30px;
     width: 100%;
     padding: 15px;
 }
@@ -483,6 +483,7 @@ form {
 
 .form-text-area:focus {
     border: none;
+    height: 50px;
     outline: 1px solid var(--ghub-red);
     box-shadow: var(--shadow3);
     padding: 12px 20px;
