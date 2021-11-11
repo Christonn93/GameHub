@@ -972,3 +972,107 @@ form {
     height: 100%;
     width: 100%;
 }
+
+#card-9{
+    background-image: url(../assets/img/itemgallery/GTA-6-Ryktene-flyr-fort-og-tett-men-det-er.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-10{
+    background-image: url(../assets/img/itemgallery/minecraft.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-11{
+    background-image: url(../assets/img/itemgallery/Need-for-Speed-Hot-Pursuit-Remastered-4-1.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-12{
+    background-image: url(../assets/img/itemgallery/pubg.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-13{
+    background-image: url(../assets/img/itemgallery/Roblox.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-14{
+    background-image: url(../assets/img/itemgallery/fortnight.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-15{
+    background-image: url(../assets/img/itemgallery/capsule_616x353.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#card-16{
+    background-image: url(../assets/img/itemgallery/flight\ sim.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: attr(aria-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
