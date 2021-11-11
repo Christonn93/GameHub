@@ -317,16 +317,16 @@ li>a {
     padding: 5px;
 }
 
-.img-box {
+/* .img-box {
     margin: 15px;
     padding: 5px;
     background-color: var(--ghub-white);
     border-radius: 0.5em;
-}
+} */
 
-.img-lg {
+/* .img-lg {
     width: 100%;
-}
+} */
 
 .img-md {
     width: 150px;
