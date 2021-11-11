@@ -75,8 +75,14 @@ address{
 
 /* div {} */
 
-/* footer {} */
-
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ghub-black);
+}
 /* --- 1.2 CSS VARIABLES --- */
 
 :root {
@@ -151,7 +157,6 @@ address{
     align-items: center;
 }
 
-
 .section-frame {
     margin: 10px;
     padding: 10px;
@@ -177,6 +182,22 @@ address{
 .page-content-frame {
     padding: 5px;
 }
+
+.game-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 15px 10px 15px;
+    background-color: var(--ghub-af);
+}
+
+.game-section-header,
+.game-section-footer {
+    color: var(--ghub-green);
+    font-family: var(--ff-heading);
+    border-bottom: 2px solid var(--ghub-green);
+}
+
 
 /* ======================
     2. TYPOGRAPHY
@@ -269,7 +290,7 @@ a{
     3.2 Text areas
    ---------------------- */
 
-/* -- 3.2.1 Main box layout -- */
+/* --- 3.2.1 Main box layout --- */
 .box {
     display: flex;
     flex-direction: column;
@@ -334,6 +355,13 @@ a{
     align-items: center;
 }
 
+.text-box-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
 
 /* -- Specific box layout -- */
 
@@ -448,6 +476,12 @@ a{
     margin-top: 10px;
 }
 
+.footer-btn-layout {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* --- 3.3.2 Anchor element --- */
 
 
@@ -504,11 +538,109 @@ a{
 
 
 
+
+/* --- 3.4.1 Game Cards --- */
+
+/* Game Card 1 */
+.game-card-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+.card-frame {
+    margin: 5px;
+    background-color: var(--ghub-rhythm);
+    box-shadow: 2px 2px 6px 0px var(--ghub-black);
+}
+
+.game-img-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-img {
+    max-width: 100%;
+}
+
+.card-text-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25em;
+    margin-top: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+/* Game Card 2 */
+.game-showcase-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.game-showcase-img {
+    max-width: 100%;
+}
+
+.card-frame-outer {
+    display: flex;
+    background-color: white;
+    padding: 0 20px 20px;
+}
+
+.text-box-2 {
+    display: felx;
+    flex: 1 1 80%;
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 20%;
+}
+
+/* Game Showcase */
+.game-showcase-frame{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.showcase-top{
+    display: flex;
+}
+
+.showcase-middle{
+    display: flex;
+}
+
+.showcase-shop{
+    margin: 15px 0;
+    display: inline-flex;
+}
+
+.showcase-bottom{
+    display: flex;
+}
+
+
 /* ----------------------
     3.5 Dropdown menu
    ---------------------- */
 
-/* 3.5.1 Dropdown menu Header Checkbox Hack*/
+/* --- 3.5.1 Dropdown menu Header Checkbox Hack --- */
 #dropdown-menu,
 .menu,
 #dropdown-cart,
@@ -586,7 +718,7 @@ li>a {
 }
 
 
-/* 3.5.2 Dropdown Checkbox Hack User page tool*/
+/* --- 3.5.2 Dropdown Checkbox Hack User page tool --- */
 #tool-item,
 .display-tool-card,
 #dropdown-cart,
@@ -773,6 +905,11 @@ form {
 /* --- 3.8.1 Vertical --- */
 .vertical-line {
     border-right: 1px solid var(--ghub-black);
+}
+
+.line-margin{
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* ======================
