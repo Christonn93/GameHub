@@ -467,7 +467,7 @@ form {
     border: none;
     outline: 1px solid var(--ghub-red);
     box-shadow: var(--shadow3);
-    height: 30px;
+    height: 50px;
     width: 100%;
     padding: 15px;
 }
