@@ -90,3 +90,6 @@
 21. Temp
     link: https://mui.com/components/textarea-autosize/
     link: https://mui.com/components/text-fields/
+
+22. JQuery for anchor tag in game cards
+    Link: http://jsfiddle.net/r5uWX/1/
