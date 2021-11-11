@@ -264,6 +264,7 @@ a{
 
 .box-right{
     display: flex;
+    flex-direction: column;
     justify-content: right;
     align-items: stretch;
 }
@@ -473,7 +474,7 @@ form {
 
 .form-text-area {
     width: 100%;
-    height: 150px;
+    height: 30px;
     padding: 12px 20px;
     border: 1px solid var(--ghub-black);
     border-radius: 0.5em;
