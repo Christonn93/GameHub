@@ -6,33 +6,48 @@ Style list:
 
 1. Global style
     1.1 Base elements
+
     1.2 Css Variables
+
     1.3 Sections
+
 2. Typography
+
 3. Components
     3.1 Page wrappers
+
     3.2 Text areas
         3.2.1 Main Box Layout
         3.2.2 Specific Box Layout
+
     3.3 Buttons & Links
         3.3.1 Button element
         3.3.2 Anchor element
+
     3.4 Cards
+
     3.5 Dropdown menu
+
     3.6 Table
         3.6.1 Table body
         3.6.2 Table Header
         3.6.3 Table row
         3.6.4 Table data
+
     3.7 Forms
         3.7.1 Form field
         3.7.2 Labels
         3.7.3 Inputs
+
     3.8 Span classes
+
 4. Images & Icons
     4.1 Images
     4.2 Icons
+
 5. ID
+
+6. Media Queries 
 
 
    ====================== */
@@ -625,6 +640,7 @@ a{
 .showcase-top{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .showcase-middle{
@@ -641,9 +657,6 @@ a{
     flex: 1 1 50%;
 }
 
-.game-img-3{
-    width: 80%;
-}
 
 .showcase-shop{
     margin: 15px 0;
@@ -1303,4 +1316,35 @@ form {
     justify-content: center;
     height: 100%;
     width: 100%;
+}
+
+
+/* ======================
+    6. Media Queries 
+   ====================== */
+
+@media only screen and (max-width: 500px) {
+    .banner-frame-desktop {
+        display: none;
+    }
+
+    .banner-frame-mobile {
+        display: flex;
+    }
+
+    .input-banner {
+        margin: 25px;
+    }
+
+    .banner-footer {
+        margin-top: 5px;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
 }
