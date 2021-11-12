@@ -124,6 +124,8 @@ footer{
     --ghub-silver: #726c6c;
     /* -- Light periwinkle */
     --ghub-periwinkle: #c5d1d9;
+     /* -- Light absolute Zero */
+     --ghub-AZ: #074dd9;
 
 
     --shadow: 2px 5px 20px var(--ghub-black);
@@ -261,6 +263,10 @@ a{
     font-size: var(--fs-body-sm);
 }
 
+.price-tag{
+    padding-right: 25px;
+    color: var(--ghub-AZ);
+}
 
 /* ======================
     3. COMPONENTS
@@ -633,17 +639,10 @@ a{
     align-items: flex-start;
     flex-wrap: wrap;
     flex: 1 1 50%;
-    width: 100%;
 }
 
 .game-img-3{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: 450px;
-    width: 100%;
+    width: 80%;
 }
 
 .showcase-shop{
@@ -662,12 +661,43 @@ a{
     flex: 1 1 50%;
 }
 
+.showcase-tb-header{
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-h2);
+}
+
+.showcase-tb-content{
+    padding: 20px;
+}
+
+.showcase-btn-box{
+    display: flex;
+    margin-top: 50px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 .showcase-bottom{
     display: flex;
     flex-direction: row;
     flex: 1 1 100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.showcase-ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.showcase-li{
+    font-family: var(--ff-body);
+    font-size: var(--fs-body-md);
 }
 
 
