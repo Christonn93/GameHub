@@ -758,7 +758,49 @@ a {
     justify-content: center;
 }
 
+
 /* Game Card 2 */
+.game-card-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.game-img-2 {
+    flex: 1 1 100%;
+    max-width: 350px;
+}
+
+.card-frame-outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 0 20px 20px;
+}
+
+.text-box-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 80%;
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+    flex: 1 1 20%;
+}
+
+
+/* Game Card 3 */
 .game-showcase-card {
     display: flex;
     flex-direction: row;
@@ -1149,7 +1191,117 @@ form>div {
 }
 
 
+/* User page */
+.user-page-frame {
+    margin: 5px;
 
+}
+
+.user-profile-tools,
+.user-info {
+    padding: 15px;
+    background-color: var(--ghub-af);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    border: 1px solid var(--ghub-black);
+}
+
+.user-profile-img{
+    flex: 1 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-basis: 150px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    border: 1px solid var(--ghub-black);
+    box-shadow: var(--shadow2);
+}
+
+.user-info-main{
+    flex: 1 1;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    padding: 20px;
+}
+
+.user-info-extra{
+    flex: 1 1;
+    flex-basis: 50px;
+    padding: 20px;
+}
+
+.user-underline{
+    border-bottom: 1px solid var(--ghub-black);
+    width: 100%;
+}
+
+.social-links,
+.status-box{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.tool-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-tools-btn{
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Dropdown */
+#tool-item,
+.display-tool-card,
+#dropdown-cart,
+.cart {
+    display: none;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+#tool-item:checked~.display-tool-card,
+#dropdown-cart:checked~.cart {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.display-tool-card {
+    position: absolute;
+    top: 993px;
+    left: 115px;
+    background-color: var(--ghub-white);
+    border: 0.1em solid black;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px var(--ghub-silver);
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.tool-header{
+    position: relative;
+}
+
+.message-box{
+    border: 1px solid var(--ghub-silver);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
 
 
 

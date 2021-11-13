@@ -36,7 +36,6 @@
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="../css/style.css" rel="stylesheet" type="text/css">
-    <link href="../css/indexstyle.css" rel="stylesheet" type="text/css">
 
     <!-- FrameWork Css 
   <link rel="stylesheet" href="./config/css/normalize.css">
@@ -45,7 +44,7 @@
 
     <!-- Favicon/icons
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="../favicon.png">
 
     <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -59,11 +58,12 @@
         <!-- Header section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <header class="page-header">
+            <a href="../pages/user-setup.html" class="btn btn-s btn-green">Log in</a>
             <div class="page-nav">
 
                 <!-- Dropdown menu -->
                 <div class="nav-section">
-                    <label for="dropdown-menu" class="btn-b btn-nav">
+                    <label for="dropdown-menu" class="btn btn-s btn-green">
                         <img src="../assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
                     </label>
                 </div>
@@ -74,12 +74,10 @@
                     <!-- Dropdown menu header -->
                     <div class="menu-header">
                         <a href="../index.html">
-                            <img src="../assets/logo/rsz_gamehub_logo4.png" alt="Dropdown company logo"
-                                class="dropdown-menu-logo">
+                            <img src="../assets/logo/rsz_gamehub_logo4.png" alt="logo" class="menu-logo">
                         </a>
-                        <label for="dropdown-menu" class="btn-b btn-exit">
-                            <img src="../assets/icons/green/Green-undo.png" alt="Dropdown back button icon"
-                                class="icon-1">
+                        <label for="dropdown-menu" class="btn-exit">
+                            <img src="../assets/icons/black/Black-closesquare.png" alt="icon" class="icon-1">
                         </label>
                     </div>
 
@@ -87,18 +85,17 @@
                     <ul class="menu-list">
 
                         <li class="list-item-search">
-                            <label for="search">
-                                <input id="search" type="search" class="menu-link icon-place-search"
-                                    placeholder="Search">
-                            </label>
-                            <button class="menu-link-btn">Search</button>
+                            <div class="search">
+                                <input type="search" id="search" class="search-text-input" placeholder="Search">
+                                <input type="submit" class="btn btn-black btn-search" value="search">
+                            </div>
                         </li>
 
                         <li class="list-item-home">
                             <div class="menu-item">
                                 <a href="../index.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-home.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Home</a>
+                                        class="menu-icon">Home</a>
                             </div>
                         </li>
 
@@ -106,7 +103,7 @@
                             <div class="menu-item">
                                 <a href="../pages/game-list.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-gridicon.png" alt="menu icon"
-                                        class="menu-icon">&ensp;All
+                                        class="menu-icon">All
                                     Games</a>
                             </div>
                         </li>
@@ -115,8 +112,16 @@
                             <div class="menu-item">
                                 <a href="#" class="menu-link not-active">
                                     <img src="../assets/icons/green/Green-percent.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Game
+                                        class="menu-icon">Game
                                     deals</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-home">
+                            <div class="menu-item">
+                                <a href="../pages/user-page.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-personperson.png" alt="menu icon"
+                                        class="menu-icon">User Page</a>
                             </div>
                         </li>
 
@@ -124,7 +129,7 @@
                             <div class="menu-item">
                                 <a href="../pages/check-out.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-setting.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Checkout</a>
+                                        class="menu-icon">Checkout</a>
                             </div>
                         </li>
 
@@ -132,7 +137,7 @@
                             <div class="menu-item">
                                 <a href="../pages/contact.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-semail.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Contact</a>
+                                        class="menu-icon">Contact</a>
                             </div>
                         </li>
 
@@ -140,7 +145,7 @@
                 </section>
 
                 <!-- Logo -->
-                <div class="nav-section">
+                <div class="nav-section nav-logo">
                     <a href="../index.html" class="desktop-logo">
                         <img src="../assets/logo/rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
                     </a>
@@ -151,7 +156,7 @@
 
                 <!-- Dropdown cart -->
                 <div class="nav-section">
-                    <label for="dropdown-cart" class="btn-b btn-nav">
+                    <label for="dropdown-cart" class="btn btn-s btn-green">
                         <img src="../assets/icons/black/black-shoppingcart2.png" alt="Menu icon" class="icon">
                     </label>
 
@@ -204,28 +209,59 @@
                 <!-- top-section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-                <section class="top-section">
-                   
-                </section>
-
                 <!-- Content Section 1 - Game Card's
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-                <section class="content-section-1">
-
+                <section class="section-frame">
+                    <div class="box">
+                        <div class="box-content">
+                            <div class="box-content-l box-left"></div>
+                            <div class=" game-card-img box-img">
+                                <img src="../assets/img/itemgallery/EuroTruckBanner.jpg" alt="Game img" class="img-md">
+                            </div>
+                            <div class="box-header">
+                                <h2>Game title</h2>
+                            </div>
+                        </div>
+                        <div class="box-content-r box-right">
+                            <p></p>
+                        </div>
+                        <div class="box-footer">
+                            <p class="price-tag">PRICE: 799 ,- NOK</p>
+                            <a class="btn btn-s btn-green">Add to cart</a>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- Content Section 2
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-                <section class="content-section-2">
-
+                <section class="section-frame">
+                    <div class="game-card-2">
+                        <div class="game-img-area">
+                            <img src="../assets/img/itemgallery/Assassins-Creed-Games.jpg" class="game-img-2"
+                                alt="Game image">
+                        </div>
+                        <div class="card-frame-outer">
+                            <div class="text-box-2">
+                                <h1>Game Title</h1>
+                                <p class="price-tag">PRICE: 799 ,- NOK</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis modi nostrum
+                                    assumenda quas, cum mollitia voluptate aspernatur? A nesciunt consequuntur hic
+                                    doloribus placeat dolore natus, magnam harum porro, maxime dolor?</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="../pages/game-page.html" class="btn btn-green btn-s">Read more</a>
+                                <a href="#" class="btn btn-green btn-s">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- Content Section 3
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-                <section class="content-section-3">
+                <section class="section-frame">
 
 
                 </section>
@@ -238,9 +274,9 @@
         <footer class="page-footer">
             <div class="page-footer-layout">
                 <div class="footer-btn-layout">
-                    <a href="../index.html" class="btn-a btn-foot">Home</a>
-                    <a href="../pages/check-out.html" class="btn-a btn-foot">Checkout</a>
-                    <a href="../pages/contact.html" class="btn-a btn-foot">Contact</a>
+                    <a href="../index.html" class="btn btn-foot">Home</a>
+                    <a href="../pages/check-out.html" class="btn btn-foot">Checkout</a>
+                    <a href="../pages/contact.html" class="btn btn-foot">Contact</a>
                 </div>
                 <div class="text-box-foot">
                     <p>Copyright reserved GameHub 2021</p>

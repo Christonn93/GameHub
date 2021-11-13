@@ -35,7 +35,7 @@
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="../css/indexstyle.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
 
     <!-- FrameWork Css 
   <link rel="stylesheet" href="./config/css/normalize.css">
@@ -44,7 +44,7 @@
 
     <!-- Favicon/icons
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="../favicon.png">
 
     <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -58,12 +58,13 @@
         <!-- Header section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <header class="page-header">
+            <a href="../pages/user-setup.html" class="btn btn-s btn-green">Log in</a>
             <div class="page-nav">
 
                 <!-- Dropdown menu -->
                 <div class="nav-section">
-                    <label for="dropdown-menu" class="btn-b btn-nav">
-                        <img src="../assets/icons/black/Black-menu.png" alt="Menu icon" class="icon">
+                    <label for="dropdown-menu" class="btn btn-s btn-green">
+                        <img src="../assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
                     </label>
                 </div>
                 <!-- Dropdown menu display -->
@@ -73,12 +74,10 @@
                     <!-- Dropdown menu header -->
                     <div class="menu-header">
                         <a href="../index.html">
-                            <img src="../assets/logo/rsz_gamehub_logo4.png" alt="Dropdown company logo"
-                                class="dropdown-menu-logo">
+                            <img src="../assets/logo/rsz_gamehub_logo4.png" alt="logo" class="menu-logo">
                         </a>
-                        <label for="dropdown-menu" class="btn-b btn-exit">
-                            <img src="../assets/icons/green/Green-undo.png" alt="Dropdown back button icon"
-                                class="icon-1">
+                        <label for="dropdown-menu" class="btn-exit">
+                            <img src="../assets/icons/black/Black-closesquare.png" alt="icon" class="icon-1">
                         </label>
                     </div>
 
@@ -86,17 +85,17 @@
                     <ul class="menu-list">
 
                         <li class="list-item-search">
-                            <label for="search">
-                                <input type="search" class="menu-link icon-place-search" placeholder="Search">
-                                <button class="menu-link-btn">Search</button>
-                            </label>
+                            <div class="search">
+                                <input type="search" id="search" class="search-text-input" placeholder="Search">
+                                <input type="submit" class="btn btn-black btn-search" value="search">
+                            </div>
                         </li>
 
                         <li class="list-item-home">
                             <div class="menu-item">
                                 <a href="../index.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-home.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Home</a>
+                                        class="menu-icon">Home</a>
                             </div>
                         </li>
 
@@ -104,7 +103,7 @@
                             <div class="menu-item">
                                 <a href="../pages/game-list.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-gridicon.png" alt="menu icon"
-                                        class="menu-icon">&ensp;All
+                                        class="menu-icon">All
                                     Games</a>
                             </div>
                         </li>
@@ -113,8 +112,16 @@
                             <div class="menu-item">
                                 <a href="#" class="menu-link not-active">
                                     <img src="../assets/icons/green/Green-percent.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Game
+                                        class="menu-icon">Game
                                     deals</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-home">
+                            <div class="menu-item">
+                                <a href="../pages/user-page.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-personperson.png" alt="menu icon"
+                                        class="menu-icon">User Page</a>
                             </div>
                         </li>
 
@@ -122,7 +129,7 @@
                             <div class="menu-item">
                                 <a href="../pages/check-out.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-setting.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Checkout</a>
+                                        class="menu-icon">Checkout</a>
                             </div>
                         </li>
 
@@ -130,7 +137,7 @@
                             <div class="menu-item">
                                 <a href="../pages/contact.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-semail.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Contact</a>
+                                        class="menu-icon">Contact</a>
                             </div>
                         </li>
 
@@ -138,7 +145,7 @@
                 </section>
 
                 <!-- Logo -->
-                <div class="nav-section">
+                <div class="nav-section nav-logo">
                     <a href="../index.html" class="desktop-logo">
                         <img src="../assets/logo/rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
                     </a>
@@ -149,7 +156,7 @@
 
                 <!-- Dropdown cart -->
                 <div class="nav-section">
-                    <label for="dropdown-cart" class="btn-b btn-nav">
+                    <label for="dropdown-cart" class="btn btn-s btn-green">
                         <img src="../assets/icons/black/black-shoppingcart2.png" alt="Menu icon" class="icon">
                     </label>
 
@@ -202,12 +209,12 @@
                 <!-- top-section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-                <section class="top-section">
-                    <div class="user-info">
+                <section class="section-frame">
+                    <div class="box">
                         <div class="user-profile-img">
                             <img src="../assets/img/male-placeholder-image.jpeg" class="profile-img" alt="User image">
                         </div>
-                        <div class="user-info-main">
+                        <div class="box-header">
                             <h3>First Last name</h3>
                             <span class="user-underline"></span>
                             <p>
@@ -242,35 +249,40 @@
                 <!-- Content Section 1 - Game Card's
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-                <section class="content-section-1">
-                    <div class="user-profile-tools">
-                        <div class="tool-list">
-                            <button class="btn-b user-tools-btn"><img src="../assets/icons/black/Black-settings.png" alt="User tool icon" class="tool-icon"></button>
+                <section class="section-frame">
+                    <div class="box">
+                        <div class="box-content">
+                            <button class="btn-b user-tools-btn"><img src="../assets/icons/black/Black-settings.png"
+                                    alt="User tool icon" class="tool-icon"></button>
                             <label for="tool-item" class="btn-b user-tools-btn">
-                                <img src="../assets/icons/black/Black-envelope.png" alt="User tool icon" class="tool-icon">
+                                <img src="../assets/icons/black/Black-envelope.png" alt="User tool icon"
+                                    class="tool-icon">
                             </label>
-        
+
                             <!-- Dropdown menu display -->
                             <input type="checkbox" id="tool-item">
                             <section class="display-tool-card">
-        
+
                                 <!-- Dropdown menu header -->
                                 <div class="tool-header">
                                     <label for="tool-item" class="btn-exit">
-                                        <img src="../assets/icons/black/Black-closesquare.png" alt="Dropdown back button icon"
-                                            class="icon-1">
+                                        <img src="../assets/icons/black/Black-closesquare.png"
+                                            alt="Dropdown back button icon" class="icon-1">
                                     </label>
                                     <h3>Inbox</h3>
                                     <div class="message-box">
-                                    <h4>New message</h4>
-                                    <p>Here is your new message</p>
-                                </div>
+                                        <h4>New message</h4>
+                                        <p>Here is your new message</p>
+                                    </div>
                                 </div>
                             </section>
 
-                            <button class="btn-b user-tools-btn"><img src="../assets/icons/black/Black-wallet.png" alt="User tool icon" class="tool-icon"></button>
-                            <button class="btn-b user-tools-btn"><img src="../assets/icons/black/Black-upload.png" alt="User tool icon" class="tool-icon"></button>
-                            <button class="btn-b user-tools-btn"><img src="../assets/icons/black/Black-heart.png" alt="User tool icon" class="tool-icon"></button>
+                            <button class="btn-b user-tools-btn"><img src="../assets/icons/black/Black-wallet.png"
+                                    alt="User tool icon" class="tool-icon"></button>
+                            <button class="btn-b user-tools-btn"><img src="../assets/icons/black/Black-upload.png"
+                                    alt="User tool icon" class="tool-icon"></button>
+                            <button class="btn-b user-tools-btn"><img src="../assets/icons/black/Black-heart.png"
+                                    alt="User tool icon" class="tool-icon"></button>
                         </div>
                     </div>
                 </section>
@@ -300,9 +312,9 @@
         <footer class="page-footer">
             <div class="page-footer-layout">
                 <div class="footer-btn-layout">
-                    <a href="../index.html" class="btn-a btn-foot">Home</a>
-                    <a href="../pages/check-out.html" class="btn-a btn-foot">Checkout</a>
-                    <a href="../pages/contact.html" class="btn-a btn-foot">Contact</a>
+                    <a href="../index.html" class="btn btn-foot">Home</a>
+                    <a href="../pages/check-out.html" class="btn btn-foot">Checkout</a>
+                    <a href="../pages/contact.html" class="btn btn-foot">Contact</a>
                 </div>
                 <div class="text-box-foot">
                     <p>Copyright reserved GameHub 2021</p>
