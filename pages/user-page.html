@@ -8,11 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>GameHub | User-page</title>
-    <meta name="description"
-        content="
-        Here you will find a range of pc games. you want a old or new game? A super good deal or a pre-release game? 
-        Maybe you want to sell a old game you have dusting in the corner? 
-        You came to the right place!Thanks for choosing GameHub for your place to get your games or to clear space in your shelf">
+    <meta name="description" content="User page, where all your information is storage">
     <meta name="keywords" content="Gaming, sale, deals, buy" />
     <meta name="subject" content="your website's subject">
     <meta name="language" content="no">
@@ -156,9 +152,9 @@
 
                 <!-- Dropdown cart -->
                 <div class="nav-section">
-                    <label for="dropdown-cart" class="btn btn-s btn-green">
+                    <a href="../pages/check-out.html" class="btn btn-s btn-green">
                         <img src="../assets/icons/black/black-shoppingcart2.png" alt="Menu icon" class="icon">
-                    </label>
+                    </a>
 
                     <!-- Dropdown menu display -->
                     <input type="checkbox" id="dropdown-cart">
@@ -235,13 +231,33 @@
                                     <p>10 stk</p>
                                 </div>
                             </div>
-                            <div class="social-links">
-                                <a href="#"><img src="../assets/icons/black/Black-socialfacebook.png"
-                                        alt="Facebook icon"></a>
-                                <a href="#"><img src="../assets/icons/black/Black-sociallinkedin.png"
-                                        alt="Linkedin icon"></a>
-                                <a href="#"><img src="../assets/icons/black/Black-github.png" alt="GitHub icon"></a>
-                            </div>
+                        </div>
+                        <div class="social-links">
+                            <span class="vertical-line">
+                                <a href="#" class="general-link social-link" target="_blank" data-value="Github">
+                                    <img src="../assets/icons/black/Black-github.png" alt="Social icon Github"
+                                        class="icon social-icon">
+                                </a>
+                            </span>
+
+                            <span class="vertical-line">
+                                <a href="#" class="general-link social-link" target="_blank" data-value="Facebook">
+                                    <img src="../assets/icons/black/Black-socialfacebook.png"
+                                        alt="Social icon Facebook" class="icon social-icon">
+                                </a>
+                            </span>
+
+                            <span class="vertical-line">
+                                <a href="#" class="general-link social-link" target="_blank" data-value="Linkedin">
+                                    <img src="../assets/icons/black/Black-sociallinkedin.png"
+                                        alt="Social icon Linkedin" class="icon social-icon">
+                                </a>
+                            </span>
+
+                            <a href="#" class="general-link social-link" target="_blank" data-value="Twitter">
+                                <img src="../assets/icons/black/Black-socialtwitter.png" alt="Social icon Twitter"
+                                    class="icon social-icon">
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -254,29 +270,8 @@
                         <div class="box-content">
                             <button class="btn-b user-tools-btn"><img src="../assets/icons/black/Black-settings.png"
                                     alt="User tool icon" class="tool-icon"></button>
-                            <label for="tool-item" class="btn-b user-tools-btn">
-                                <img src="../assets/icons/black/Black-envelope.png" alt="User tool icon"
-                                    class="tool-icon">
-                            </label>
-
-                            <!-- Dropdown menu display -->
-                            <input type="checkbox" id="tool-item">
-                            <section class="display-tool-card">
-
-                                <!-- Dropdown menu header -->
-                                <div class="tool-header">
-                                    <label for="tool-item" class="btn-exit">
-                                        <img src="../assets/icons/black/Black-closesquare.png"
-                                            alt="Dropdown back button icon" class="icon-1">
-                                    </label>
-                                    <h3>Inbox</h3>
-                                    <div class="message-box">
-                                        <h4>New message</h4>
-                                        <p>Here is your new message</p>
-                                    </div>
-                                </div>
-                            </section>
-
+                            <button class="btn-b user-tools-btn"><img src="../assets/icons/black/Black-envelope.png"
+                                    alt="User tool icon" class="tool-icon"></button>
                             <button class="btn-b user-tools-btn"><img src="../assets/icons/black/Black-wallet.png"
                                     alt="User tool icon" class="tool-icon"></button>
                             <button class="btn-b user-tools-btn"><img src="../assets/icons/black/Black-upload.png"

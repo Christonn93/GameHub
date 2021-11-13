@@ -69,16 +69,6 @@ body {
     background-color: var(--ghub-white);
 }
 
-/* header {} */
-
-main {
-    background-color: var(--ghub-black);
-    margin: 15px;
-    border-radius: 0.5em;
-}
-
-/* section {} */
-
 address {
     display: flex;
     flex-direction: column;
@@ -87,8 +77,6 @@ address {
     font-style: normal;
     padding: 5px;
 }
-
-/* div {} */
 
 footer {
     display: flex;
@@ -339,6 +327,8 @@ a {
 .page-wrapper-inner {
     background-color: var(--ghub-black);
     margin: 15px;
+    border-radius: 0.5em;
+    min-height: 100vh;
 }
 
 .page-content-frame {
@@ -1286,10 +1276,6 @@ form>div {
     flex-direction: column;
 }
 
-.user-tools-btn{
-    border-radius: 50%;
-    margin-top: 10px;
-}
 
 /* Dropdown */
 #tool-item,
@@ -1470,23 +1456,6 @@ form {
     border-radius: 50%;
 }
 
-.user-profile-img {
-    flex: 1 1;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-basis: 150px;
-}
-
-.profile-img {
-    border-radius: 50%;
-    width: 150px;
-    border: 1px solid var(--ghub-black);
-    box-shadow: var(--shadow2);
-}
-
 .game-img-area {
     display: flex;
     align-items: center;
@@ -1643,123 +1612,6 @@ form {
 
 #card-7 {
     background-image: url(../assets/img/itemgallery/capsule_616x353.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    content: attr(aria-label);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-#card-8 {
-    background-image: url(../assets/img/itemgallery/flight\ sim.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    content: attr(aria-label);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-#card-9 {
-    background-image: url(../assets/img/itemgallery/GTA-6-Ryktene-flyr-fort-og-tett-men-det-er.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    content: attr(aria-label);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-#card-10 {
-    background-image: url(../assets/img/itemgallery/minecraft.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    content: attr(aria-label);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-#card-11 {
-    background-image: url(../assets/img/itemgallery/Need-for-Speed-Hot-Pursuit-Remastered-4-1.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    content: attr(aria-label);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-#card-12 {
-    background-image: url(../assets/img/itemgallery/pubg.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    content: attr(aria-label);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-#card-13 {
-    background-image: url(../assets/img/itemgallery/Roblox.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    content: attr(aria-label);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-#card-14 {
-    background-image: url(../assets/img/itemgallery/fortnight.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    content: attr(aria-label);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-#card-15 {
-    background-image: url(../assets/img/itemgallery/capsule_616x353.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    content: attr(aria-label);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-#card-16 {
-    background-image: url(../assets/img/itemgallery/flight\ sim.jpg);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
