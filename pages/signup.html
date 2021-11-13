@@ -7,7 +7,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>GameHub | Login</title>
+    <title>GameHub | Register</title>
     <meta name="description"
         content="
         Here you will find a range of pc games. you want a old or new game? A super good deal or a pre-release game? 
@@ -35,7 +35,7 @@
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="../css/indexstyle.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
 
     <!-- FrameWork Css 
   <link rel="stylesheet" href="./config/css/normalize.css">
@@ -44,7 +44,7 @@
 
     <!-- Favicon/icons
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="../favicon.png">
 
     <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -58,11 +58,12 @@
         <!-- Header section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <header class="page-header">
+            <a href="../pages/user-setup.html" class="btn btn-s btn-green">Log in</a>
             <div class="page-nav">
 
                 <!-- Dropdown menu -->
                 <div class="nav-section">
-                    <label for="dropdown-menu" class="btn-b btn-nav">
+                    <label for="dropdown-menu" class="btn btn-s btn-green">
                         <img src="../assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
                     </label>
                 </div>
@@ -73,12 +74,10 @@
                     <!-- Dropdown menu header -->
                     <div class="menu-header">
                         <a href="../index.html">
-                            <img src="../assets/logo/rsz_gamehub_logo4.png" alt="Dropdown company logo"
-                                class="dropdown-menu-logo">
+                            <img src="../assets/logo/rsz_gamehub_logo4.png" alt="logo" class="menu-logo">
                         </a>
-                        <label for="dropdown-menu" class="btn-b btn-exit">
-                            <img src="../assets/icons/green/Green-undo.png" alt="Dropdown back button icon"
-                                class="icon-1">
+                        <label for="dropdown-menu" class="btn-exit">
+                            <img src="../assets/icons/black/Black-closesquare.png" alt="icon" class="icon-1">
                         </label>
                     </div>
 
@@ -86,18 +85,17 @@
                     <ul class="menu-list">
 
                         <li class="list-item-search">
-                            <label for="search">
-                                <input id="search" type="search" class="menu-link icon-place-search"
-                                    placeholder="Search">
-                            </label>
-                            <button class="menu-link-btn">Search</button>
+                            <div class="search">
+                                <input type="search" id="search" class="search-text-input" placeholder="Search">
+                                <input type="submit" class="btn btn-black btn-search" value="search">
+                            </div>
                         </li>
 
                         <li class="list-item-home">
                             <div class="menu-item">
                                 <a href="../index.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-home.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Home</a>
+                                        class="menu-icon">Home</a>
                             </div>
                         </li>
 
@@ -105,7 +103,7 @@
                             <div class="menu-item">
                                 <a href="../pages/game-list.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-gridicon.png" alt="menu icon"
-                                        class="menu-icon">&ensp;All
+                                        class="menu-icon">All
                                     Games</a>
                             </div>
                         </li>
@@ -114,8 +112,16 @@
                             <div class="menu-item">
                                 <a href="#" class="menu-link not-active">
                                     <img src="../assets/icons/green/Green-percent.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Game
+                                        class="menu-icon">Game
                                     deals</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-home">
+                            <div class="menu-item">
+                                <a href="../pages/user-page.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-personperson.png" alt="menu icon"
+                                        class="menu-icon">User Page</a>
                             </div>
                         </li>
 
@@ -123,7 +129,7 @@
                             <div class="menu-item">
                                 <a href="../pages/check-out.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-setting.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Checkout</a>
+                                        class="menu-icon">Checkout</a>
                             </div>
                         </li>
 
@@ -131,7 +137,7 @@
                             <div class="menu-item">
                                 <a href="../pages/contact.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-semail.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Contact</a>
+                                        class="menu-icon">Contact</a>
                             </div>
                         </li>
 
@@ -139,7 +145,7 @@
                 </section>
 
                 <!-- Logo -->
-                <div class="nav-section">
+                <div class="nav-section nav-logo">
                     <a href="../index.html" class="desktop-logo">
                         <img src="../assets/logo/rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
                     </a>
@@ -150,8 +156,8 @@
 
                 <!-- Dropdown cart -->
                 <div class="nav-section">
-                    <label for="dropdown-cart" class="btn-b btn-nav">
-                        <img src="./assets/icons/black/black-shoppingcart2.png" alt="Menu icon" class="icon">
+                    <label for="dropdown-cart" class="btn btn-s btn-green">
+                        <img src="../assets/icons/black/black-shoppingcart2.png" alt="Menu icon" class="icon">
                     </label>
 
                     <!-- Dropdown menu display -->
@@ -206,15 +212,19 @@
                 <section class="top-section">
                     <div class="register-form">
                         <div class="img-box">
-                            <img src="../assets/img/bannerimg/retro-games-vector-logo-geek-gaming-gamepad-hand-neon-sign-modern-trend-design-vivid-illustration-promotional-character-vintage-118692182.jpg"
-                                alt="Login-img" class="img-md">
+                            <img src="../assets/logo/GameHub_Logo4.png" alt="Company logo" class="img-md">
                         </div>
-                        <div class="text-box underline">
-                            <h1>Welcome</h1>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-header">
+                                    <h1>Welcome</h1>
                             <p>We are so happy to find out that you want to join our community</p>
                             <p>When signing up, are you agreeing to our community guidelines, terms of use & our privacy
                                 agreement.</p>
                             <p><a href="#" class="user-form-link">Please read this before signing up</a></p>
+                                </div>
+                            </div>
+                            
                         </div>
 
                         <form action="../pages/user-page.html" class="from-frame">
@@ -268,7 +278,7 @@
                             </div>
 
                             <div class="form-footer">
-                                <button class="btn-b login-btn" type="submit">Log in</button>
+                                <button class="btn login-btn" type="submit">Log in</button>
                             </div>
                         </form>
 
@@ -305,9 +315,9 @@
         <footer class="page-footer">
             <div class="page-footer-layout">
                 <div class="footer-btn-layout">
-                    <a href="../index.html" class="btn-a btn-foot">Home</a>
-                    <a href="../pages/check-out.html" class="btn-a btn-foot">Checkout</a>
-                    <a href="../pages/contact.html" class="btn-a btn-foot">Contact</a>
+                    <a href="../index.html" class="btn btn-foot">Home</a>
+                    <a href="../pages/check-out.html" class="btn btn-foot">Checkout</a>
+                    <a href="../pages/contact.html" class="btn btn-foot">Contact</a>
                 </div>
                 <div class="text-box-foot">
                     <p>Copyright reserved GameHub 2021</p>

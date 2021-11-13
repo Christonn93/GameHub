@@ -1085,6 +1085,78 @@ tr {
 /* ----------------------
     3.7 Forms
    ---------------------- */
+
+/* Login & Register */
+.login-form,
+.register-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ghub-white);
+}
+
+.underline {
+    border: 0;
+    border-bottom: 1px solid var(--ghub-black);
+    margin-bottom: 5px;
+}
+
+.form {
+    border: 0;
+    background-color: var(--ghub-white);
+}
+
+form>div {
+    margin: 20px;
+}
+
+.form-footer {
+    margin-top: 15px;
+}
+
+.form-input-area {
+    margin: 15px;
+}
+
+.form-input-label {
+    background-color: none;
+}
+
+.form-input-style {
+    border: 1px solid var(--ghub-black);
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+
+}
+
+.form-input-style:focus {
+    border: none;
+    outline: 1px solid var(--ghub-red);
+    box-shadow: var(--shadow3);
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+}
+
+.user-form-link {
+    text-decoration: none;
+    border-bottom: 2px solid var(--ghub-red);
+    color: var(--ghub-black);
+}
+
+
+
+
+
+
+
+
+
+
 form {
     border: 0;
     width: 100%;

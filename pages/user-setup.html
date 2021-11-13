@@ -35,7 +35,7 @@
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="../css/indexstyle.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
 
     <!-- FrameWork Css 
   <link rel="stylesheet" href="./config/css/normalize.css">
@@ -44,7 +44,7 @@
 
     <!-- Favicon/icons
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="../favicon.png">
 
     <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -58,12 +58,13 @@
         <!-- Header section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <header class="page-header">
+            <a href="../pages/user-setup.html" class="btn btn-s btn-green">Log in</a>
             <div class="page-nav">
 
                 <!-- Dropdown menu -->
                 <div class="nav-section">
-                    <label for="dropdown-menu" class="btn-b btn-nav">
-                        <img src="../assets/icons/black/Black-menu.png" alt="Menu icon" class="icon">
+                    <label for="dropdown-menu" class="btn btn-s btn-green">
+                        <img src="../assets/icons/black/black-Menu.svg" alt="Menu icon" class="icon">
                     </label>
                 </div>
                 <!-- Dropdown menu display -->
@@ -73,12 +74,10 @@
                     <!-- Dropdown menu header -->
                     <div class="menu-header">
                         <a href="../index.html">
-                            <img src="../assets/logo/rsz_gamehub_logo4.png" alt="Dropdown company logo"
-                                class="dropdown-menu-logo">
+                            <img src="../assets/logo/rsz_gamehub_logo4.png" alt="logo" class="menu-logo">
                         </a>
-                        <label for="dropdown-menu" class="btn-b btn-exit">
-                            <img src="../assets/icons/green/Green-undo.png" alt="Dropdown back button icon"
-                                class="icon-1">
+                        <label for="dropdown-menu" class="btn-exit">
+                            <img src="../assets/icons/black/Black-closesquare.png" alt="icon" class="icon-1">
                         </label>
                     </div>
 
@@ -86,18 +85,17 @@
                     <ul class="menu-list">
 
                         <li class="list-item-search">
-                            <label for="search">
-                                <input id="search" type="search" class="menu-link icon-place-search"
-                                    placeholder="Search">
-                            </label>
-                            <button class="menu-link-btn">Search</button>
+                            <div class="search">
+                                <input type="search" id="search" class="search-text-input" placeholder="Search">
+                                <input type="submit" class="btn btn-black btn-search" value="search">
+                            </div>
                         </li>
 
                         <li class="list-item-home">
                             <div class="menu-item">
                                 <a href="../index.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-home.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Home</a>
+                                        class="menu-icon">Home</a>
                             </div>
                         </li>
 
@@ -105,7 +103,7 @@
                             <div class="menu-item">
                                 <a href="../pages/game-list.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-gridicon.png" alt="menu icon"
-                                        class="menu-icon">&ensp;All
+                                        class="menu-icon">All
                                     Games</a>
                             </div>
                         </li>
@@ -114,8 +112,16 @@
                             <div class="menu-item">
                                 <a href="#" class="menu-link not-active">
                                     <img src="../assets/icons/green/Green-percent.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Game
+                                        class="menu-icon">Game
                                     deals</a>
+                            </div>
+                        </li>
+
+                        <li class="list-item-home">
+                            <div class="menu-item">
+                                <a href="../pages/user-page.html" class="menu-link">
+                                    <img src="../assets/icons/green/Green-personperson.png" alt="menu icon"
+                                        class="menu-icon">User Page</a>
                             </div>
                         </li>
 
@@ -123,7 +129,7 @@
                             <div class="menu-item">
                                 <a href="../pages/check-out.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-setting.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Checkout</a>
+                                        class="menu-icon">Checkout</a>
                             </div>
                         </li>
 
@@ -131,7 +137,7 @@
                             <div class="menu-item">
                                 <a href="../pages/contact.html" class="menu-link">
                                     <img src="../assets/icons/green/Green-semail.png" alt="menu icon"
-                                        class="menu-icon">&ensp;Contact</a>
+                                        class="menu-icon">Contact</a>
                             </div>
                         </li>
 
@@ -139,7 +145,7 @@
                 </section>
 
                 <!-- Logo -->
-                <div class="nav-section">
+                <div class="nav-section nav-logo">
                     <a href="../index.html" class="desktop-logo">
                         <img src="../assets/logo/rsz_1gamehub_logo4.png" alt="Logo-image" class="nav-logo">
                     </a>
@@ -150,7 +156,7 @@
 
                 <!-- Dropdown cart -->
                 <div class="nav-section">
-                    <label for="dropdown-cart" class="btn-b btn-nav">
+                    <label for="dropdown-cart" class="btn btn-s btn-green">
                         <img src="../assets/icons/black/black-shoppingcart2.png" alt="Menu icon" class="icon">
                     </label>
 
@@ -203,17 +209,19 @@
                 <!-- top-section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-                <section class="top-section">
+                <section class="section-frame">
                     <div class="login-form">
                         <div class="img-box">
-                            <img src="../assets/img/bannerimg/retro-games-vector-logo-geek-gaming-gamepad-hand-neon-sign-modern-trend-design-vivid-illustration-promotional-character-vintage-118692182.jpg"
-                                alt="Login-img" class="img-md">
+                            <img src="../assets/logo/GameHub_Logo4.png" alt="Company logo"  class="img-md">
                         </div>
-                        <div class="text-box underline">
-                            <h1>Login</h1>
-                            <p>Welcome back!</p>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-header">
+                                    <h1>Login</h1>
+                                    <p>Welcome back!</p>
+                                </div>
+                            </div>
                         </div>
-
                         <form action="../pages/user-page.html" class="from-frame">
                             <div class="form-input-area">
                                 <label class="form-input-label" for="user-name">
@@ -231,12 +239,17 @@
                                 </label>
                             </div>
                             <div class="form-footer">
-                                <button class="btn-b login-btn" type="submit">Log in</button>
+                                <button class="btn btn-green btn-l login-btn" type="submit">Log in</button>
                             </div>
                         </form>
-                        <div class="text-box form">
-                            <h4>Not part of our community yet?</h4>
-                            <p>Join our community <a href="../pages/signup.html" class="user-form-link">here</a></p>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-header">
+                                    <h3>Not part of our community yet?</h3>
+                                    <p>Join our community <a href="../pages/signup.html" class="user-form-link">here</a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -244,48 +257,46 @@
                 <!-- content-section-2
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-                <section class="content-section-2">
-                    <div class="banner-frame-desktop">
-                        <div class="banner-img">
-                            <img src="../assets/img/bannerimg/Razer-BlackWidow-Kraken-Basilisk-Essential-Press-Size-500x500.png"
-                                alt="banner img" class="banner-img-desktop">
+                <section class="content-section-3">
+                    <div class="banner-box">
+                        <div class="banner-box-header">
+                            <h4>A word from our sponsor, Razer</h4>
                         </div>
-                        <div class="banner-text-area-desktop">
-                            <h3>A word from our sponsor, Razer</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est est, aliquet at
-                                libero non, laoreet pharetra nibh. Vivamus fermentum leo lacus, a varius diam feugiat
-                                eu. Sed vel elementum dolor. Etiam id risus urna. Aliquam gravida ex tempus lorem
-                                tempor, sit amet feugiat nisl posuere. Donec est orci, varius.
-                            </p>
-                            <p>
-                                Want to get to know our sponsor more? <a href="#" class="banner-link">Check them out</a>
-                            </p>
-                        </div>
-                    </div>
+                        <!-- Banner Box content -->
+                        <div class="banner-box-content">
+                            <div class="banner-box-content-top">
+                                <div class="banner-box-content-l">
+                                    <div class="banner-box-img">
+                                        <img src="../assets/img/bannerimg/Razer-BlackWidow-Kraken-Basilisk-Essential-Press-Size-500x500.png"
+                                            alt="banner img" class="banner-img">
+                                    </div>
+                                </div>
+                                <div class="banner-box-content-r">
 
-                    <div class="banner-frame-mobile">
-                        <div class="banner-img">
-                            <img src="../assets/img/bannerimg/Razer-BlackWidow-Kraken-Basilisk-Essential-Press-Size-500x500.png"
-                                alt="banner img" class="banner-img-mobile">
-                        </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est est,
+                                        aliquet at
+                                        libero non, laoreet pharetra nibh. Vivamus fermentum leo lacus, a varius diam
+                                        feugiat
+                                        eu. Sed vel elementum dolor. Etiam id risus urna. Aliquam gravida ex tempus
+                                        lorem
+                                        tempor, sit amet feugiat nisl posuere. Donec est orci, varius.
+                                    </p>
+                                    <!-- Banner Box footer -->
+                                    <div class="banner-box-footer">
+                                        <p>
+                                            Want to get to know our sponsor more? <a href="#" class="banner-link">Check
+                                                them out</a>
+                                        </p>
 
-                        <!-- Mobile text-area -->
-                        <div class="banner-text-area-mobile">
-                            <h3>A word from our sponsor, Razer</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est est, aliquet at
-                                libero non, laoreet pharetra nibh. Vivamus fermentum leo lacus, a varius diam feugiat
-                                eu. Sed vel elementum dolor. Etiam id risus urna. Aliquam gravida ex tempus lorem
-                                tempor, sit amet feugiat nisl posuere. Donec est orci, varius.
-                            </p>
-                            <p></p>
-                            <p>
-                                Want to get to know our sponsor more?<p><a href="#" class="banner-link"><b>Check them
-                                            out</b></a></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
+
+
             </div>
         </main>
 
@@ -294,9 +305,9 @@
         <footer class="page-footer">
             <div class="page-footer-layout">
                 <div class="footer-btn-layout">
-                    <a href="../index.html" class="btn-a btn-foot">Home</a>
-                    <a href="../pages/check-out.html" class="btn-a btn-foot">Checkout</a>
-                    <a href="../pages/contact.html" class="btn-a btn-foot">Contact</a>
+                    <a href="../index.html" class="btn btn-foot">Home</a>
+                    <a href="../pages/check-out.html" class="btn btn-foot">Checkout</a>
+                    <a href="../pages/contact.html" class="btn btn-foot">Contact</a>
                 </div>
                 <div class="text-box-foot">
                     <p>Copyright reserved GameHub 2021</p>
