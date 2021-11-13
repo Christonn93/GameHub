@@ -185,7 +185,7 @@ footer {
         0px 0px 10px #e6e3e3,
         0px 0px 10px #9c9a9a;
     --shadow4: 0.5rem 0.5rem var(--ghub-green),
-        -0.5rem -0.5rem var(--ghub-red);
+              -0.5rem -0.5rem var(--ghub-red);
 
 }
 
@@ -447,8 +447,6 @@ a {
     font-size: var(--fs-body-md);
 }
 
-
-
 .text-box-2 {
     display: felx;
     flex: 1 1 80%;
@@ -569,6 +567,7 @@ a {
     border: 0.1em solid black;
     cursor: pointer;
     box-shadow: 0px 5px 20px var(--ghub-silver);
+    margin: 5px;
 }
 
 .btn:hover {
@@ -760,43 +759,78 @@ a {
 
 
 /* Game Card 2 */
-.game-card-2 {
+.flex-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    flex: 0 0 100%;
-    margin: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-}
-
-.game-img-2 {
     flex: 1 1 100%;
-    max-width: 350px;
-}
-
-.card-frame-outer {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: white;
-    padding: 0 20px 20px;
 }
 
-.text-box-2 {
+.flex-col {
     display: flex;
     flex-direction: column;
-    flex: 1 1 80%;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
 }
 
-.btn-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: baseline;
-    flex: 1 1 20%;
+
+/* list card */
+.list-card {
+    border: 1px solid var(--ghub-black);
+    height: max-content;
+    margin: 15px;
+    box-shadow: var(--shadow2);
+    border-radius: 0.25em;
+    flex-wrap: wrap;
+}
+
+.list-card-img {
+    height: max-content;
+    background-color: var(--ghub-silver);
+}
+
+.med-img {
+    padding: 5px;
+    max-width: 235px;
+}
+
+.list-card-content {
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+}
+
+.list-card-header {
+    padding-left: 5px;
+}
+
+.list-card-main {
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-wrap: wrap;
+}
+
+.list-card-footer {
+    justify-content: space-between;
+    align-content: space-between;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+}
+
+.list-card-price-tag {
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: flex-start;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+}
+
+.list-card-btn {
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: flex-end;
+    align-content: baseline;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
 }
 
 
@@ -1117,7 +1151,6 @@ tr {
 }
 
 /* --- 3.6.4 Table data --- */
-
 .table-data {
     background-color: var(--ghub-white);
     font-family: var(--ff-body);
@@ -1303,12 +1336,6 @@ label:hover {
     border-radius: 15px;
 }
 
-
-
-
-
-
-
 form {
     border: 0;
     width: 100%;
@@ -1344,7 +1371,6 @@ form {
 }
 
 /* --- 3.7.1 Form field --- */
-
 .form-input-area {
     margin: 10px;
 }
@@ -1354,7 +1380,6 @@ form {
 }
 
 /* --- 3.7.2 Labels --- */
-
 .form-label {
     background-color: none;
 }
@@ -1370,7 +1395,6 @@ form {
 }
 
 /* --- 3.7.3 Inputs --- */
-
 .form-text-input {
     background-color: white;
     border: 1px solid var(--ghub-black);
@@ -1425,7 +1449,6 @@ form {
     4. Images & Icons
    ====================== */
 /* --- 4.1 Images --- */
-
 .map-img {
     width: 100%;
     border-radius: 5px;
@@ -1498,7 +1521,6 @@ form {
     margin-bottom: 10px;
 }
 
-
 /* --- 4.2 Icons --- */
 .menu-icon {
     width: 20px;
@@ -1517,7 +1539,6 @@ form {
 /* ======================
     5. ID
    ====================== */
-
 #card-1 {
     background-image: url(../assets/img/itemgallery/GTA-6-Ryktene-flyr-fort-og-tett-men-det-er.jpg);
     background-size: contain;
@@ -1751,18 +1772,19 @@ form {
     width: 100%;
 }
 
-
 /* ======================
     6. Media Queries 
    ====================== */
 
 @media only screen and (max-width: 500px) {
-    .banner-frame-desktop {
-        display: none;
-    }
-
-    .banner-frame-mobile {
-        display: flex;
+    .list-card {
+        border: 1px solid var(--ghub-black);
+        height: max-content;
+        max-width: 238px;
+        margin: 15px;
+        box-shadow: var(--shadow3);
+        border-radius: 0.25em;
+        flex-wrap: wrap;
     }
 
     .input-banner {
