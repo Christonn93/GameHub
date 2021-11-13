@@ -79,7 +79,7 @@ main {
 
 /* section {} */
 
-address{
+address {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -90,7 +90,7 @@ address{
 
 /* div {} */
 
-footer{
+footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -98,6 +98,42 @@ footer{
     align-items: center;
     background-color: var(--ghub-black);
 }
+
+/* ======== Footer section ======== */
+.page-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ghub-black);
+}
+
+.page-footer-layout {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 1.25em;
+    background-color: var(--ghub-white);
+}
+
+.footer-btn-layout {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.text-box-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
 /* --- 1.2 CSS VARIABLES --- */
 
 :root {
@@ -139,8 +175,8 @@ footer{
     --ghub-silver: #726c6c;
     /* -- Light periwinkle */
     --ghub-periwinkle: #c5d1d9;
-     /* -- Light absolute Zero */
-     --ghub-AZ: #074dd9;
+    /* -- Light absolute Zero */
+    --ghub-AZ: #074dd9;
 
 
     --shadow: 2px 5px 20px var(--ghub-black);
@@ -174,12 +210,25 @@ footer{
     align-items: center;
 }
 
+.nav-logo {
+    display: flex;
+    flex: 1 1 100%;
+}
+
 .section-frame {
-    margin: 10px;
+    margin: 10px 15px 10px 15px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     background-color: var(--ghub-af);
+    border-radius: 0.5em;
+}
+
+.section-frame-remove-bg {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
     border-radius: 0.5em;
 }
 
@@ -193,10 +242,13 @@ footer{
     flex-wrap: wrap;
     margin: 10px 15px 10px 15px;
     background-color: var(--ghub-af);
+    border-radius: 0.5em;
 }
 
 .game-section-header,
 .game-section-footer {
+    display: flex;
+    justify-content: space-between;
     color: var(--ghub-green);
     font-family: var(--ff-heading);
     border-bottom: 2px solid var(--ghub-green);
@@ -207,31 +259,31 @@ footer{
     2. TYPOGRAPHY
    ====================== */
 
-h1{
+h1 {
     font-family: var(--ff-heading);
     font-size: var(--fs-h3);
     margin: 5px;
 }
 
-h2{
+h2 {
     font-family: var(--ff-heading);
     font-size: var(--fs-h2);
     margin: 5px;
 }
 
-h3{
+h3 {
     font-family: var(--ff-heading);
     font-size: var(--fs-h3);
     margin: 5px;
 }
 
-h4{
+h4 {
     font-family: var(--ff-heading);
     font-size: var(--fs-h4);
     margin: 5px;
 }
 
-h5{
+h5 {
     font-family: var(--ff-heading);
     font-size: var(--fs-h5);
     margin: 5px;
@@ -249,23 +301,23 @@ p {
     margin: 5px;
 }
 
-a{
+a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--ghub-black); 
+    color: var(--ghub-black);
 }
 
-.text-size{
+.text-size {
     font-family: var(--ff-heading);
     font-size: var(--fs-h4);
 }
 
-.text-p{
+.text-p {
     font-family: var(--ff-body);
     font-size: var(--fs-body-sm);
 }
 
-.price-tag{
+.price-tag {
     padding-right: 25px;
     color: var(--ghub-AZ);
 }
@@ -328,7 +380,7 @@ a{
 }
 
 .box-content-l,
-.box-content-r{
+.box-content-r {
     display: flex;
     flex-direction: column;
     flex: 1 1 50%;
@@ -337,21 +389,21 @@ a{
     align-items: stretch;
 }
 
-.box-left{
+.box-left {
     display: flex;
     flex-direction: column;
     justify-content: right;
     align-items: stretch;
 }
 
-.box-right{
+.box-right {
     display: flex;
     flex-direction: column;
     justify-content: right;
     align-items: stretch;
 }
 
-.box-img{
+.box-img {
     width: 100%;
 }
 
@@ -368,7 +420,7 @@ a{
     justify-content: center;
     align-items: center;
     margin: 0;
-    
+
 }
 
 /* -- Specific box layout -- */
@@ -395,24 +447,122 @@ a{
     font-size: var(--fs-body-md);
 }
 
-.card-text-box {
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.25em;
-    margin-top: 5px;
-    background-color: white;
-    padding: 5px;
-}
+
 
 .text-box-2 {
     display: felx;
     flex: 1 1 80%;
 }
+
+/* Banner Box */
+.banner-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    margin: 10px 15px 10px 15px;
+    padding: 5px;
+    border-radius: 0.5em;
+    background-color: var(--ghub-white);
+    box-shadow: 0px 5px 20px var(--ghub-red);
+}
+
+.banner-box>div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.banner-box-header {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-box-content {
+    flex: 1 1 100%;
+}
+
+.banner-box-content-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+}
+
+.banner-box-content-l,
+.banner-box-content-r {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.banner-box-content-l {
+    max-width: 250px;
+}
+
+.banner-box-img {
+    width: 100%;
+}
+
+.banner-img {
+    padding: 15px;
+    border-radius: 25px;
+    max-width: 250px;
+}
+
+.banner-form-text-input {
+    background-color: white;
+    border: none;
+    outline: 1px solid var(--ghub-black);
+    box-shadow: var(--shadow3);
+    border-radius: 0.5em;
+    height: 30px;
+    min-width: 200px;
+    padding: 15px;
+
+}
+
+.banner-form-text-input:hover,
+.banner-form-text-input:focus {
+    border: none;
+    outline: 1px solid var(--ghub-red);
+    border-radius: 0.5em;
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+}
+
+.banner-box-footer {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner-text-box-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
 /* ----------------------
     3.3 Buttons / Links
    ---------------------- */
-.btn-a,
-.btn-b {
+.btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     text-decoration: none;
     padding: 0.35em 1.2em;
     border-radius: 0.25em;
@@ -421,11 +571,36 @@ a{
     box-shadow: 0px 5px 20px var(--ghub-silver);
 }
 
-.btn-a:hover,
-.btn-b:hover {
+.btn:hover {
     box-shadow: 0px 10px 20px #4F4D4D;
 }
 
+.btn-s {
+    margin: 5px;
+    max-width: 150px;
+}
+
+.btn-m {
+    margin: 5px;
+    width: 50%;
+}
+
+.btn-l {
+    margin: 5px;
+    width: 100%;
+}
+
+.btn-black {
+    background-color: var(--ghub-black);
+    color: var(--ghub-red);
+    font-family: var(--ff-body);
+}
+
+.btn-green {
+    background-color: var(--ghub-green);
+    color: var(--ghub-black);
+    font-family: var(--ff-body);
+}
 
 /* --- 3.3.1 Button element --- */
 .btn-nav {
@@ -437,7 +612,6 @@ a{
     top: 2px;
     right: 2px;
     background-color: var(--ghub-white);
-
 }
 
 .login-btn {
@@ -478,7 +652,7 @@ a{
     background-color: var(--ghub-green);
 }
 
-.form-btn{
+.form-btn {
     background-color: var(--ghub-green);
     color: var(--ghub-black);
     font-size: var(--fs-body-sm);
@@ -491,7 +665,7 @@ a{
     background-color: var(--ghub-black);
 }
 
-.user-tools-btn{
+.user-tools-btn {
     border-radius: 50%;
     margin-top: 10px;
 }
@@ -512,6 +686,11 @@ a{
     color: var(--ghub-black);
 }
 
+.general-link-green {
+    text-decoration: none;
+    color: var(--ghub-green);
+}
+
 .social-link {
     display: inline-flex;
     justify-content: baseline;
@@ -528,19 +707,6 @@ a{
     text-shadow: 0 0 3px #ccc;
 }
 
-.menu-link {
-    display: inline-block;
-    text-decoration: none;
-    font-family: var(--ff-body);
-    color: var(--ghub-green);
-}
-
-.menu-link > .not-active {
-    color: currentColor;
-    cursor: not-allowed;
-    opacity: 0.5;
-}
-
 .banner-link {
     text-decoration: none;
     color: var(--ghub-black);
@@ -551,6 +717,7 @@ a{
     color: var(--ghub-black);
     border-bottom: 2px solid var(--ghub-green);
 }
+
 /* ----------------------
     3.4 Cards
    ---------------------- */
@@ -567,6 +734,7 @@ a{
     flex-wrap: wrap;
     margin: 10px;
     flex: 1 1 300px;
+    
 }
 
 .card-frame {
@@ -575,16 +743,20 @@ a{
     box-shadow: 2px 2px 6px 0px var(--ghub-black);
 }
 
+.card-text-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25em;
+    margin-top: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
 .game-img-area {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.game-img {
-    max-width: 100%;
-}
-
 
 /* Game Card 2 */
 .game-showcase-card {
@@ -614,7 +786,7 @@ a{
 }
 
 /* Game Showcase */
-.game-showcase-frame{
+.game-showcase-frame {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -623,16 +795,16 @@ a{
     padding: 15px;
 }
 
-.showcase-top{
+.showcase-top {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
 }
 
-.showcase-middle{
+.showcase-middle {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .showcase-img-box {
@@ -646,7 +818,7 @@ a{
     min-width: 200px;
 }
 
-.showcase-shop{
+.showcase-shop {
     margin: 10px;
     display: inline-flex;
     flex-direction: row;
@@ -656,7 +828,7 @@ a{
 
 }
 
-.showcase-textbox{
+.showcase-textbox {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -664,7 +836,7 @@ a{
     margin-top: 15px;
 }
 
-.showcase-tb-header{
+.showcase-tb-header {
     display: flex;
     flex: row;
     justify-content: flex-start;
@@ -673,18 +845,18 @@ a{
     padding: 20px;
 }
 
-.showcase-tb-content{
+.showcase-tb-content {
     padding: 20px;
 }
 
-.showcase-btn-box{
+.showcase-btn-box {
     display: flex;
     margin-top: 50px;
     justify-content: stretch;
     align-items: stretch;
 }
 
-.showcase-bottom{
+.showcase-bottom {
     display: flex;
     flex-direction: row;
     flex: 1 1 100%;
@@ -692,18 +864,17 @@ a{
     justify-content: space-between;
 }
 
-.showcase-ul{
+.showcase-ul {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
 }
 
-.showcase-li{
+.showcase-li {
     font-family: var(--ff-body);
     font-size: var(--fs-body-md);
 }
-
 
 /* ----------------------
     3.5 Dropdown menu
@@ -734,17 +905,54 @@ label:hover {
 .menu {
     position: fixed;
     top: 150px;
-    left: 10px;
+    left: 1px;
     background-color: var(--ghub-white);
-    border: 0.1em solid black;
+    border: 0.1em solid var(--ghub-black);
+    border-radius: 0em 0em 0.5em 0.5em;
     box-shadow: 0px 5px 20px var(--ghub-silver);
-    width: 200px;
     padding: 5px;
     margin-bottom: 20px;
 }
 
-.menu-list{
+.menu-header {
+    display: flex;
+    padding: 5px;
+}
+
+.menu-logo{
+    margin-top: 15px;
+    margin-left: 65px;
+    width: 60px;
+}
+
+.search {
+    display: inline-flex;
+}
+
+.menu-list {
     padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.list-item-contact {
+    margin-top: 40px;
+}
+
+.search-text-input {
+    background-color: white;
+    border: none;
+    outline: 1px solid var(--ghub-black);
+    border-radius: 0.5em 0em 0em 0.5em;
+    height: 32px;
+}
+
+.btn-search {
+    border-radius:  0em 0.5em 0.5em 0em ;
+    height: 33px;
 }
 
 .menu-item {
@@ -753,25 +961,33 @@ label:hover {
     flex-wrap: wrap;
     padding: 0.35em 1.2em;
     border-radius: 0.25em;
-    border: 0.1em solid black;
+    border: 0.1em solid var(--ghub-black);
     cursor: pointer;
     box-shadow: 0px 5px 20px var(--ghub-silver);
     color: var(--ghub-black);
-    font-family: var(ff);
     background-color: var(--ghub-black);
 }
 
+.menu-item:hover {
+    box-shadow: 0px 5px 20px var(--ghub-black);
+}
+
+.menu-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--ff-heading);
+    color: #00FF00;
+}
+
+.menu-link>.not-active {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+
 .list-item-contact {
     margin-top: 40px;
-}
-
-li {
-    list-style-type: none;
-    margin-top: 15px;
-}
-
-li>a {
-    text-decoration: none;
 }
 
 .cart {
@@ -820,11 +1036,11 @@ label:hover {
     height: 200px;
 }
 
-.tool-header{
+.tool-header {
     position: relative;
 }
 
-.message-box{
+.message-box {
     border: 1px solid var(--ghub-silver);
     padding: 5px;
     margin-top: 5px;
@@ -835,7 +1051,7 @@ label:hover {
 /* ----------------------
     3.6 Table
    ---------------------- */
-.table{
+.table {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -844,23 +1060,23 @@ label:hover {
 
 /* --- 3.6.1 Table Header --- */
 
-.thead{
+.thead {
     font-family: var(--ff-heading);
 }
 
 /* --- 3.6.2 Table body --- */
-.table-body{
+.table-body {
     background-color: var(--ghub-af);
 }
 
 /* --- 3.6.3 Table row --- */
-tr{
+tr {
     border-bottom: 1px solid var(--ghub-silver);
 }
 
 /* --- 3.6.4 Table data --- */
 
-.table-data{
+.table-data {
     background-color: var(--ghub-white);
     font-family: var(--ff-body);
     padding: 5px;
@@ -909,7 +1125,7 @@ form {
     margin: 10px;
 }
 
-.checkbox-area{
+.checkbox-area {
     display: inline-flex;
 }
 
@@ -923,7 +1139,7 @@ form {
     cursor: pointer;
 }
 
-.adress-label{
+.adress-label {
     font-family: var(--ff-body);
     text-decoration: none;
     font-size: var(--fs-body-md);
@@ -934,6 +1150,7 @@ form {
 .form-text-input {
     background-color: white;
     border: 1px solid var(--ghub-black);
+    box-shadow: var(--shadow3);
     border-radius: 0.5em;
     height: 30px;
     width: 100%;
@@ -944,7 +1161,6 @@ form {
 .form-text-input:focus {
     border: none;
     outline: 1px solid var(--ghub-red);
-    box-shadow: var(--shadow3);
     height: 30px;
     width: 100%;
     padding: 15px;
@@ -976,7 +1192,7 @@ form {
     border-right: 1px solid var(--ghub-black);
 }
 
-.line-margin{
+.line-margin {
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -986,7 +1202,7 @@ form {
    ====================== */
 /* --- 4.1 Images --- */
 
-.map-img{
+.map-img {
     width: 100%;
     border-radius: 5px;
 }
@@ -1008,13 +1224,13 @@ form {
     border-radius: 50%;
 }
 
-.user-profile-img{
+.user-profile-img {
     flex: 1 1;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     flex-basis: 150px;
 }
 
@@ -1053,8 +1269,9 @@ form {
 }
 
 .mobile-logo {
-    margin: 15px 5px 5px;
     display: none;
+    margin-top: -40px;
+    margin-bottom: 10px;
 }
 
 
@@ -1068,12 +1285,16 @@ form {
     width: 15px;
 }
 
+.icon {
+    max-width: 20px;
+    max-height: 20px;
+}
 
 /* ======================
     5. ID
    ====================== */
 
-#card-1{
+#card-1 {
     background-image: url(../assets/img/itemgallery/GTA-6-Ryktene-flyr-fort-og-tett-men-det-er.jpg);
     background-size: contain;
     background-position: center center;
@@ -1086,7 +1307,7 @@ form {
     width: 100%;
 }
 
-#card-1-2{
+#card-1-2 {
     background-image: url(../assets/img/itemgallery/8mjns6fdhoy31.jpg);
     background-size: contain;
     background-position: center center;
@@ -1098,7 +1319,7 @@ form {
 
 }
 
-#card-1-3{
+#card-1-3 {
     background-image: url(../assets/img/itemgallery/GTA-6-Ryktene-flyr-fort-og-tett-men-det-er.jpg);
     background-size: contain;
     background-position: center center;
@@ -1111,7 +1332,7 @@ form {
     width: 100%;
 }
 
-#card-2{
+#card-2 {
     background-image: url(../assets/img/itemgallery/minecraft.jpg);
     background-size: contain;
     background-position: center center;
@@ -1124,7 +1345,7 @@ form {
     width: 100%;
 }
 
-#card-3{
+#card-3 {
     background-image: url(../assets/img/itemgallery/Need-for-Speed-Hot-Pursuit-Remastered-4-1.jpg);
     background-size: contain;
     background-position: center center;
@@ -1137,7 +1358,7 @@ form {
     width: 100%;
 }
 
-#card-4{
+#card-4 {
     background-image: url(../assets/img/itemgallery/pubg.jpg);
     background-size: contain;
     background-position: center center;
@@ -1150,7 +1371,7 @@ form {
     width: 100%;
 }
 
-#card-5{
+#card-5 {
     background-image: url(../assets/img/itemgallery/Roblox.jpg);
     background-size: contain;
     background-position: center center;
@@ -1163,7 +1384,7 @@ form {
     width: 100%;
 }
 
-#card-6{
+#card-6 {
     background-image: url(../assets/img/itemgallery/fortnight.jpg);
     background-size: contain;
     background-position: center center;
@@ -1176,7 +1397,7 @@ form {
     width: 100%;
 }
 
-#card-7{
+#card-7 {
     background-image: url(../assets/img/itemgallery/capsule_616x353.jpg);
     background-size: contain;
     background-position: center center;
@@ -1189,7 +1410,7 @@ form {
     width: 100%;
 }
 
-#card-8{
+#card-8 {
     background-image: url(../assets/img/itemgallery/flight\ sim.jpg);
     background-size: contain;
     background-position: center center;
@@ -1202,7 +1423,7 @@ form {
     width: 100%;
 }
 
-#card-9{
+#card-9 {
     background-image: url(../assets/img/itemgallery/GTA-6-Ryktene-flyr-fort-og-tett-men-det-er.jpg);
     background-size: contain;
     background-position: center center;
@@ -1215,7 +1436,7 @@ form {
     width: 100%;
 }
 
-#card-10{
+#card-10 {
     background-image: url(../assets/img/itemgallery/minecraft.jpg);
     background-size: contain;
     background-position: center center;
@@ -1228,7 +1449,7 @@ form {
     width: 100%;
 }
 
-#card-11{
+#card-11 {
     background-image: url(../assets/img/itemgallery/Need-for-Speed-Hot-Pursuit-Remastered-4-1.jpg);
     background-size: contain;
     background-position: center center;
@@ -1241,7 +1462,7 @@ form {
     width: 100%;
 }
 
-#card-12{
+#card-12 {
     background-image: url(../assets/img/itemgallery/pubg.jpg);
     background-size: contain;
     background-position: center center;
@@ -1254,7 +1475,7 @@ form {
     width: 100%;
 }
 
-#card-13{
+#card-13 {
     background-image: url(../assets/img/itemgallery/Roblox.jpg);
     background-size: contain;
     background-position: center center;
@@ -1267,7 +1488,7 @@ form {
     width: 100%;
 }
 
-#card-14{
+#card-14 {
     background-image: url(../assets/img/itemgallery/fortnight.jpg);
     background-size: contain;
     background-position: center center;
@@ -1280,7 +1501,7 @@ form {
     width: 100%;
 }
 
-#card-15{
+#card-15 {
     background-image: url(../assets/img/itemgallery/capsule_616x353.jpg);
     background-size: contain;
     background-position: center center;
@@ -1293,7 +1514,7 @@ form {
     width: 100%;
 }
 
-#card-16{
+#card-16 {
     background-image: url(../assets/img/itemgallery/flight\ sim.jpg);
     background-size: contain;
     background-position: center center;
