@@ -830,6 +830,7 @@ a {
 .list-card-content {
     flex: 1 1 50%;
     flex-wrap: wrap;
+    background-color: var(--ghub-periwinkle);
 }
 
 .list-card-header {
@@ -1497,6 +1498,10 @@ form {
 
 .img-lg {
     width: 100%;
+}
+
+.med-img{
+    width: 150px;
 }
 
 .img-md {
