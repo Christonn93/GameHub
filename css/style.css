@@ -248,7 +248,7 @@ footer {
 
 h1 {
     font-family: var(--ff-heading);
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h1);
     margin: 5px;
 }
 

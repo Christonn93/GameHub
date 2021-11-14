@@ -24,23 +24,23 @@
     $mdc-typography-styles-overline: (font-family: unquote("Oswald"), font-size: 9);
     $mdc-typography-styles-caption: (font-family: unquote("Oswald"), font-size: 11);
 
-4.  Used this for gaining information on how to creat icon for the tittle bar. 
+4.  Used this for gaining information on how to create icon for the tittle bar. 
     Link: https://stackoverflow.com/questions/15786937/add-image-in-title-bar
     Link: https://www.hostinger.com/tutorials/how-to-add-favicon-to-website
 
-5.  Make responsive img and other responsive aspeks
+5.  Make responsive img and other responsive aspects
     Link: https://www.freecodecamp.org/news/css-responsive-image-tutorial/
     link: https://www.youtube.com/watch?v=rKtOarvKeZE
 
 6.  Some guides on web responsiveness
     Link: https://css-tricks.com/guides/
 
-7.  Got some good feedback and help from MJPhilip regardin grid and felx layout.
+7.  Got some good feedback and help from MJPhilip regarding grid and flex layout.
     He provided me with links: 
     Link: https://jsfiddle.net/vL5yxj98/
 
-8.  Got some tips from BonitaDiener regaring the layout for the logo in the header, most about the resizing. 
-    She sendt me this two lines of code.
+8.  Got some tips from BonitaDiener regarding the layout for the logo in the header, most about the resizing. 
+    She sent me this two lines of code.
 
     Code: <img style="-webkit-user-select: none;margin: auto;cursor: zoom-out;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://cross-course-christonn93.netlify.app/img/GameHub_log.png%22** width="150" height="150">**
     width="150" height="150">** this section
@@ -57,7 +57,7 @@
     Link: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries
     Link: https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 
-12. Tips on making the dropsown menu for both menus, in js. 
+12. Tips on making the dropdown menu for both menus, in js. 
     Link: https://www.javatpoint.com/how-to-create-dropdown-list-using-javascript
     Link: https://stackoverflow.com/questions/7789521/how-to-link-external-javascript-file-onclick-of-button/32245490
 
